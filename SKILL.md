@@ -1,42 +1,145 @@
 ---
 name: launch-tradingview
-description: Launch TradingView Desktop and verify the CDP connection is ready. Use when the user says "launch tradingview", "open tradingview", "start tradingview", "connect to tradingview", or when TradingView tools fail because the app isn't running.
+description: Launch TradingView Desktop and verify the CDP connection is ready. Use when the user says "launch tradingview", "open tradingview", "start tradingview", "connect to tradingview", or when TradingView tools fail because the app isn't running. Also use when the user asks to "set up tradingview", "install tradingview mcp", or "configure tradingview with claude".
 disable-model-invocation: true
-allowed-tools: mcp__tradingview__tv_launch, mcp__tradingview__tv_health_check
+allowed-tools: mcp__tradingview__tv_launch, mcp__tradingview__tv_health_check, Bash, Read, Write
 ---
 
-# Launch TradingView
+# TradingView + Claude — Launch & Setup
 
-Launch TradingView Desktop with CDP (Chrome DevTools Protocol) enabled so MCP tools can control it.
+This skill handles two scenarios:
+1. **Launch** — TradingView MCP is already installed, just start the app and verify connection.
+2. **Full setup from scratch** — Install the MCP server, configure Claude Code, and launch TradingView.
 
-## Arguments
+---
+
+## Scenario 1: Launch (MCP already installed)
+
+Use this when the user just wants to start TradingView.
+
+### Arguments
 
 Optional: `$ARGUMENTS` — accepts `port=<number>` to override the default CDP port (9222), or `keep` to skip killing the existing instance.
 
-## Steps
+### Steps
 
 1. **Parse arguments** (if any):
-   - If the user passed `port=<N>`, use that port number.
-   - If the user passed `keep`, set `kill_existing` to false.
-   - Otherwise use defaults: port 9222, kill_existing true.
+   - `port=<N>` → use that port number
+   - `keep` → set `kill_existing` to false
+   - Otherwise: port 9222, kill_existing true
 
 2. **Launch TradingView** using `mcp__tradingview__tv_launch` with the resolved parameters.
 
-3. **Verify the connection** by calling `mcp__tradingview__tv_health_check`.
-   - If `cdp_connected` is true, report success and show:
-     - Symbol currently on chart
-     - Timeframe
-     - Chart URL
-   - If `cdp_connected` is false, report failure and suggest the user:
-     - Check that TradingView Desktop is installed
-     - Try running `/launch-tradingview` again
-     - Manually open TradingView and enable remote debugging on port 9222
+3. **Verify the connection** with `mcp__tradingview__tv_health_check`.
+   - If `cdp_connected: true`, report success:
+     ```
+     TradingView is live.
+       Symbol:    <chart_symbol>
+       Timeframe: <chart_resolution>
+       URL:       <target_url>
+     ```
+   - If `cdp_connected: false`, follow the troubleshooting steps below.
 
-## Success output format
+### Troubleshooting
 
+- Confirm TradingView Desktop is installed (not the web version)
+- Try running `/launch-tradingview` again
+- If it still fails, manually launch with CDP enabled (see platform commands in Setup below)
+- Confirm port 9222 is not blocked by another process: `lsof -i :9222`
+
+---
+
+## Scenario 2: Full Setup from Scratch
+
+Use this when the MCP server is not yet installed or the user asks for a fresh setup.
+
+### Prerequisites
+
+- **Node.js** v18+ — check with `node --version`
+- **TradingView Desktop** installed (download from tradingview.com)
+- **Claude Code** CLI installed
+
+### Step 1 — Clone and install the MCP server
+
+```bash
+git clone https://github.com/tradesdontlie/tradingview-mcp.git ~/tradingview-mcp
+cd ~/tradingview-mcp
+npm install
 ```
-TradingView is live.
-  Symbol:    <chart_symbol>
-  Timeframe: <chart_resolution>
-  URL:       <target_url>
+
+If the user wants a different install path, substitute it everywhere below.
+
+### Step 2 — Add to Claude Code MCP config
+
+Edit `~/.claude/.mcp.json` (global) or `.mcp.json` in the project root. Merge this entry — do **not** overwrite other servers:
+
+```json
+{
+  "mcpServers": {
+    "tradingview": {
+      "command": "node",
+      "args": ["/Users/<username>/tradingview-mcp/src/server.js"]
+    }
+  }
+}
 ```
+
+Replace `/Users/<username>/tradingview-mcp` with the actual clone path.
+
+### Step 3 — Launch TradingView Desktop with CDP enabled
+
+**Recommended:** after MCP is connected, use `tv_launch` — it auto-detects the install location.
+
+**Manual launch by platform:**
+
+macOS:
+```bash
+/Applications/TradingView.app/Contents/MacOS/TradingView --remote-debugging-port=9222
+```
+
+Windows:
+```bash
+%LOCALAPPDATA%\TradingView\TradingView.exe --remote-debugging-port=9222
+```
+
+Linux:
+```bash
+tradingview --remote-debugging-port=9222
+```
+
+### Step 4 — Restart Claude Code
+
+The MCP server loads at startup. After updating `.mcp.json`:
+
+1. Exit Claude Code (`Ctrl+C`)
+2. Relaunch Claude Code
+3. The `tradingview` MCP server connects automatically on startup
+
+### Step 5 — Verify
+
+Run `tv_health_check`. Expected:
+
+```json
+{
+  "success": true,
+  "cdp_connected": true,
+  "chart_symbol": "...",
+  "api_available": true
+}
+```
+
+If `cdp_connected: false` — TradingView is not running with `--remote-debugging-port=9222`. Relaunch it manually using the platform command above.
+
+---
+
+## Quick reference — useful tools after connecting
+
+| Goal | Tool |
+|------|------|
+| Check connection | `tv_health_check` |
+| Change symbol | `chart_set_symbol` |
+| Change timeframe | `chart_set_timeframe` (use minutes: 5, 15, 60, 240, D, W) |
+| Get price | `quote_get` |
+| Take screenshot | `capture_screenshot` |
+| Clear drawings | `draw_clear` |
+| Add indicator | `chart_manage_indicator` |
