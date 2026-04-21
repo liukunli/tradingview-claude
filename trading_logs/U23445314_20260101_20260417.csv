@@ -1,0 +1,974 @@
+﻿Statement,Header,Field Name,Field Value
+Statement,Data,BrokerName,Interactive Brokers LLC
+Statement,Data,BrokerAddress,"Two Pickwick Plaza, Greenwich, CT 06830"
+Statement,Data,Title,Activity Statement
+Statement,Data,Period,"January 1, 2026 - April 17, 2026"
+Statement,Data,WhenGenerated,"2026-04-20, 20:11:06 EDT"
+Account Information,Header,Field Name,Field Value
+Account Information,Data,Name,Kunli Liu
+Account Information,Data,Account,U23445314
+Account Information,Data,Investment Advisor,Animus LLC
+Account Information,Data,Account Type,Advisor Client
+Account Information,Data,Customer Type,Individual
+Account Information,Data,Account Capabilities,Cash
+Account Information,Data,Base Currency,USD
+Net Asset Value,Header,Asset Class,Prior Total,Current Long,Current Short,Current Total,Change
+Net Asset Value,Data,Cash ,56133.660777778,38.028629531,0,38.028629531,-56095.632148247
+Net Asset Value,Data,Interest Accruals,24.36,0,0,0,-24.36
+Net Asset Value,Data,Total,56158.020777778,38.028629531,0,38.028629531,-56119.992148247
+Net Asset Value,Header,Time Weighted Rate of Return
+Net Asset Value,Data,-88.61035417%
+Change in NAV,Header,Field Name,Field Value
+Change in NAV,Data,Starting Value,56158.020777778
+Change in NAV,Data,Mark-to-Market,-131025.2518
+Change in NAV,Data,Deposits & Withdrawals,79387.69
+Change in NAV,Data,Interest,381.83
+Change in NAV,Data,Change in Interest Accruals,-24.36
+Change in NAV,Data,Advisor Fees,-1875.7079
+Change in NAV,Data,Commissions,-2964.1925
+Change in NAV,Data,Ending Value,38.028629531
+Mark-to-Market Performance Summary,Header,Asset Category,Symbol,Prior Quantity,Current Quantity,Prior Price,Current Price,Mark-to-Market P/L Position,Mark-to-Market P/L Transaction,Mark-to-Market P/L Commissions,Mark-to-Market P/L Other,Mark-to-Market P/L Total,Code
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 05JAN26 25100 P,0,0,--,--,0,-3098.5,-3.1475,0,-3101.6475,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 05JAN26 25150 P,0,0,--,--,0,3608.5,-3.1475,0,3605.3525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 05JAN26 25200 P,0,0,--,--,-37076.76,6181.76,-19.95166667,0,-30914.95166667,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 05JAN26 25250 P,0,0,--,--,46146.52,-7653.52,-19.95166667,0,38473.04833333,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 06JAN26 25500 P,0,0,--,--,0,-276.66666667,-5.46166667,0,-282.12833334,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 06JAN26 25550 C,0,0,--,--,0,2188,-6.295,0,2181.705,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 06JAN26 25550 P,0,0,--,--,0,296.66666667,-6.46166667,0,290.205,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 06JAN26 25600 C,0,0,--,--,0,-1588,-5.795,0,-1593.795,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 07JAN26 25600 P,0,0,--,--,0,-170,-6.295,0,-176.295,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 07JAN26 25650 P,0,0,--,--,0,335,-9.6675,0,325.3325,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 07JAN26 25700 P,0,0,--,--,0,-210,-3.3725,0,-213.3725,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 08JAN26 25700 C,0,0,--,--,0,-8445,-10.12583333,0,-8455.12583333,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 08JAN26 25700 P,0,0,--,--,0,-990,-9.6925,0,-999.6925,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 08JAN26 25750 C,0,0,--,--,0,5945,-10.12583333,0,5934.87416667,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 08JAN26 25750 P,0,0,--,--,0,1020,-9.6925,0,1010.3075,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 09JAN26 25760 C,0,0,--,--,0,7029,-12.7375,0,7016.2625,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 09JAN26 25810 C,0,0,--,--,0,-2688,-12.2375,0,-2700.2375,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 12JAN26 25750 P,0,0,--,--,-12840,183.16666667,-12.67333333,0,-12669.50666666,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 12JAN26 25800 P,0,0,--,--,14753.64,-1276.80666667,-12.67333333,0,13464.16,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 13JAN26 25800 C,0,0,--,--,22560,-9445.5,-10.1175,0,13104.3825,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 13JAN26 25850 C,0,0,--,--,-15210,4481.83333333,-16.57916667,0,-10744.74583334,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 13JAN26 25900 C,0,0,--,--,0,-77.33333333,-5.46166667,0,-82.795,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 14JAN26 25650 P,0,0,--,--,0,-9795,-9.6925,0,-9804.6925,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 14JAN26 25700 P,0,0,--,--,0,10995,-9.6925,0,10985.3075,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 15JAN26 25250 P,0,0,--,--,0,-9530,-14.4875,0,-9544.4875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 15JAN26 25300 P,0,0,--,--,0,5704,-29.725,0,5674.275,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 15JAN26 25350 P,0,0,--,--,0,5726,-15.2375,0,5710.7625,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 16JAN26 25500 P,0,0,--,--,0,-11850,-15.9875,0,-11865.9875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 16JAN26 25550 P,0,0,--,--,-7101.2,11521.2,-19.835,0,4400.165,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 16JAN26 25600 P,0,0,--,--,4576.41,5053.59,-3.8475,0,9626.1525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 20JAN26 25450 P,0,0,--,--,0,-11650,-15.9875,0,-11665.9875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 20JAN26 25500 P,0,0,--,--,0,12650,-15.9875,0,12634.0125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 21JAN26 25250 P,0,0,--,--,-262430.73,165665.73,-28.5775,0,-96793.5775,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 21JAN26 25300 P,0,0,--,--,298537.2,-201682.2,-28.5775,0,96826.4225,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 22JAN26 25050 P,0,0,--,--,0,-3315,-15.9875,0,-3330.9875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 22JAN26 25100 P,0,0,--,--,0,3565,-15.9875,0,3549.0125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25500 C,0,0,--,--,0,1210,-6.045,0,1203.955,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25500 P,0,0,--,--,-37650,20360,-15.9875,0,-17305.9875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25550 C,0,0,--,--,0,-1010,-6.045,0,-1016.045,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25550 P,0,0,--,--,50087.7,-32917.7,-43.7125,0,17126.2875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25600 P,0,0,--,--,0,-3570,-27.725,0,-3597.725,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25700 C,0,0,--,--,0,9395,-27.725,0,9367.275,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25700 P,0,0,--,--,0,-7050,-31.475,0,-7081.475,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25750 C,0,0,--,--,0,-3455,-27.725,0,-3482.725,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25750 P,0,0,--,--,0,8050,-31.475,0,8018.525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25650 P,0,0,--,--,0,-1000,-26.475,0,-1026.475,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25700 P,0,0,--,--,0,760,-26.475,0,733.525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25750 C,0,0,--,--,0,7688,-30.975,0,7657.025,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25800 C,0,0,--,--,0,1992,-52.45,0,1939.55,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25850 C,0,0,--,--,0,-1380,-38.4625,0,-1418.4625,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25800 C,0,0,--,--,0,10185,-30.225,0,10154.775,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25800 P,0,0,--,--,0,-2210,-52.95,0,-2262.95,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25850 C,0,0,--,--,0,-8065,-30.225,0,-8095.225,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25850 P,0,0,--,--,0,2715,-79.425,0,2635.575,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25900 P,0,0,--,--,0,2440,-26.475,0,2413.525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25920 C,0,0,--,--,0,5480,-31.475,0,5448.525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25950 C,0,0,--,--,0,180,-26.475,0,153.525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25970 C,0,0,--,--,0,-1835,-52.95,0,-1887.95,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25980 C,0,0,--,--,0,4550,-26.475,0,4523.525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 26000 C,0,0,--,--,0,-785,-26.475,0,-811.475,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 26020 C,0,0,--,--,0,-715,-26.475,0,-741.475,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 27JAN26 26030 C,0,0,--,--,0,-1220,-26.475,0,-1246.475,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 25800 P,0,0,--,--,0,-10630,-6.74375,0,-10636.74375,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 25850 P,0,0,--,--,0,-1552,-40.7125,0,-1592.7125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 25900 P,0,0,--,--,0,22205,-37.71875,0,22167.28125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 25950 C,0,0,--,--,0,-8180,-31.475,0,-8211.475,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26000 C,0,0,--,--,0,7180,-31.475,0,7148.525,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26150 C,0,0,--,--,0,9040,-6.74375,0,9033.25625,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26160 C,0,0,--,--,0,17837,-33.96875,0,17803.03125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26200 C,0,0,--,--,0,-4950,-6.74375,0,-4956.74375,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26210 C,0,0,--,--,0,-10425,-32.71875,0,-10457.71875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25450 P,0,0,--,--,0,-5746,-40.7575,0,-5786.7575,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25500 P,0,0,--,--,0,8908,-40.7575,0,8867.2425,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25550 P,0,0,--,--,0,-5673,-37.16125,0,-5710.16125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25600 P,0,0,--,--,0,12121,-37.16125,0,12083.83875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25750 C,0,0,--,--,0,900,-39.7125,0,860.2875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25800 C,0,0,--,--,0,2833.90909091,-80.47,0,2753.43909091,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25850 C,0,0,--,--,0,-106603.54545455,-77.91875,0,-106681.46420455,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25900 C,0,0,--,--,0,-2418,-37.16125,0,-2455.16125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25350 P,0,0,--,--,0,-4000,-13.2375,0,-4013.2375,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25400 P,0,0,--,--,0,-9100,-38.4625,0,-9138.4625,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25450 P,0,0,--,--,0,22890,-51.7,0,22838.3,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25500 P,0,0,--,--,0,-3317,-51.7,0,-3368.7,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25520 P,0,0,--,--,0,-244,-32.225,0,-276.225,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25550 C,0,0,--,--,0,24975,-54.2,0,24920.8,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25550 P,0,0,--,--,0,12270,-30.225,0,12239.775,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25570 P,0,0,--,--,0,-394,-32.225,0,-426.225,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25600 C,0,0,--,--,0,-12555,-79.425,0,-12634.425,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25650 C,0,0,--,--,0,15260,-49.2,0,15210.8,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25700 C,0,0,--,--,0,-8163,-22.475,0,-8185.475,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25730 C,0,0,--,--,0,2678,-27.225,0,2650.775,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25780 C,0,0,--,--,0,-1940,-27.225,0,-1967.225,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25150 P,0,0,--,--,0,32546,-36.52,0,32509.48,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25200 P,0,0,--,--,0,-46378,-36.52,0,-46414.52,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25300 P,0,0,--,--,0,-18353.26923077,-55.1775,0,-18408.44673077,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25350 P,0,0,--,--,0,96053.65384615,-91.6525,0,95962.00134615,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25400 P,0,0,--,--,0,-140885,-31.725,0,-140916.725,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 04FEB26 25050 C,0,0,--,--,0,-1420,-11.9875,0,-1431.9875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 04FEB26 25350 P,0,0,--,--,331959.5,3250.5,-14.4875,0,335195.5125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 04FEB26 25400 P,0,0,--,--,-355579.9,-7130.1,-14.4875,0,-362724.4875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 04FEB26 25550 C,0,0,--,--,0,-14400,-47.95,0,-14447.95,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 05FEB26 25050 P,0,0,--,--,113996.75,-25896.75,-15.2375,0,88084.7625,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 05FEB26 25100 P,0,0,--,--,-124333.15,21543.15,-15.2375,0,-102805.2375,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 05FEB26 25350 P,0,0,--,--,611628.6,-156968.6,-14.4875,0,454645.5125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 05FEB26 25400 P,0,0,--,--,-636287.5,161627.5,-14.4875,0,-474674.4875,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 12FEB26 24700 P,0,0,--,--,0,-1849.33333333,-13.57083333,0,-1862.90416666,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 12FEB26 24750 P,0,0,--,--,0,2479.33333333,-13.82083333,0,2465.5125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 13FEB26 24650 P,0,0,--,--,0,-54526.83333333,-15.8625,0,-54542.69583333,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 13FEB26 24700 P,0,0,--,--,0,60026.83333333,-15.8625,0,60010.97083333,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,NDX 17FEB26 24700 P,0,0,--,--,0,311,-3.0975,0,307.9025,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SPXW 13JAN26 6920 P,0,0,--,--,0,-3550,-5.165,0,-3555.165,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SPXW 13JAN26 6970 P,0,0,--,--,0,6450,-5.165,0,6444.835,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SPXW 20JAN26 6830 P,0,0,--,--,0,-15364,-28.4075,0,-15392.4075,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SPXW 20JAN26 6880 P,0,0,--,--,0,21014,-28.4075,0,20985.5925,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SPXW 21JAN26 6740 P,0,0,--,--,-4792.75,1637.75,-12.9125,0,-3167.9125,
+Mark-to-Market Performance Summary,Data,Equity and Index Options,SPXW 21JAN26 6790 P,0,0,--,--,12507,-6102,-12.9125,0,6392.0875,
+Mark-to-Market Performance Summary,Data,Total,,,,,,13451.33,-144476.58174826,-2964.1925,0,-133989.44424826,
+Mark-to-Market Performance Summary,Data,Forex,USD,56133.660777778,38.028629531,1.0000,1.0000,0,0,0,0,0,
+Mark-to-Market Performance Summary,Data,Total,,,,,,0,0,0,0,0,
+Mark-to-Market Performance Summary,Data,Total (All Assets),,,,,,13451.33,-144476.58174826,-2964.1925,0,-133989.44424826,
+Mark-to-Market Performance Summary,Data,Broker Interest Paid and Received,,,,,,,,,,381.83,
+Mark-to-Market Performance Summary,Data,Advisor Fees,,,,,,,,,,-1875.7079,
+Total P/L for Statement Period,,,,,,,,,,,,-135483.32214826,
+Realized & Unrealized Performance Summary,Header,Asset Category,Symbol,Cost Adj.,Realized S/T Profit,Realized S/T Loss,Realized L/T Profit,Realized L/T Loss,Realized Total,Unrealized S/T Profit,Unrealized S/T Loss,Unrealized L/T Profit,Unrealized L/T Loss,Unrealized Total,Total,Code
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 05JAN26 25100 P,0,0,-3101.6475,0,0,-3101.6475,0,0,0,0,0,-3101.6475,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 05JAN26 25150 P,0,3605.3525,0,0,0,3605.3525,0,0,0,0,0,3605.3525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 05JAN26 25200 P,0,0,-30914.95166734,0,0,-30914.95166734,0,0,0,0,0,-30914.95166734,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 05JAN26 25250 P,0,38473.04833333,0,0,0,38473.04833333,0,0,0,0,0,38473.04833333,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 06JAN26 25500 P,0,0,-282.12833333,0,0,-282.12833333,0,0,0,0,0,-282.12833333,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 06JAN26 25550 C,0,2181.705,0,0,0,2181.705,0,0,0,0,0,2181.705,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 06JAN26 25550 P,0,290.205,0,0,0,290.205,0,0,0,0,0,290.205,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 06JAN26 25600 C,0,0,-1593.795,0,0,-1593.795,0,0,0,0,0,-1593.795,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 07JAN26 25600 P,0,0,-176.295,0,0,-176.295,0,0,0,0,0,-176.295,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 07JAN26 25650 P,0,325.3325,0,0,0,325.3325,0,0,0,0,0,325.3325,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 07JAN26 25700 P,0,0,-213.3725,0,0,-213.3725,0,0,0,0,0,-213.3725,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 08JAN26 25700 C,0,0,-8455.12583333,0,0,-8455.12583333,0,0,0,0,0,-8455.12583333,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 08JAN26 25700 P,0,0,-999.6925,0,0,-999.6925,0,0,0,0,0,-999.6925,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 08JAN26 25750 C,0,5934.87416667,0,0,0,5934.87416667,0,0,0,0,0,5934.87416667,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 08JAN26 25750 P,0,1010.3075,0,0,0,1010.3075,0,0,0,0,0,1010.3075,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 09JAN26 25760 C,0,7016.2625,0,0,0,7016.2625,0,0,0,0,0,7016.2625,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 09JAN26 25810 C,0,0,-2700.2375,0,0,-2700.2375,0,0,0,0,0,-2700.2375,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 12JAN26 25750 P,0,0,-12669.506666,0,0,-12669.506666,0,0,0,0,0,-12669.506666,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 12JAN26 25800 P,0,13464.16,0,0,0,13464.16,0,0,0,0,0,13464.16,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 13JAN26 25800 C,0,13104.3825,0,0,0,13104.3825,0,0,0,0,0,13104.3825,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 13JAN26 25850 C,0,90.87166667,-10835.6175,0,0,-10744.74583333,0,0,0,0,0,-10744.74583333,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 13JAN26 25900 C,0,0,-82.795,0,0,-82.795,0,0,0,0,0,-82.795,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 14JAN26 25650 P,0,0,-9804.6925,0,0,-9804.6925,0,0,0,0,0,-9804.6925,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 14JAN26 25700 P,0,10985.3075,0,0,0,10985.3075,0,0,0,0,0,10985.3075,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 15JAN26 25250 P,0,0,-9544.4875,0,0,-9544.4875,0,0,0,0,0,-9544.4875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 15JAN26 25300 P,0,10880.5125,-5206.2375,0,0,5674.275,0,0,0,0,0,5674.275,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 15JAN26 25350 P,0,5710.7625,0,0,0,5710.7625,0,0,0,0,0,5710.7625,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 16JAN26 25500 P,0,0,-11865.9875,0,0,-11865.9875,0,0,0,0,0,-11865.9875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 16JAN26 25550 P,0,12334.0125,-7933.8475,0,0,4400.165,0,0,0,0,0,4400.165,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 16JAN26 25600 P,0,9626.1525,0,0,0,9626.1525,0,0,0,0,0,9626.1525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 20JAN26 25450 P,0,0,-11665.9875,0,0,-11665.9875,0,0,0,0,0,-11665.9875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 20JAN26 25500 P,0,12634.0125,0,0,0,12634.0125,0,0,0,0,0,12634.0125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 21JAN26 25250 P,0,0,-96793.5775,0,0,-96793.5775,0,0,0,0,0,-96793.5775,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 21JAN26 25300 P,0,96826.4225,0,0,0,96826.4225,0,0,0,0,0,96826.4225,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 22JAN26 25050 P,0,0,-3330.9875,0,0,-3330.9875,0,0,0,0,0,-3330.9875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 22JAN26 25100 P,0,3549.0125,0,0,0,3549.0125,0,0,0,0,0,3549.0125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25500 C,0,1203.955,0,0,0,1203.955,0,0,0,0,0,1203.955,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25500 P,0,0,-17305.9875,0,0,-17305.9875,0,0,0,0,0,-17305.9875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25550 C,0,0,-1016.045,0,0,-1016.045,0,0,0,0,0,-1016.045,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25550 P,0,17524.0125,-397.725,0,0,17126.2875,0,0,0,0,0,17126.2875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25600 P,0,0,-3597.725,0,0,-3597.725,0,0,0,0,0,-3597.725,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25700 C,0,9367.275,0,0,0,9367.275,0,0,0,0,0,9367.275,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25700 P,0,0,-7081.475,0,0,-7081.475,0,0,0,0,0,-7081.475,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25750 C,0,0,-3482.725,0,0,-3482.725,0,0,0,0,0,-3482.725,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 23JAN26 25750 P,0,8018.525,0,0,0,8018.525,0,0,0,0,0,8018.525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25650 P,0,0,-1026.475,0,0,-1026.475,0,0,0,0,0,-1026.475,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25700 P,0,733.525,0,0,0,733.525,0,0,0,0,0,733.525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25750 C,0,7657.025,0,0,0,7657.025,0,0,0,0,0,7657.025,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25800 C,0,4140.5375,-2200.9875,0,0,1939.55,0,0,0,0,0,1939.55,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 26JAN26 25850 C,0,0,-1418.4625,0,0,-1418.4625,0,0,0,0,0,-1418.4625,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25800 C,0,10154.775,0,0,0,10154.775,0,0,0,0,0,10154.775,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25800 P,0,0,-2262.95,0,0,-2262.95,0,0,0,0,0,-2262.95,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25850 C,0,0,-8095.225,0,0,-8095.225,0,0,0,0,0,-8095.225,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25850 P,0,3282.05,-646.475,0,0,2635.575,0,0,0,0,0,2635.575,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25900 P,0,2413.525,0,0,0,2413.525,0,0,0,0,0,2413.525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25920 C,0,5448.525,0,0,0,5448.525,0,0,0,0,0,5448.525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25950 C,0,153.525,0,0,0,153.525,0,0,0,0,0,153.525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25970 C,0,1618.525,-3506.475,0,0,-1887.95,0,0,0,0,0,-1887.95,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 25980 C,0,4523.525,0,0,0,4523.525,0,0,0,0,0,4523.525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 26000 C,0,0,-811.475,0,0,-811.475,0,0,0,0,0,-811.475,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 26020 C,0,0,-741.475,0,0,-741.475,0,0,0,0,0,-741.475,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 27JAN26 26030 C,0,0,-1246.475,0,0,-1246.475,0,0,0,0,0,-1246.475,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 25800 P,0,0,-10636.74375,0,0,-10636.74375,0,0,0,0,0,-10636.74375,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 25850 P,0,7922.025,-9514.7375,0,0,-1592.7125,0,0,0,0,0,-1592.7125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 25900 P,0,22167.28125,0,0,0,22167.28125,0,0,0,0,0,22167.28125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 25950 C,0,0,-8211.475,0,0,-8211.475,0,0,0,0,0,-8211.475,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26000 C,0,7148.525,0,0,0,7148.525,0,0,0,0,0,7148.525,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26150 C,0,9033.25625,0,0,0,9033.25625,0,0,0,0,0,9033.25625,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26160 C,0,17803.03125,0,0,0,17803.03125,0,0,0,0,0,17803.03125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26200 C,0,0,-4956.74375,0,0,-4956.74375,0,0,0,0,0,-4956.74375,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 28JAN26 26210 C,0,0,-10457.71875,0,0,-10457.71875,0,0,0,0,0,-10457.71875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25450 P,0,0,-5786.7575,0,0,-5786.7575,0,0,0,0,0,-5786.7575,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25500 P,0,8867.2425,0,0,0,8867.2425,0,0,0,0,0,8867.2425,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25550 P,0,0,-5710.16125,0,0,-5710.16125,0,0,0,0,0,-5710.16125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25600 P,0,12083.83875,0,0,0,12083.83875,0,0,0,0,0,12083.83875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25750 C,0,860.2875,0,0,0,860.2875,0,0,0,0,0,860.2875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25800 C,0,3543.15159091,-789.7125,0,0,2753.43909091,0,0,0,0,0,2753.43909091,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25850 C,0,0,-106681.46420455,0,0,-106681.46420455,0,0,0,0,0,-106681.46420455,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 29JAN26 25900 C,0,0,-2455.16125,0,0,-2455.16125,0,0,0,0,0,-2455.16125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25350 P,0,0,-4013.2375,0,0,-4013.2375,0,0,0,0,0,-4013.2375,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25400 P,0,8986.7625,-18125.225,0,0,-9138.4625,0,0,0,0,0,-9138.4625,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25450 P,0,27472.275,-4633.975,0,0,22838.3,0,0,0,0,0,22838.3,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25500 P,0,6609.025,-9977.725,0,0,-3368.7,0,0,0,0,0,-3368.7,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25520 P,0,3.7525,-279.9775,0,0,-276.225,0,0,0,0,0,-276.225,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25550 C,0,24920.8,0,0,0,24920.8,0,0,0,0,0,24920.8,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25550 P,0,12239.775,0,0,0,12239.775,0,0,0,0,0,12239.775,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25570 P,0,0,-426.225,0,0,-426.225,0,0,0,0,0,-426.225,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25600 C,0,2892.275,-15526.7,0,0,-12634.425,0,0,0,0,0,-12634.425,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25650 C,0,17616.025,-2405.225,0,0,15210.8,0,0,0,0,0,15210.8,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25700 C,0,0,-8185.475,0,0,-8185.475,0,0,0,0,0,-8185.475,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25730 C,0,2650.775,0,0,0,2650.775,0,0,0,0,0,2650.775,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 30JAN26 25780 C,0,0,-1967.225,0,0,-1967.225,0,0,0,0,0,-1967.225,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25150 P,0,32509.48,0,0,0,32509.48,0,0,0,0,0,32509.48,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25200 P,0,0,-46414.52,0,0,-46414.52,0,0,0,0,0,-46414.52,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25300 P,0,0,-18408.44673077,0,0,-18408.44673077,0,0,0,0,0,-18408.44673077,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25350 P,0,96276.90230769,-314.90096154,0,0,95962.00134615,0,0,0,0,0,95962.00134615,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 03FEB26 25400 P,0,0,-140916.725,0,0,-140916.725,0,0,0,0,0,-140916.725,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 04FEB26 25050 C,0,0,-1431.9875,0,0,-1431.9875,0,0,0,0,0,-1431.9875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 04FEB26 25350 P,0,335195.5125,0,0,0,335195.5125,0,0,0,0,0,335195.5125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 04FEB26 25400 P,0,0,-362724.4875,0,0,-362724.4875,0,0,0,0,0,-362724.4875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 04FEB26 25550 C,0,0,-14447.95,0,0,-14447.95,0,0,0,0,0,-14447.95,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 05FEB26 25050 P,0,88084.7625,0,0,0,88084.7625,0,0,0,0,0,88084.7625,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 05FEB26 25100 P,0,0,-102805.2375,0,0,-102805.2375,0,0,0,0,0,-102805.2375,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 05FEB26 25350 P,0,454645.5125,0,0,0,454645.5125,0,0,0,0,0,454645.5125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 05FEB26 25400 P,0,0,-474674.4875,0,0,-474674.4875,0,0,0,0,0,-474674.4875,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 12FEB26 24700 P,0,0,-1862.90416666,0,0,-1862.90416666,0,0,0,0,0,-1862.90416666,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 12FEB26 24750 P,0,2465.5125,0,0,0,2465.5125,0,0,0,0,0,2465.5125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 13FEB26 24650 P,0,0,-54542.69583333,0,0,-54542.69583333,0,0,0,0,0,-54542.69583333,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 13FEB26 24700 P,0,60010.97083333,0,0,0,60010.97083333,0,0,0,0,0,60010.97083333,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,NDX 17FEB26 24700 P,0,307.9025,0,0,0,307.9025,0,0,0,0,0,307.9025,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,SPXW 13JAN26 6920 P,0,0,-3555.165,0,0,-3555.165,0,0,0,0,0,-3555.165,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,SPXW 13JAN26 6970 P,0,6444.835,0,0,0,6444.835,0,0,0,0,0,6444.835,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,SPXW 20JAN26 6830 P,0,0,-15392.4075,0,0,-15392.4075,0,0,0,0,0,-15392.4075,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,SPXW 20JAN26 6880 P,0,20985.5925,0,0,0,20985.5925,0,0,0,0,0,20985.5925,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,SPXW 21JAN26 6740 P,0,0,-3167.9125,0,0,-3167.9125,0,0,0,0,0,-3167.9125,
+Realized & Unrealized Performance Summary,Data,Equity and Index Options,SPXW 21JAN26 6790 P,0,6392.0875,0,0,0,6392.0875,0,0,0,0,0,6392.0875,
+Realized & Unrealized Performance Summary,Data,Total,,0,1620421.1763986,-1754410.620646851,0,0,-133989.444248251,0,0,0,0,0,-133989.444248251,
+Realized & Unrealized Performance Summary,Data,Total (All Assets),,0,1620421.1763986,-1754410.620646851,0,0,-133989.444248251,0,0,0,0,0,-133989.444248251,
+Notes,This statement uses wash sales P/L for realized and unrealized P/L calculations.
+Cash Report,Header,Currency Summary,Currency,Total,Securities,Futures,
+Cash Report,Data,Starting Cash,Base Currency Summary,56133.660777778,56133.660777778,0,
+Cash Report,Data,Commissions,Base Currency Summary,-2964.1925,-2964.1925,0,
+Cash Report,Data,Deposits,Base Currency Summary,112000,112000,0,
+Cash Report,Data,Account Transfers,Base Currency Summary,-32612.31,-32612.31,0,
+Cash Report,Data,Broker Interest Paid and Received,Base Currency Summary,381.83,381.83,0,
+Cash Report,Data,Cash Settling MTM,Base Currency Summary,-206330,-206330,0,
+Cash Report,Data,Trades (Sales),Base Currency Summary,4222311.44172494,4222311.44172494,0,
+Cash Report,Data,Trades (Purchase),Base Currency Summary,-4147006.69347319,-4147006.69347319,0,
+Cash Report,Data,Advisor Fees,Base Currency Summary,-1875.7079,-1875.7079,0,
+Cash Report,Data,Ending Cash,Base Currency Summary,38.028629531,38.028629531,0,
+Cash Report,Data,Ending Settled Cash,Base Currency Summary,38.028629531,38.028629531,0,
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25100 P,"2026-01-02, 13:55:44",1,104.335,56.1,-10433.5,-1.57375,10435.07375,0,-4823.5,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25100 P,"2026-01-02, 14:08:59",-1,73.35,56.1,7335,-1.57375,-10435.07375,-3101.6475,1725,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 05JAN26 25100 P,,0,,,-3098.5,-3.1475,0,-3101.6475,-3098.5,
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25150 P,"2026-01-02, 13:55:44",-1,129.335,73.6993,12933.5,-1.57375,-12931.92625,0,5563.57,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25150 P,"2026-01-02, 14:08:59",1,93.25,73.6993,-9325,-1.57375,12931.92625,3605.3525,-1955.07,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 05JAN26 25150 P,,0,,,3608.5,-3.1475,0,3605.3525,3608.5,
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25200 P,"2026-01-02, 14:17:10",2,96.35,92.6919,-19270,-3.230833333,19273.230833333,0,-731.62,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25200 P,"2026-01-02, 14:29:41",-2,82.05,92.6919,16410,-2.8975,-19273.230833,-2866.128333,-2128.38,C
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25200 P,"2026-01-02, 15:20:39",1,68.05,92.6919,-6805,-2.04875,6807.04875,1433.064167,2464.19,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25200 P,"2026-01-02, 15:30:00",1,72.1,92.6919,-7210,-2.04875,7212.04875,1433.064167,2059.19,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25200 P,"2026-01-02, 15:50:39",1,87.5,92.6919,-8750,-2.04875,8752.04875,0,519.19,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25200 P,"2026-01-02, 15:58:06",1,98.5,92.6919,-9850,-2.04875,9852.04875,0,-580.81,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25200 P,"2026-01-05, 09:30:33",-4,11.45,0,4580,-5.628333333,-35489.323334,-30914.951666,4580,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 05JAN26 25200 P,,0,,,-30895,-19.951666666,-2866.128333667,-30914.951665,6181.76,
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25250 P,"2026-01-02, 14:17:10",-2,121.35,115.3663,24270,-3.230833333,-24266.769166667,0,1196.74,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25250 P,"2026-01-02, 14:29:41",2,104.56,115.3663,-20912,-2.8975,24266.769167,3351.871667,2161.26,C
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25250 P,"2026-01-02, 15:20:39",-1,88.05,115.3663,8805,-2.04875,-8802.95125,0,-2731.63,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25250 P,"2026-01-02, 15:30:00",-1,93.1,115.3663,9310,-2.04875,-9307.95125,0,-2226.63,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25250 P,"2026-01-02, 15:50:39",-1,111.5,115.3663,11150,-2.04875,-11147.95125,0,-386.63,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25250 P,"2026-01-02, 15:58:06",-1,124.5,115.3663,12450,-2.04875,-12447.95125,0,913.37,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05JAN26 25250 P,"2026-01-05, 09:30:33",4,16.45,0,-6580,-5.628333333,41706.805,35121.176668,-6580,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 05JAN26 25250 P,,0,,,38493,-19.951666666,0.000000333,38473.048335,-7653.52,
+Trades,Data,Order,Equity and Index Options,USD,NDX 06JAN26 25550 C,"2026-01-06, 12:39:09",-2,60.64,89.71,12128,-3.1475,-12124.8525,0,-5814,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 06JAN26 25550 C,"2026-01-06, 12:43:20",2,49.7,89.71,-9940,-3.1475,12124.8525,2181.705,8002,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 06JAN26 25550 C,,0,,,2188,-6.295,0,2181.705,2188,
+Trades,Data,Order,Equity and Index Options,USD,NDX 06JAN26 25600 C,"2026-01-06, 12:39:09",2,25.64,39.71,-5128,-3.1475,5131.1475,0,2814,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 06JAN26 25600 C,"2026-01-06, 12:43:20",-2,17.7,39.71,3540,-2.6475,-5131.1475,-1593.795,-4402,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 06JAN26 25600 C,,0,,,-1588,-5.795,0,-1593.795,-1588,
+Trades,Data,Order,Equity and Index Options,USD,NDX 06JAN26 25500 P,"2026-01-06, 12:13:45",2,16.083333333,0,-3216.666666667,-2.730833333,3219.3975,0,-3216.6667,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 06JAN26 25500 P,"2026-01-06, 12:18:17",-2,14.7,0,2940,-2.730833333,-3219.3975,-282.128333,2940,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 06JAN26 25500 P,,0,,,-276.666666667,-5.461666666,0,-282.128333,-276.6667,
+Trades,Data,Order,Equity and Index Options,USD,NDX 06JAN26 25550 P,"2026-01-06, 12:13:45",-2,36.083333333,0,7216.666666667,-3.230833333,-7213.435833334,0,7216.6667,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 06JAN26 25550 P,"2026-01-06, 12:18:17",2,34.6,0,-6920,-3.230833333,7213.435833,290.205,-6920,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 06JAN26 25550 P,,0,,,296.666666667,-6.461666666,-0.000000334,290.205,296.6667,
+Trades,Data,Order,Equity and Index Options,USD,NDX 07JAN26 25600 P,"2026-01-06, 15:20:05",2,54.95,51.85,-10990,-3.1475,10993.1475,0,-620,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 07JAN26 25600 P,"2026-01-06, 15:36:27",-2,54.1,51.85,10820,-3.1475,-10993.1475,-176.295,450,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 07JAN26 25600 P,,0,,,-170,-6.295,0,-176.295,-170,
+Trades,Data,Order,Equity and Index Options,USD,NDX 07JAN26 25650 P,"2026-01-06, 15:20:05",-2,75.45,71.7932,15090,-3.1475,-15086.8525,0,731.36,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 07JAN26 25650 P,"2026-01-06, 15:36:27",2,74.5,71.7932,-14900,-3.1475,15086.8525,183.705,-541.36,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 07JAN26 25650 P,"2026-01-06, 16:13:10",1,71.95,71.7932,-7195,-1.57375,7196.57375,0,-15.68,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 07JAN26 25650 P,"2026-01-06, 16:14:40",-1,73.4,71.7932,7340,-1.79875,-7196.57375,141.6275,160.68,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 07JAN26 25650 P,,0,,,335,-9.6675,0,325.3325,335,
+Trades,Data,Order,Equity and Index Options,USD,NDX 07JAN26 25700 P,"2026-01-06, 16:13:10",-1,97.95,97.9114,9795,-1.57375,-9793.42625,0,3.86,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 07JAN26 25700 P,"2026-01-06, 16:14:40",1,100.05,97.9114,-10005,-1.79875,9793.42625,-213.3725,-213.86,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 07JAN26 25700 P,,0,,,-210,-3.3725,0,-213.3725,-210,
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25700 C,"2026-01-07, 10:15:38",-2,71.1,54.6969,14220,-3.230833333,-14216.769166667,0,3280.62,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25700 C,"2026-01-07, 10:39:42",-1,67.35,54.6969,6735,-2.04875,-6732.95125,0,1265.31,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25700 C,"2026-01-07, 14:14:52",3,98,54.6969,-29400,-4.84625,18256.40625,-8455.125833,-12990.93,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 08JAN26 25700 C,,0,,,-8445,-10.125833333,-2693.314166667,-8455.125833,-8445,
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25750 C,"2026-01-07, 10:15:38",2,49.1,33.5,-9820,-3.230833333,9823.230833333,0,-3120,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25750 C,"2026-01-07, 10:39:42",1,46.35,33.5,-4635,-2.04875,4637.04875,0,-1285,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25750 C,"2026-01-07, 14:14:52",-3,68,33.5,20400,-4.84625,-14460.279583,5934.874167,10350,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 08JAN26 25750 C,,0,,,5945,-10.125833333,0.000000333,5934.874167,5945,
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25700 P,"2026-01-07, 14:18:40",3,60.65,97.4128,-18195,-4.84625,18199.84625,0,11028.84,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25700 P,"2026-01-07, 14:53:06",-3,57.35,97.4128,17205,-4.84625,-18199.84625,-999.6925,-12018.84,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 08JAN26 25700 P,,0,,,-990,-9.6925,0,-999.6925,-990,
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25750 P,"2026-01-07, 14:18:40",-3,81.65,126.2108,24495,-4.84625,-24490.15375,0,-13368.24,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 08JAN26 25750 P,"2026-01-07, 14:53:06",3,78.25,126.2108,-23475,-4.84625,24490.15375,1010.3075,14388.24,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 08JAN26 25750 P,,0,,,1020,-9.6925,0,1010.3075,1020,
+Trades,Data,Order,Equity and Index Options,USD,NDX 09JAN26 25760 C,"2026-01-09, 12:03:23",-3,23.653333333,6.26,7096,-3.59625,-7092.40375,0,5218,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 09JAN26 25760 C,"2026-01-09, 12:51:54",-2,29.49,6.26,5898,-3.1475,-5894.8525,0,4646,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 09JAN26 25760 C,"2026-01-09, 13:09:55",5,11.93,6.26,-5965,-5.99375,12987.25625,7016.2625,-2835,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 09JAN26 25760 C,,0,,,7029,-12.7375,0,7016.2625,7029,
+Trades,Data,Order,Equity and Index Options,USD,NDX 09JAN26 25810 C,"2026-01-09, 12:03:23",3,7.75,0,-2325,-3.59625,2328.59625,0,-2325,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 09JAN26 25810 C,"2026-01-09, 12:51:54",2,9.49,0,-1898,-2.6475,1900.6475,0,-1898,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 09JAN26 25810 C,"2026-01-09, 13:09:55",-5,3.07,0,1535,-5.99375,-5170.03875,-2700.2375,1535,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 09JAN26 25810 C,,0,,,-2688,-12.2375,-940.795,-2700.2375,-2688,
+Trades,Data,Order,Equity and Index Options,USD,NDX 12JAN26 25750 P,"2026-01-09, 11:53:10",2,88.786666667,64.2,-17757.333333333,-3.230833333,17760.564166666,0,-4917.3333,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12JAN26 25750 P,"2026-01-09, 14:07:41",-2,64.4625,64.2,12892.5,-3.1475,-17760.564167,-4871.211667,52.5,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12JAN26 25750 P,"2026-01-09, 16:14:50",2,66.36,64.2,-13272,-3.1475,13275.1475,4871.211666,-432,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12JAN26 25750 P,"2026-01-12, 11:14:26",-2,27.4,0,5480,-3.1475,-18146.359166,-12669.506666,5480,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 12JAN26 25750 P,,0,,,-12656.833333333,-12.673333333,-4871.211666334,-12669.506667,183.1667,
+Trades,Data,Order,Equity and Index Options,USD,NDX 12JAN26 25800 P,"2026-01-09, 11:53:10",-2,113.786666667,86.1082,22757.333333333,-3.230833333,-22754.1025,0,5535.6933,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12JAN26 25800 P,"2026-01-09, 14:07:41",2,85.4625,86.1082,-17092.5,-3.1475,22754.1025,5658.455,129.14,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12JAN26 25800 P,"2026-01-09, 16:14:50",-2,89.86,86.1082,17972,-3.1475,-17968.8525,0,750.36,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12JAN26 25800 P,"2026-01-12, 11:14:26",2,50.8,12.34,-10160,-3.1475,17968.8525,7805.705,-7692,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 12JAN26 25800 P,,0,,,13476.833333333,-12.673333333,0,13464.16,-1276.8067,
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25800 C,"2026-01-12, 13:35:44",-1,87.18,75.2,8718,-1.79875,-8716.20125,0,1198,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25800 C,"2026-01-12, 13:38:17",-1,88.65,75.2,8865,-1.79875,-8863.20125,0,1345,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25800 C,"2026-01-12, 14:53:53",-1,102.81,75.2,10281,-1.79875,-10279.20125,0,2761,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25800 C,"2026-01-13, 09:30:22",3,49.165,0,-14749.5,-4.72125,27858.60375,13104.3825,-14749.5,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 13JAN26 25800 C,,0,,,13114.5,-10.1175,0,13104.3825,-9445.5,
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25850 C,"2026-01-12, 13:35:44",1,60.5,50.7,-6050,-1.79875,6051.79875,0,-980,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25850 C,"2026-01-12, 13:38:17",1,61.75,50.7,-6175,-1.79875,6176.79875,0,-1105,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25850 C,"2026-01-12, 14:53:53",1,73.5,50.7,-7350,-1.79875,7351.79875,0,-2280,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25850 C,"2026-01-13, 09:30:22",-3,29.165,0,8749.5,-4.72125,-19580.39625,-10835.6175,8749.5,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25850 C,"2026-01-13, 09:59:05",-2,30.416666667,0,6083.333333333,-3.230833333,-6080.1025,0,6083.3333,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25850 C,"2026-01-13, 10:01:38",2,29.93,0,-5986,-3.230833333,6080.1025,90.871667,-5986,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 13JAN26 25850 C,,0,,,-10728.166666667,-16.579166666,0,-10744.745833,4481.8333,
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25900 C,"2026-01-13, 09:59:05",2,15.416666667,0,-3083.333333333,-2.730833333,3086.064166666,0,-3083.3333,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 13JAN26 25900 C,"2026-01-13, 10:01:38",-2,15.03,0,3006,-2.730833333,-3086.064167,-82.795,3006,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 13JAN26 25900 C,,0,,,-77.333333333,-5.461666666,-0.000000334,-82.795,-77.3333,
+Trades,Data,Order,Equity and Index Options,USD,NDX 14JAN26 25650 P,"2026-01-13, 10:25:32",3,102.2,53.2348,-30660,-4.84625,30664.84625,0,-14689.56,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 14JAN26 25650 P,"2026-01-13, 11:00:37",-3,69.55,53.2348,20865,-4.84625,-30664.84625,-9804.6925,4894.56,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 14JAN26 25650 P,,0,,,-9795,-9.6925,0,-9804.6925,-9795,
+Trades,Data,Order,Equity and Index Options,USD,NDX 14JAN26 25700 P,"2026-01-13, 10:25:32",-3,124.2,69,37260,-4.84625,-37255.15375,0,16560,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 14JAN26 25700 P,"2026-01-13, 11:00:37",3,87.55,69,-26265,-4.84625,37255.15375,10985.3075,-5565,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 14JAN26 25700 P,,0,,,10995,-9.6925,0,10985.3075,10995,
+Trades,Data,Order,Equity and Index Options,USD,NDX 15JAN26 25250 P,"2026-01-14, 12:19:53",5,100.38,35.1,-50190,-7.24375,50197.24375,0,-32640,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 15JAN26 25250 P,"2026-01-14, 12:26:59",-5,81.32,35.1,40660,-7.24375,-50197.24375,-9544.4875,23110,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 15JAN26 25250 P,,0,,,-9530,-14.4875,0,-9544.4875,-9530,
+Trades,Data,Order,Equity and Index Options,USD,NDX 15JAN26 25300 P,"2026-01-14, 12:19:53",-5,121.82,45.45,60910,-7.24375,-60902.75625,0,38185,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 15JAN26 25300 P,"2026-01-14, 12:26:59",5,100.03,45.45,-50015,-7.24375,60902.75625,10880.5125,-27290,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 15JAN26 25300 P,"2026-01-14, 12:59:27",5,122.182,45.45,-61091,-7.99375,61098.99375,0,-38366,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 15JAN26 25300 P,"2026-01-14, 13:06:22",-5,111.8,45.45,55900,-7.24375,-61098.99375,-5206.2375,33175,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 15JAN26 25300 P,,0,,,5704,-29.725,0,5674.275,5704,
+Trades,Data,Order,Equity and Index Options,USD,NDX 15JAN26 25350 P,"2026-01-14, 12:59:27",-5,147.182,58.559,73591,-7.99375,-73583.00625,0,44311.5,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 15JAN26 25350 P,"2026-01-14, 13:06:22",5,135.73,58.559,-67865,-7.24375,73583.00625,5710.7625,-38585.5,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 15JAN26 25350 P,,0,,,5726,-15.2375,0,5710.7625,5726,
+Trades,Data,Order,Equity and Index Options,USD,NDX 16JAN26 25500 P,"2026-01-14, 13:15:35",5,250.35,155.8114,-125175,-7.99375,125182.99375,0,-47269.3,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 16JAN26 25500 P,"2026-01-14, 14:01:11",-5,226.65,155.8114,113325,-7.99375,-125182.99375,-11865.9875,35419.3,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 16JAN26 25500 P,,0,,,-11850,-15.9875,0,-11865.9875,-11850,
+Trades,Data,Order,Equity and Index Options,USD,NDX 16JAN26 25550 P,"2026-01-14, 13:15:35",-5,283.35,181.0228,141675,-7.99375,-141667.00625,0,51163.6,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 16JAN26 25550 P,"2026-01-14, 14:01:11",5,258.65,181.0228,-129325,-7.99375,141667.00625,12334.0125,-38813.6,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 16JAN26 25550 P,"2026-01-15, 15:54:16",1,96.05,91.752,-9605,-2.04875,9607.04875,0,-429.8,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 16JAN26 25550 P,"2026-01-16, 09:30:56",-1,16.75,20.74,1675,-1.79875,-9607.04875,-7933.8475,-399,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 16JAN26 25550 P,,0,,,4420,-19.835,0,4400.165,11521.2,
+Trades,Data,Order,Equity and Index Options,USD,NDX 16JAN26 25600 P,"2026-01-15, 15:54:16",-1,121.05,116.5041,12105,-2.04875,-12102.95125,0,454.59,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 16JAN26 25600 P,"2026-01-16, 09:30:56",1,24.75,70.74,-2475,-1.79875,12102.95125,9626.1525,4599,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 16JAN26 25600 P,,0,,,9630,-3.8475,0,9626.1525,5053.59,
+Trades,Data,Order,Equity and Index Options,USD,NDX 20JAN26 25450 P,"2026-01-16, 10:41:28",5,115.9,65.0604,-57950,-7.99375,57957.99375,0,-25419.8,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 20JAN26 25450 P,"2026-01-16, 10:56:20",-5,92.6,65.0604,46300,-7.99375,-57957.99375,-11665.9875,13769.8,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 20JAN26 25450 P,,0,,,-11650,-15.9875,0,-11665.9875,-11650,
+Trades,Data,Order,Equity and Index Options,USD,NDX 20JAN26 25500 P,"2026-01-16, 10:41:28",-5,136.9,81.5099,68450,-7.99375,-68442.00625,0,27695.05,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 20JAN26 25500 P,"2026-01-16, 10:56:20",5,111.6,81.5099,-55800,-7.99375,68442.00625,12634.0125,-15045.05,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 20JAN26 25500 P,,0,,,12650,-15.9875,0,12634.0125,12650,
+Trades,Data,Order,Equity and Index Options,USD,NDX 21JAN26 25250 P,"2026-01-20, 12:47:33",9,190.4,291.5897,-171360,-14.28875,171374.28875,0,91070.73,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 21JAN26 25250 P,"2026-01-21, 10:16:10",-9,82.883333333,0,74595,-14.28875,-171374.288751,-96793.577501,74595,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 21JAN26 25250 P,,0,,,-96765,-28.5775,-0.000001,-96793.577501,165665.73,
+Trades,Data,Order,Equity and Index Options,USD,NDX 21JAN26 25300 P,"2026-01-20, 12:47:33",-9,221.4,331.708,199260,-14.28875,-199245.71125,0,-99277.2,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 21JAN26 25300 P,"2026-01-21, 10:16:10",9,113.783333333,0,-102405,-14.28875,199245.711249,96826.422499,-102405,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 21JAN26 25300 P,,0,,,96855,-28.5775,-0.000001,96826.422499,-201682.2,
+Trades,Data,Order,Equity and Index Options,USD,NDX 22JAN26 25050 P,"2026-01-21, 12:10:26",5,115.2,24.9058,-57600,-7.99375,57607.99375,0,-45147.1,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 22JAN26 25050 P,"2026-01-21, 13:19:16",-5,108.57,24.9058,54285,-7.99375,-57607.99375,-3330.9875,41832.1,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 22JAN26 25050 P,,0,,,-3315,-15.9875,0,-3330.9875,-3315,
+Trades,Data,Order,Equity and Index Options,USD,NDX 22JAN26 25100 P,"2026-01-21, 12:10:26",-5,137.2,32.4,68600,-7.99375,-68592.00625,0,52400,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 22JAN26 25100 P,"2026-01-21, 13:19:16",5,130.07,32.4,-65035,-7.99375,68592.00625,3549.0125,-48835,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 22JAN26 25100 P,,0,,,3565,-15.9875,0,3549.0125,3565,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25500 C,"2026-01-23, 09:34:38",-2,55.1,105.47,11020,-2.8975,-11017.1025,0,-10074,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25500 C,"2026-01-23, 09:38:14",2,49.05,105.47,-9810,-3.1475,11017.1025,1203.955,11284,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25500 C,,0,,,1210,-6.045,0,1203.955,1210,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25550 C,"2026-01-23, 09:34:38",2,35.1,55.47,-7020,-2.8975,7022.8975,0,4074,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25550 C,"2026-01-23, 09:38:14",-2,30.05,55.47,6010,-3.1475,-7022.8975,-1016.045,-5084,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25550 C,,0,,,-1010,-6.045,0,-1016.045,-1010,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25700 C,"2026-01-23, 12:11:31",-10,16.5,0,16500,-13.2375,-16486.7625,0,16500,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25700 C,"2026-01-23, 13:25:55",10,7.105,0,-7105,-14.4875,16486.7625,9367.275,-7105,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25700 C,,0,,,9395,-27.725,0,9367.275,9395,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25750 C,"2026-01-23, 12:11:31",10,5.85,0,-5850,-13.2375,5863.2375,0,-5850,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25750 C,"2026-01-23, 13:25:55",-10,2.395,0,2395,-14.4875,-5863.2375,-3482.725,2395,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25750 C,,0,,,-3455,-27.725,0,-3482.725,-3455,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25500 P,"2026-01-22, 15:58:23",5,77.85,75.3,-38925,-7.99375,38932.99375,0,-1275,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25500 P,"2026-01-23, 10:00:16",-5,43.27,0,21635,-7.99375,-38932.99375,-17305.9875,21635,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25500 P,,0,,,-17290,-15.9875,0,-17305.9875,20360,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25550 P,"2026-01-22, 15:58:23",-5,97.85,100.1754,48925,-7.99375,-48917.00625,0,-1162.7,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25550 P,"2026-01-23, 10:00:16",5,62.77,0,-31385,-7.99375,48917.00625,17524.0125,-31385,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25550 P,"2026-01-23, 12:11:31",10,12.1,0,-12100,-13.2375,12113.2375,0,-12100,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25550 P,"2026-01-23, 13:25:55",-10,11.73,0,11730,-14.4875,-12113.2375,-397.725,11730,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25550 P,,0,,,17170,-43.7125,0,17126.2875,-32917.7,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25600 P,"2026-01-23, 12:11:31",-10,20.45,0,20450,-13.2375,-20436.7625,0,20450,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25600 P,"2026-01-23, 13:25:55",10,24.02,0,-24020,-14.4875,20436.7625,-3597.725,-24020,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25600 P,,0,,,-3570,-27.725,0,-3597.725,-3570,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25700 P,"2026-01-23, 10:54:38",10,53.45,94.53,-53450,-15.7375,53465.7375,0,41080,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25700 P,"2026-01-23, 11:13:20",-10,46.4,94.53,46400,-15.7375,-53465.7375,-7081.475,-48130,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25700 P,,0,,,-7050,-31.475,0,-7081.475,-7050,
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25750 P,"2026-01-23, 10:54:38",-10,84.45,144.53,84450,-15.7375,-84434.2625,0,-60080,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 23JAN26 25750 P,"2026-01-23, 11:13:20",10,76.4,144.53,-76400,-15.7375,84434.2625,8018.525,68130,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 23JAN26 25750 P,,0,,,8050,-31.475,0,8018.525,8050,
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25750 C,"2026-01-26, 13:28:39",-10,40.43,0,40430,-15.7375,-40414.2625,0,40430,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25750 C,"2026-01-26, 13:41:51",5,32.104,0,-16052,-7.99375,20181.75625,4121.7625,-16052,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25750 C,"2026-01-26, 13:42:07",5,33.38,0,-16690,-7.24375,20232.50625,3535.2625,-16690,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 26JAN26 25750 C,,0,,,7688,-30.975,-0,7657.025,7688,
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25800 C,"2026-01-26, 13:21:04",-5,11.76,0,5880,-5.99375,-5874.00625,0,5880,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25800 C,"2026-01-26, 13:28:39",10,12.43,0,-12430,-13.2375,12120.25,-322.9875,-12430,C;O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25800 C,"2026-01-26, 13:41:51",-5,8.104,0,4052,-6.74375,-6246.24375,-2200.9875,4052,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25800 C,"2026-01-26, 14:42:36",-10,5.25,0,5250,-13.2375,-5236.7625,322.9875,5250,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25800 C,"2026-01-26, 15:27:19",10,0.76,0,-760,-13.2375,4913.775,4140.5375,-760,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 26JAN26 25800 C,,0,,,1992,-52.45,-322.9875,1939.55,1992,
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25850 C,"2026-01-26, 13:21:04",5,2.96,0,-1480,-5.99375,1485.99375,0,-1480,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25850 C,"2026-01-26, 13:42:07",-5,1.7,0,850,-5.99375,-1485.99375,-641.9875,850,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25850 C,"2026-01-26, 14:42:36",10,0.93,0,-930,-13.2375,943.2375,641.9875,-930,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25850 C,"2026-01-26, 15:27:19",-10,0.18,0,180,-13.2375,-1585.225,-1418.4625,180,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 26JAN26 25850 C,,0,,,-1380,-38.4625,-641.9875,-1418.4625,-1380,
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25650 P,"2026-01-26, 14:42:36",10,1.38,0,-1380,-13.2375,1393.2375,0,-1380,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25650 P,"2026-01-26, 15:27:19",-10,0.38,0,380,-13.2375,-1393.2375,-1026.475,380,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 26JAN26 25650 P,,0,,,-1000,-26.475,0,-1026.475,-1000,
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25700 P,"2026-01-26, 14:42:36",-10,3.06,0,3060,-13.2375,-3046.7625,0,3060,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 26JAN26 25700 P,"2026-01-26, 15:27:19",10,2.3,0,-2300,-13.2375,3046.7625,733.525,-2300,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 26JAN26 25700 P,,0,,,760,-26.475,0,733.525,760,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25800 C,"2026-01-26, 12:34:06",-10,62.475,40.3793,62475,-15.7375,-62459.2625,0,22095.7,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25800 C,"2026-01-26, 15:05:21",10,52.29,40.3793,-52290,-14.4875,62459.2625,10154.775,-11910.7,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25800 C,,0,,,10185,-30.225,0,10154.775,10185,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25850 C,"2026-01-26, 12:34:06",10,39.475,23.35,-39475,-15.7375,39490.7375,0,-16125,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25850 C,"2026-01-26, 15:05:21",-10,31.41,23.35,31410,-14.4875,-39490.7375,-8095.225,8060,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25850 C,,0,,,-8065,-30.225,0,-8095.225,-8065,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25920 C,"2026-01-27, 12:19:19",-10,32.72,19.74,32720,-15.7375,-32704.2625,0,12980,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25920 C,"2026-01-27, 13:06:34",10,27.24,19.74,-27240,-15.7375,32704.2625,5448.525,-7500,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25920 C,,0,,,5480,-31.475,0,5448.525,5480,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25950 C,"2026-01-27, 13:23:23",-10,20.955,0,20955,-13.2375,-20941.7625,0,20955,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25950 C,"2026-01-27, 14:00:20",10,20.775,0,-20775,-13.2375,20941.7625,153.525,-20775,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25950 C,,0,,,180,-26.475,0,153.525,180,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25970 C,"2026-01-27, 12:19:19",10,10.72,0,-10720,-13.2375,10733.2375,0,-10720,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25970 C,"2026-01-27, 13:06:34",-10,7.24,0,7240,-13.2375,-10733.2375,-3506.475,7240,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25970 C,"2026-01-27, 14:10:11",-10,7.99,0,7990,-13.2375,-7976.7625,0,7990,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25970 C,"2026-01-27, 15:08:18",10,6.345,0,-6345,-13.2375,7976.7625,1618.525,-6345,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25970 C,,0,,,-1835,-52.95,0,-1887.95,-1835,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25980 C,"2026-01-27, 14:30:08",-10,8.65,0,8650,-13.2375,-8636.7625,0,8650,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25980 C,"2026-01-27, 15:36:17",10,4.1,0,-4100,-13.2375,8636.7625,4523.525,-4100,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25980 C,,0,,,4550,-26.475,0,4523.525,4550,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 26000 C,"2026-01-27, 13:23:23",10,4.44,0,-4440,-13.2375,4453.2375,0,-4440,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 26000 C,"2026-01-27, 14:00:20",-10,3.655,0,3655,-13.2375,-4453.2375,-811.475,3655,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 26000 C,,0,,,-785,-26.475,0,-811.475,-785,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 26020 C,"2026-01-27, 14:10:11",10,1.38,0,-1380,-13.2375,1393.2375,0,-1380,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 26020 C,"2026-01-27, 15:08:18",-10,0.665,0,665,-13.2375,-1393.2375,-741.475,665,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 26020 C,,0,,,-715,-26.475,0,-741.475,-715,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 26030 C,"2026-01-27, 14:30:08",10,1.47,0,-1470,-13.2375,1483.2375,0,-1470,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 26030 C,"2026-01-27, 15:36:17",-10,0.25,0,250,-13.2375,-1483.2375,-1246.475,250,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 26030 C,,0,,,-1220,-26.475,0,-1246.475,-1220,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25800 P,"2026-01-27, 13:23:23",10,2.6,0,-2600,-13.2375,2613.2375,0,-2600,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25800 P,"2026-01-27, 14:00:20",-10,1.67,0,1670,-13.2375,-2613.2375,-956.475,1670,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25800 P,"2026-01-27, 14:10:11",10,1.78,0,-1780,-13.2375,1793.2375,956.475,-1780,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25800 P,"2026-01-27, 15:08:18",-10,0.5,0,500,-13.2375,-2749.7125,-2262.95,500,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25800 P,,0,,,-2210,-52.95,-956.475,-2262.95,-2210,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25850 P,"2026-01-27, 13:23:23",-10,4.585,0,4585,-13.2375,-4571.7625,0,4585,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25850 P,"2026-01-27, 14:00:20",10,2.95,0,-2950,-13.2375,4571.7625,1608.525,-2950,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25850 P,"2026-01-27, 14:10:11",-10,3.17,0,3170,-13.2375,-3156.7625,0,3170,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25850 P,"2026-01-27, 14:30:08",10,1.47,0,-1470,-13.2375,3156.7625,1673.525,-1470,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25850 P,"2026-01-27, 15:08:18",10,0.82,0,-820,-13.2375,833.2375,0,-820,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25850 P,"2026-01-27, 15:36:17",-10,0.2,0,200,-13.2375,-833.2375,-646.475,200,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25850 P,,0,,,2715,-79.425,0,2635.575,2715,
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25900 P,"2026-01-27, 14:30:08",-10,3.29,0,3290,-13.2375,-3276.7625,0,3290,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 27JAN26 25900 P,"2026-01-27, 15:36:17",10,0.85,0,-850,-13.2375,3276.7625,2413.525,-850,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 27JAN26 25900 P,,0,,,2440,-26.475,0,2413.525,2440,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25950 C,"2026-01-27, 12:37:23",-10,91.82,88.1709,91820,-15.7375,-91804.2625,0,3649.1,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25950 C,"2026-01-27, 15:45:32",10,100,88.1709,-100000,-15.7375,91804.2625,-8211.475,-11829.1,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 25950 C,,0,,,-8180,-31.475,0,-8211.475,-8180,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26000 C,"2026-01-27, 12:37:23",10,65.32,62.7,-65320,-15.7375,65335.7375,0,-2620,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26000 C,"2026-01-27, 15:45:32",-10,72.5,62.7,72500,-15.7375,-65335.7375,7148.525,9800,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 26000 C,,0,,,7180,-31.475,0,7148.525,7180,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26150 C,"2026-01-28, 11:45:56",-5,18.08,0,9040,-6.74375,-9033.25625,0,9040,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26150 C,"2026-01-28, 16:20:00",5,0,0,0,0,9033.25625,9033.25625,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 26150 C,,0,,,9040,-6.74375,0,9033.25625,9040,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26160 C,"2026-01-28, 11:09:48",-5,26.66,0,13330,-7.24375,-13322.75625,0,13330,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26160 C,"2026-01-28, 12:35:04",5,11.65,0,-5825,-6.74375,13322.75625,7491.0125,-5825,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26160 C,"2026-01-28, 12:44:49",-10,11.93,0,11930,-13.2375,-11916.7625,0,11930,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26160 C,"2026-01-28, 15:04:18",5,3.196,0,-1598,-6.74375,5942.75625,4338.0125,-1598,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26160 C,"2026-01-28, 16:20:00",5,0,0,0,0,5974.00625,5974.00625,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 26160 C,,0,,,17837,-33.96875,0,17803.03125,17837,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26200 C,"2026-01-28, 11:45:56",5,9.9,0,-4950,-6.74375,4956.74375,0,-4950,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26200 C,"2026-01-28, 16:20:00",-5,0,0,0,0,-4956.74375,-4956.74375,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 26200 C,,0,,,-4950,-6.74375,0,-4956.74375,-4950,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26210 C,"2026-01-28, 11:09:48",5,14.79,0,-7395,-5.99375,7400.99375,0,-7395,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26210 C,"2026-01-28, 12:35:04",-5,6.1,0,3050,-6.74375,-7400.99375,-4357.7375,3050,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26210 C,"2026-01-28, 12:44:49",10,6.57,0,-6570,-13.2375,6583.2375,4357.7375,-6570,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26210 C,"2026-01-28, 15:04:18",-5,0.98,0,490,-6.74375,-7664.98125,-7181.725,490,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 26210 C,"2026-01-28, 16:20:00",-5,0,0,0,0,-3275.99375,-3275.99375,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 26210 C,,0,,,-10425,-32.71875,-4357.7375,-10457.71875,-10425,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25800 P,"2026-01-28, 11:45:56",5,21.26,0,-10630,-6.74375,10636.74375,0,-10630,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25800 P,"2026-01-28, 16:20:00",-5,0,0,0,0,-10636.74375,-10636.74375,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 25800 P,,0,,,-10630,-6.74375,0,-10636.74375,-10630,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25850 P,"2026-01-28, 11:09:48",5,17.9,0,-8950,-5.99375,8955.99375,0,-8950,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25850 P,"2026-01-28, 11:45:56",-5,29.58,0,14790,-7.99375,-8955.99375,5826.0125,14790,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25850 P,"2026-01-28, 12:35:04",-5,24.82,0,12410,-6.74375,-12403.25625,0,12410,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25850 P,"2026-01-28, 12:44:49",10,20.57,0,-20570,-13.2375,22679.25,2096.0125,-20570,C;O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25850 P,"2026-01-28, 15:04:18",-5,1.536,0,768,-6.74375,-10275.99375,-9514.7375,768,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 25850 P,,0,,,-1552,-40.7125,0,-1592.7125,-1552,
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25900 P,"2026-01-28, 11:09:48",-5,25.2,0,12600,-7.24375,-12592.75625,0,12600,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25900 P,"2026-01-28, 12:35:04",5,36.27,0,-18135,-7.99375,12592.75625,-5550.2375,-18135,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25900 P,"2026-01-28, 12:44:49",-10,29.4,0,29400,-15.7375,-29384.2625,5550.2375,29400,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25900 P,"2026-01-28, 15:04:18",5,3.32,0,-1660,-6.74375,9141.26875,7474.525,-1660,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 28JAN26 25900 P,"2026-01-28, 16:20:00",5,0,0,0,0,14692.75625,14692.75625,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 28JAN26 25900 P,,0,,,22205,-37.71875,-5550.2375,22167.28125,22205,
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25750 C,"2026-01-29, 12:53:11",-15,18.15,134.3,27225,-19.85625,-27205.14375,0,-174225,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25750 C,"2026-01-29, 12:58:08",15,17.55,134.3,-26325,-19.85625,27205.14375,860.2875,175125,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 29JAN26 25750 C,,0,,,900,-39.7125,0,860.2875,900,
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25800 C,"2026-01-29, 12:53:11",15,9.15,84.3,-13725,-19.85625,13744.85625,0,112725,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25800 C,"2026-01-29, 12:58:08",-15,8.65,84.3,12975,-19.85625,-13744.85625,-789.7125,-113475,C
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25800 C,"2026-01-29, 13:17:20",-17,17.36,84.3,29512,-20.37875,-29491.62125,0,-113798,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25800 C,"2026-01-29, 14:23:42",17,15.251818182,84.3,-25928.090909091,-20.37875,29491.62125,3543.151591,117381.9091,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 29JAN26 25800 C,,0,,,2833.909090909,-80.47,0,2753.439091,2833.9091,
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25850 C,"2026-01-29, 13:17:20",17,8.1,34.3,-13770,-20.37875,13790.37875,0,44540,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25850 C,"2026-01-29, 14:23:42",-17,4.839090909,34.3,8226.454545455,-20.37875,-13790.37875,-5584.302955,-50083.5455,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25850 C,"2026-01-29, 14:38:42",-31,1.7,34.3,5270,-37.16125,-5232.83875,0,-101060,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25850 C,"2026-01-29, 16:20:00",31,0,34.3,0,0,5232.83875,-101097.16125,106330,A;C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 29JAN26 25850 C,,0,,,-273.545454545,-77.91875,0,-106681.464205,-273.5455,
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25900 C,"2026-01-29, 14:38:42",31,0.78,0,-2418,-37.16125,2455.16125,0,-2418,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25900 C,"2026-01-29, 16:20:00",-31,0,0,0,0,-2455.16125,-2455.16125,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 29JAN26 25900 C,,0,,,-2418,-37.16125,0,-2455.16125,-2418,
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25450 P,"2026-01-29, 13:17:20",17,3.75,0,-6375,-20.37875,6395.37875,0,-6375,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25450 P,"2026-01-29, 14:23:42",-17,0.37,0,629,-20.37875,-6395.37875,-5786.7575,629,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 29JAN26 25450 P,,0,,,-5746,-40.7575,0,-5786.7575,-5746,
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25500 P,"2026-01-29, 13:17:20",-17,5.99,0,10183,-20.37875,-10162.62125,0,10183,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25500 P,"2026-01-29, 14:23:42",17,0.75,0,-1275,-20.37875,10162.62125,8867.2425,-1275,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 29JAN26 25500 P,,0,,,8908,-40.7575,0,8867.2425,8908,
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25550 P,"2026-01-29, 14:38:42",31,1.83,0,-5673,-37.16125,5710.16125,0,-5673,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25550 P,"2026-01-29, 16:20:00",-31,0,0,0,0,-5710.16125,-5710.16125,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 29JAN26 25550 P,,0,,,-5673,-37.16125,0,-5710.16125,-5673,
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25600 P,"2026-01-29, 14:38:42",-31,3.91,0,12121,-37.16125,-12083.83875,0,12121,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 29JAN26 25600 P,"2026-01-29, 16:20:00",31,0,0,0,0,12083.83875,12083.83875,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 29JAN26 25600 P,,0,,,12121,-37.16125,0,12083.83875,12121,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25550 C,"2026-01-30, 15:15:47",-10,14.96,2.39,14960,-11.9875,-14948.0125,0,12570,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25550 C,"2026-01-30, 15:45:58",-10,30.185,2.39,30185,-15.7375,-30169.2625,0,27795,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25550 C,"2026-01-30, 15:54:30",20,10.085,2.39,-20170,-26.475,45117.275,24920.8,-15390,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25550 C,,0,,,24975,-54.2,0,24920.8,24975,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25600 C,"2026-01-30, 13:17:16",-10,27.07,0,27070,-14.4875,-27055.5125,0,27070,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25600 C,"2026-01-30, 13:45:59",10,24.15,0,-24150,-13.2375,27055.5125,2892.275,-24150,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25600 C,"2026-01-30, 15:15:47",10,6.46,0,-6460,-11.9875,6471.9875,0,-6460,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25600 C,"2026-01-30, 15:45:58",10,11.185,0,-11185,-13.2375,11198.2375,0,-11185,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25600 C,"2026-01-30, 15:54:30",-20,1.085,0,2170,-26.475,-23056.7,-15526.7,2170,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25600 C,,0,,,-12555,-79.425,-5386.475,-12634.425,-12555,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25650 C,"2026-01-30, 13:17:16",10,14.53,0,-14530,-11.9875,14541.9875,0,-14530,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25650 C,"2026-01-30, 13:45:59",-10,12.15,0,12150,-13.2375,-14541.9875,-2405.225,12150,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25650 C,"2026-01-30, 14:53:10",-10,17.75,0,17750,-11.9875,-17738.0125,0,17750,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25650 C,"2026-01-30, 15:55:14",10,0.11,0,-110,-11.9875,17738.0125,17616.025,-110,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25650 C,,0,,,15260,-49.2,0,15210.8,15260,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25700 C,"2026-01-30, 14:53:10",10,8.213,0,-8213,-11.9875,8224.9875,0,-8213,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25700 C,"2026-01-30, 15:55:14",-10,0.05,0,50,-10.4875,-8224.9875,-8185.475,50,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25700 C,,0,,,-8163,-22.475,0,-8185.475,-8163,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25730 C,"2026-01-30, 12:34:20",-10,19.01,0,19010,-13.2375,-18996.7625,0,19010,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25730 C,"2026-01-30, 12:44:01",10,16.332,0,-16332,-13.9875,18996.7625,2650.775,-16332,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25730 C,,0,,,2678,-27.225,0,2650.775,2678,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25780 C,"2026-01-30, 12:34:20",10,10.5,0,-10500,-13.2375,10513.2375,0,-10500,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25780 C,"2026-01-30, 12:44:01",-10,8.56,0,8560,-13.9875,-10513.2375,-1967.225,8560,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25780 C,,0,,,-1940,-27.225,0,-1967.225,-1940,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25350 P,"2026-01-30, 15:25:37",10,4,0,-4000,-13.2375,4013.2375,0,-4000,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25350 P,"2026-01-30, 16:20:00",-10,0,0,0,0,-4013.2375,-4013.2375,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25350 P,,0,,,-4000,-13.2375,0,-4013.2375,-4000,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25400 P,"2026-01-30, 13:25:00",10,24.25,0,-24250,-11.9875,24261.9875,0,-24250,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25400 P,"2026-01-30, 13:56:16",-10,6.15,0,6150,-13.2375,-24261.9875,-18125.225,6150,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25400 P,"2026-01-30, 15:25:37",-10,9,0,9000,-13.2375,-8986.7625,0,9000,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25400 P,"2026-01-30, 16:20:00",10,0,0,0,0,8986.7625,8986.7625,0,C;Ep
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25400 P,,0,,,-9100,-38.4625,0,-9138.4625,-9100,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25450 P,"2026-01-30, 13:25:00",-10,37.65,0,37650,-14.4875,-37635.5125,0,37650,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25450 P,"2026-01-30, 13:56:16",10,10.15,0,-10150,-13.2375,37635.5125,27472.275,-10150,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25450 P,"2026-01-30, 14:53:10",10,5.25,0,-5250,-11.9875,5261.9875,0,-5250,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25450 P,"2026-01-30, 15:55:14",-10,0.64,0,640,-11.9875,-5261.9875,-4633.975,640,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25450 P,,0,,,22890,-51.7,0,22838.3,22890,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25500 P,"2026-01-30, 13:03:29",10,31.8,0,-31800,-15.7375,31815.7375,0,-31800,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25500 P,"2026-01-30, 13:51:29",-10,21.85,0,21850,-11.9875,-31815.7375,-9977.725,21850,C;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25500 P,"2026-01-30, 14:53:10",-10,10.213,0,10213,-11.9875,-10201.0125,0,10213,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25500 P,"2026-01-30, 15:55:14",10,3.58,0,-3580,-11.9875,10201.0125,6609.025,-3580,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25500 P,,0,,,-3317,-51.7,0,-3368.7,-3317,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25520 P,"2026-01-30, 12:34:20",10,26.58,0,-26580,-15.7375,26595.7375,0,-26580,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25520 P,"2026-01-30, 12:44:01",-10,26.336,0,26336,-16.4875,-26595.7375,-276.225,26336,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25520 P,,0,,,-244,-32.225,0,-276.225,-244,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25550 P,"2026-01-30, 13:03:29",-10,48.8,0,48800,-15.7375,-48784.2625,0,48800,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25550 P,"2026-01-30, 13:51:29",10,36.53,0,-36530,-14.4875,48784.2625,12239.775,-36530,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25550 P,,0,,,12270,-30.225,0,12239.775,12270,
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25570 P,"2026-01-30, 12:34:20",-10,40.07,17.61,40070,-15.7375,-40054.2625,0,22460,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 30JAN26 25570 P,"2026-01-30, 12:44:01",10,40.464,17.61,-40464,-16.4875,40054.2625,-426.225,-22854,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 30JAN26 25570 P,,0,,,-394,-32.225,0,-426.225,-394,
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25150 P,"2026-02-03, 13:33:00",10,39.39,0,-39390,-15.7375,39405.7375,0,-39390,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25150 P,"2026-02-03, 13:51:00",2,48.2,0,-9640,-3.3975,9643.3975,0,-9640,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25150 P,"2026-02-03, 14:07:34",-12,67.98,0,81576,-17.385,-49049.135,32509.48,81576,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 03FEB26 25150 P,,0,,,32546,-36.52,0,32509.48,32546,
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25200 P,"2026-02-03, 13:33:00",-10,59.39,0,59390,-15.7375,-59374.2625,0,59390,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25200 P,"2026-02-03, 13:51:00",-2,69.9,0,13980,-3.3975,-13976.6025,0,13980,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25200 P,"2026-02-03, 14:07:34",12,99.79,0,-119748,-17.385,65246.57,-46414.52,-119748,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 03FEB26 25200 P,,0,,,-46378,-36.52,-8104.295,-46414.52,-46378,
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25300 P,"2026-02-03, 11:52:34",19,32.059615385,0,-60913.269230769,-29.90125,60943.170480769,0,-60913.2692,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25300 P,"2026-02-03, 15:46:42",-19,22.4,0,42560,-25.27625,-60943.170481,-18408.446731,42560,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 03FEB26 25300 P,,0,,,-18353.269230769,-55.1775,-0.000000231,-18408.446731,-18353.2692,
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25350 P,"2026-02-03, 11:20:55",5,32.35,0,-16175,-7.99375,16182.99375,0,-16175,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25350 P,"2026-02-03, 11:23:01",5,48.35,0,-24175,-7.99375,24182.99375,0,-24175,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25350 P,"2026-02-03, 11:52:34",-19,47.751923077,0,90728.653846154,-29.90125,-40365.9875,7370.198079,90728.6538,C;O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25350 P,"2026-02-03, 13:29:40",-10,154.735,0,154735,-15.7375,-154719.2625,0,154735,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25350 P,"2026-02-03, 15:46:42",19,57.4,0,-109060,-30.02625,188969.107788,88591.803269,-109060,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 03FEB26 25350 P,,0,,,96053.653846154,-91.6525,34249.845288,95962.001348,96053.6538,
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25400 P,"2026-02-03, 11:20:55",-5,47.35,0,23675,-7.99375,-23667.00625,0,23675,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25400 P,"2026-02-03, 11:23:01",-5,68.35,0,34175,-7.99375,-34167.00625,0,34175,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 03FEB26 25400 P,"2026-02-03, 13:29:40",10,198.735,0,-198735,-15.7375,-18066.225,-140916.725,-198735,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 03FEB26 25400 P,,0,,,-140885,-31.725,-75900.2375,-140916.725,-140885,
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25050 C,"2026-02-04, 15:04:05",5,14.84,0,-7420,-5.99375,7425.99375,0,-7420,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25050 C,"2026-02-04, 15:08:01",-5,12,0,6000,-5.99375,-7425.99375,-1431.9875,6000,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 04FEB26 25050 C,,0,,,-1420,-11.9875,0,-1431.9875,-1420,
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25550 C,"2026-02-04, 09:36:57",10,10,0,-10000,-11.9875,10011.9875,0,-10000,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25550 C,"2026-02-04, 09:55:04",10,6,0,-6000,-11.9875,6011.9875,0,-6000,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25550 C,"2026-02-04, 11:09:45",-20,0.8,0,1600,-23.975,-16023.975,-14447.95,1600,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 04FEB26 25550 C,,0,,,-14400,-47.95,0,-14447.95,-14400,
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25350 P,"2026-02-03, 16:11:58",10,123.55,126.8005,-123550,-14.4875,123564.4875,0,3250.5,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25350 P,"2026-02-04, 16:20:00",-10,0,458.76,0,0,-123564.4875,335195.5125,-458760,C;Ex
+Trades,SubTotal,,Equity and Index Options,USD,NDX 04FEB26 25350 P,,0,,,-123550,-14.4875,0,335195.5125,-455509.5,
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25400 P,"2026-02-03, 16:11:58",-10,146.05,153.1801,146050,-14.4875,-146035.5125,0,-7130.1,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 04FEB26 25400 P,"2026-02-04, 16:20:00",10,0,508.76,0,0,146035.5125,-362724.4875,508760,A;C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 04FEB26 25400 P,,0,,,146050,-14.4875,0,-362724.4875,501629.9,
+Trades,Data,Order,Equity and Index Options,USD,NDX 05FEB26 25050 P,"2026-02-04, 10:45:11",5,172.05,273.3165,-86025,-7.24375,86032.24375,0,50633.25,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 05FEB26 25050 P,"2026-02-05, 14:15:32",-5,348.25,501.31,174125,-7.99375,-86032.24375,88084.7625,-76530,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 05FEB26 25050 P,,0,,,88100,-15.2375,0,88084.7625,-25896.75,
+Trades,Data,Order,Equity and Index Options,USD,NDX 05FEB26 25100 P,"2026-02-04, 10:45:11",-5,192.57,302.6437,96285,-7.24375,-96277.75625,0,-55036.85,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 05FEB26 25100 P,"2026-02-05, 14:15:32",5,398.15,551.31,-199075,-7.99375,96277.75625,-102805.2375,76580,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 05FEB26 25100 P,,0,,,-102790,-15.2375,0,-102805.2375,21543.15,
+Trades,Data,Order,Equity and Index Options,USD,NDX 05FEB26 25350 P,"2026-02-03, 14:10:56",10,346.65,189.6814,-346650,-14.4875,346664.4875,0,-156968.6,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05FEB26 25350 P,"2026-02-05, 16:20:00",-10,0,801.31,0,0,-346664.4875,454645.5125,-801310,C;Ex
+Trades,SubTotal,,Equity and Index Options,USD,NDX 05FEB26 25350 P,,0,,,-346650,-14.4875,0,454645.5125,-958278.6,
+Trades,Data,Order,Equity and Index Options,USD,NDX 05FEB26 25400 P,"2026-02-03, 14:10:56",-10,376.65,215.0225,376650,-14.4875,-376635.5125,0,161627.5,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 05FEB26 25400 P,"2026-02-05, 16:20:00",10,0,851.31,0,0,376635.5125,-474674.4875,851310,A;C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 05FEB26 25400 P,,0,,,376650,-14.4875,0,-474674.4875,1012937.5,
+Trades,Data,Order,Equity and Index Options,USD,NDX 12FEB26 24700 P,"2026-02-12, 13:34:18",1,32.883333333,12.39,-3288.333333333,-1.615416667,3289.94875,0,-2049.3333,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12FEB26 24700 P,"2026-02-12, 13:51:02",-1,16.75,12.39,1675,-1.365416667,-3289.94875,-1616.314167,436,C
+Trades,Data,Order,Equity and Index Options,USD,NDX 12FEB26 24700 P,"2026-02-12, 14:24:27",4,7.125,12.39,-2850,-5.295,2855.295,1616.314167,2106,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12FEB26 24700 P,"2026-02-12, 14:36:30",-4,6.535,12.39,2614,-5.295,-4471.609167,-1862.904167,-2342,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 12FEB26 24700 P,,0,,,-1849.333333333,-13.570833334,-1616.314167,-1862.904167,-1849.3333,
+Trades,Data,Order,Equity and Index Options,USD,NDX 12FEB26 24750 P,"2026-02-12, 13:34:18",-1,50.883333333,62.39,5088.333333333,-1.615416667,-5086.717916666,0,-1150.6667,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12FEB26 24750 P,"2026-02-12, 13:51:02",1,28.85,62.39,-2885,-1.615416667,5086.717917,2200.1025,3354,C
+Trades,Data,Order,Equity and Index Options,USD,NDX 12FEB26 24750 P,"2026-02-12, 14:24:27",-4,14.125,62.39,5650,-5.295,-5644.705,0,-19306,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 12FEB26 24750 P,"2026-02-12, 14:36:30",4,13.435,62.39,-5374,-5.295,5644.705,265.41,19582,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 12FEB26 24750 P,,0,,,2479.333333333,-13.820833334,0.000000334,2465.5125,2479.3333,
+Trades,Data,Order,Equity and Index Options,USD,NDX 13FEB26 24650 P,"2026-02-13, 09:40:59",5,190.312,0,-95156,-7.99375,95163.99375,0,-95156,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 13FEB26 24650 P,"2026-02-13, 10:13:04",-5,81.258333333,0,40629.166666667,-7.86875,-95163.99375,-54542.695833,40629.1667,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 13FEB26 24650 P,,0,,,-54526.833333333,-15.8625,0,-54542.695833,-54526.8333,
+Trades,Data,Order,Equity and Index Options,USD,NDX 13FEB26 24700 P,"2026-02-13, 09:40:59",-5,220.312,0,110156,-7.99375,-110148.00625,0,110156,O;P
+Trades,Data,Order,Equity and Index Options,USD,NDX 13FEB26 24700 P,"2026-02-13, 10:13:04",5,100.258333333,0,-50129.166666667,-7.86875,110148.00625,60010.970833,-50129.1667,C;P
+Trades,SubTotal,,Equity and Index Options,USD,NDX 13FEB26 24700 P,,0,,,60026.833333333,-15.8625,0,60010.970833,60026.8333,
+Trades,Data,Order,Equity and Index Options,USD,NDX 17FEB26 24700 P,"2026-02-17, 15:27:46",1,20,0,-2000,-1.54875,2001.54875,0,-2000,O
+Trades,Data,Order,Equity and Index Options,USD,NDX 17FEB26 24700 P,"2026-02-17, 15:30:24",-1,23.11,0,2311,-1.54875,-2001.54875,307.9025,2311,C
+Trades,SubTotal,,Equity and Index Options,USD,NDX 17FEB26 24700 P,,0,,,311,-3.0975,0,307.9025,311,
+Trades,Data,Order,Equity and Index Options,USD,SPXW 13JAN26 6920 P,"2026-01-12, 01:12:45",2,22.59,2.8,-4518,-2.5825,4520.5825,0,-3958,O;P
+Trades,Data,Order,Equity and Index Options,USD,SPXW 13JAN26 6920 P,"2026-01-12, 11:28:50",-2,4.84,2.8,968,-2.5825,-4520.5825,-3555.165,408,C
+Trades,SubTotal,,Equity and Index Options,USD,SPXW 13JAN26 6920 P,,0,,,-3550,-5.165,0,-3555.165,-3550,
+Trades,Data,Order,Equity and Index Options,USD,SPXW 13JAN26 6970 P,"2026-01-12, 01:12:45",-2,50.09,12.5773,10018,-2.5825,-10015.4175,0,7502.54,O;P
+Trades,Data,Order,Equity and Index Options,USD,SPXW 13JAN26 6970 P,"2026-01-12, 11:28:50",2,17.84,12.5773,-3568,-2.5825,10015.4175,6444.835,-1052.54,C
+Trades,SubTotal,,Equity and Index Options,USD,SPXW 13JAN26 6970 P,,0,,,6450,-5.165,0,6444.835,6450,
+Trades,Data,Order,Equity and Index Options,USD,SPXW 20JAN26 6830 P,"2026-01-19, 21:59:28",5,10.004,33.14,-5002,-6.45625,5008.45625,0,11568,O;P
+Trades,Data,Order,Equity and Index Options,USD,SPXW 20JAN26 6830 P,"2026-01-20, 01:39:56",3,20.19,33.14,-6057,-3.87375,6060.87375,0,3885,O
+Trades,Data,Order,Equity and Index Options,USD,SPXW 20JAN26 6830 P,"2026-01-20, 03:35:10",3,28.1,33.14,-8430,-3.87375,8433.87375,0,1512,O
+Trades,Data,Order,Equity and Index Options,USD,SPXW 20JAN26 6830 P,"2026-01-20, 10:37:01",-11,3.75,33.14,4125,-14.20375,-19503.20375,-15392.4075,-32329,C
+Trades,SubTotal,,Equity and Index Options,USD,SPXW 20JAN26 6830 P,,0,,,-15364,-28.4075,0,-15392.4075,-15364,
+Trades,Data,Order,Equity and Index Options,USD,SPXW 20JAN26 6880 P,"2026-01-19, 21:59:28",-5,26.004,83.14,13002,-6.45625,-12995.54375,0,-28568,O;P
+Trades,Data,Order,Equity and Index Options,USD,SPXW 20JAN26 6880 P,"2026-01-20, 01:39:56",-3,44.69,83.14,13407,-3.87375,-13403.12625,0,-11535,O
+Trades,Data,Order,Equity and Index Options,USD,SPXW 20JAN26 6880 P,"2026-01-20, 03:35:10",-3,58.1,83.14,17430,-3.87375,-17426.12625,0,-7512,O
+Trades,Data,Order,Equity and Index Options,USD,SPXW 20JAN26 6880 P,"2026-01-20, 10:37:01",11,20.75,83.14,-22825,-14.20375,43824.79625,20985.5925,68629,C
+Trades,SubTotal,,Equity and Index Options,USD,SPXW 20JAN26 6880 P,,0,,,21014,-28.4075,0,20985.5925,21014,
+Trades,Data,Order,Equity and Index Options,USD,SPXW 21JAN26 6740 P,"2026-01-20, 15:46:29",5,11,9.5855,-5500,-6.45625,5506.45625,0,-707.25,O;P
+Trades,Data,Order,Equity and Index Options,USD,SPXW 21JAN26 6740 P,"2026-01-20, 22:45:57",-5,4.69,0,2345,-6.45625,-5506.45625,-3167.9125,2345,C
+Trades,SubTotal,,Equity and Index Options,USD,SPXW 21JAN26 6740 P,,0,,,-3155,-12.9125,0,-3167.9125,1637.75,
+Trades,Data,Order,Equity and Index Options,USD,SPXW 21JAN26 6790 P,"2026-01-20, 15:46:29",-5,27,25.014,13500,-6.45625,-13493.54375,0,993,O;P
+Trades,Data,Order,Equity and Index Options,USD,SPXW 21JAN26 6790 P,"2026-01-20, 22:45:57",5,14.19,0,-7095,-6.45625,13493.54375,6392.0875,-7095,C
+Trades,SubTotal,,Equity and Index Options,USD,SPXW 21JAN26 6790 P,,0,,,6405,-12.9125,0,6392.0875,-6102,
+Trades,Total,,Equity and Index Options,USD,,,,,,75304.748251749,-2964.192499996,-79958.350547567,-133989.444245,61853.4182, 
+Option Cash Settlements,Header,Currency,Date,Description,Amount,
+Option Cash Settlements,Data,USD,"2026-01-29, 16:20:00",Assignment ( NDX 29JAN26 25850 C ),-106330,
+Option Cash Settlements,Data,USD,"2026-02-04, 16:20:00",Exercise ( NDX 04FEB26 25350 P ),458760,
+Option Cash Settlements,Data,USD,"2026-02-04, 16:20:00",Assignment ( NDX 04FEB26 25400 P ),-508760,
+Option Cash Settlements,Data,USD,"2026-02-05, 16:20:00",Assignment ( NDX 05FEB26 25400 P ),-851310,
+Option Cash Settlements,Data,USD,"2026-02-05, 16:20:00",Exercise ( NDX 05FEB26 25350 P ),801310,
+Option Cash Settlements,Data,Total,,,-206330,
+Deposits & Withdrawals,Header,Currency,Settle Date,Description,Amount
+Deposits & Withdrawals,Data,USD,2026-01-14,Electronic Fund Transfer,100000
+Deposits & Withdrawals,Data,USD,2026-02-11,Electronic Fund Transfer,12000
+Deposits & Withdrawals,Data,USD,2026-02-18,Internal Transfer Out To Account U24514532,-32612.31
+Deposits & Withdrawals,Data,Total,,,79387.69
+Fees,Header,Subtitle,Currency,Date,Description,Amount
+Fees,Data,Advisor Fees,USD,2026-01-02,"FA Fee: Percent of Equity, Posted Quarterly",-20.65
+Fees,Data,Advisor Fees,USD,2026-01-06,FA Fee: Percentage of Quarterly Profit,-1847.41
+Fees,Data,Advisor Fees,USD,2026-03-02,"FA Fee: Percent of Equity, Posted Monthly",-4.69
+Fees,Data,Advisor Fees,USD,2026-04-06,FA Fee: Percentage of Quarterly Profit,-2.9579
+Fees,Data,Total,,,,-1875.7079
+Interest,Header,Currency,Date,Description,Amount
+Interest,Data,USD,2026-01-06,USD Credit Interest for Dec-2025,26.66
+Interest,Data,USD,2026-02-04,USD Credit Interest for Jan-2026,309.49
+Interest,Data,USD,2026-03-04,USD Credit Interest for Feb-2026,45.68
+Interest,Data,Total,,,381.83
+Interest Accruals,Header,Currency,Field Name,Field Value
+Interest Accruals,Data,Base Currency Summary,Starting Accrual Balance,24.36
+Interest Accruals,Data,Base Currency Summary,Interest Accrued,357.47
+Interest Accruals,Data,Base Currency Summary,Accrual Reversal,-381.83
+Interest Accruals,Data,Base Currency Summary,FX Translation,-0
+Interest Accruals,Data,Base Currency Summary,Ending Accrual Balance,0
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Underlying,Listing Exch,Multiplier,Expiry,Delivery Month,Type,Strike,Code
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260105P25100000,NDX 05JAN26 25100 P,835697916,NDX,CBOE,100,2026-01-05,2026-01,P,25100,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260105P25150000,NDX 05JAN26 25150 P,842238905,NDX,CBOE,100,2026-01-05,2026-01,P,25150,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260105P25200000,NDX 05JAN26 25200 P,835697942,NDX,CBOE,100,2026-01-05,2026-01,P,25200,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260105P25250000,NDX 05JAN26 25250 P,842238943,NDX,CBOE,100,2026-01-05,2026-01,P,25250,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260106C25550000,NDX 06JAN26 25550 C,842776630,NDX,CBOE,100,2026-01-06,2026-01,C,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260106C25600000,NDX 06JAN26 25600 C,835698720,NDX,CBOE,100,2026-01-06,2026-01,C,25600,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260106P25500000,NDX 06JAN26 25500 P,835699330,NDX,CBOE,100,2026-01-06,2026-01,P,25500,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260106P25550000,NDX 06JAN26 25550 P,842782116,NDX,CBOE,100,2026-01-06,2026-01,P,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260107P25600000,NDX 07JAN26 25600 P,835972447,NDX,CBOE,100,2026-01-07,2026-01,P,25600,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260107P25650000,NDX 07JAN26 25650 P,842787020,NDX,CBOE,100,2026-01-07,2026-01,P,25650,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260107P25700000,NDX 07JAN26 25700 P,835972451,NDX,CBOE,100,2026-01-07,2026-01,P,25700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260108C25700000,NDX 08JAN26 25700 C,836211292,NDX,CBOE,100,2026-01-08,2026-01,C,25700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260108C25750000,NDX 08JAN26 25750 C,843111999,NDX,CBOE,100,2026-01-08,2026-01,C,25750,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260108P25700000,NDX 08JAN26 25700 P,836211543,NDX,CBOE,100,2026-01-08,2026-01,P,25700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260108P25750000,NDX 08JAN26 25750 P,843117484,NDX,CBOE,100,2026-01-08,2026-01,P,25750,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260109C25760000,NDX 09JAN26 25760 C,843308549,NDX,CBOE,100,2026-01-09,2026-01,C,25760,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260109C25810000,NDX 09JAN26 25810 C,843308574,NDX,CBOE,100,2026-01-09,2026-01,C,25810,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260112P25750000,NDX 12JAN26 25750 P,843616970,NDX,CBOE,100,2026-01-12,2026-01,P,25750,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260112P25800000,NDX 12JAN26 25800 P,836948976,NDX,CBOE,100,2026-01-12,2026-01,P,25800,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260113C25800000,NDX 13JAN26 25800 C,837287854,NDX,CBOE,100,2026-01-13,2026-01,C,25800,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260113C25850000,NDX 13JAN26 25850 C,843965049,NDX,CBOE,100,2026-01-13,2026-01,C,25850,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260113C25900000,NDX 13JAN26 25900 C,837287861,NDX,CBOE,100,2026-01-13,2026-01,C,25900,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260114P25650000,NDX 14JAN26 25650 P,844440521,NDX,CBOE,100,2026-01-14,2026-01,P,25650,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260114P25700000,NDX 14JAN26 25700 P,837529671,NDX,CBOE,100,2026-01-14,2026-01,P,25700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260115P25250000,NDX 15JAN26 25250 P,844769644,NDX,CBOE,100,2026-01-15,2026-01,P,25250,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260115P25300000,NDX 15JAN26 25300 P,837826523,NDX,CBOE,100,2026-01-15,2026-01,P,25300,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260115P25350000,NDX 15JAN26 25350 P,844769672,NDX,CBOE,100,2026-01-15,2026-01,P,25350,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260116P25500000,NDX 16JAN26 25500 P,823671598,NDX,CBOE,100,2026-01-16,2026-01,P,25500,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260116P25550000,NDX 16JAN26 25550 P,835214686,NDX,CBOE,100,2026-01-16,2026-01,P,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260116P25600000,NDX 16JAN26 25600 P,823671605,NDX,CBOE,100,2026-01-16,2026-01,P,25600,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260120P25450000,NDX 20JAN26 25450 P,845717521,NDX,CBOE,100,2026-01-20,2026-01,P,25450,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260120P25500000,NDX 20JAN26 25500 P,838736975,NDX,CBOE,100,2026-01-20,2026-01,P,25500,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260121P25250000,NDX 21JAN26 25250 P,845718174,NDX,CBOE,100,2026-01-21,2026-01,P,25250,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260121P25300000,NDX 21JAN26 25300 P,839016528,NDX,CBOE,100,2026-01-21,2026-01,P,25300,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260122P25050000,NDX 22JAN26 25050 P,845718864,NDX,CBOE,100,2026-01-22,2026-01,P,25050,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260122P25100000,NDX 22JAN26 25100 P,839275703,NDX,CBOE,100,2026-01-22,2026-01,P,25100,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123C25500000,NDX 23JAN26 25500 C,834852490,NDX,CBOE,100,2026-01-23,2026-01,C,25500,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123C25550000,NDX 23JAN26 25550 C,836953966,NDX,CBOE,100,2026-01-23,2026-01,C,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123C25700000,NDX 23JAN26 25700 C,834852520,NDX,CBOE,100,2026-01-23,2026-01,C,25700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123C25750000,NDX 23JAN26 25750 C,838473318,NDX,CBOE,100,2026-01-23,2026-01,C,25750,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123P25500000,NDX 23JAN26 25500 P,834852907,NDX,CBOE,100,2026-01-23,2026-01,P,25500,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123P25550000,NDX 23JAN26 25550 P,836956201,NDX,CBOE,100,2026-01-23,2026-01,P,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123P25600000,NDX 23JAN26 25600 P,834852917,NDX,CBOE,100,2026-01-23,2026-01,P,25600,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123P25700000,NDX 23JAN26 25700 P,834852936,NDX,CBOE,100,2026-01-23,2026-01,P,25700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260123P25750000,NDX 23JAN26 25750 P,838473456,NDX,CBOE,100,2026-01-23,2026-01,P,25750,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260126C25750000,NDX 26JAN26 25750 C,845719463,NDX,CBOE,100,2026-01-26,2026-01,C,25750,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260126C25800000,NDX 26JAN26 25800 C,840350098,NDX,CBOE,100,2026-01-26,2026-01,C,25800,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260126C25850000,NDX 26JAN26 25850 C,845719478,NDX,CBOE,100,2026-01-26,2026-01,C,25850,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260126P25650000,NDX 26JAN26 25650 P,845719977,NDX,CBOE,100,2026-01-26,2026-01,P,25650,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260126P25700000,NDX 26JAN26 25700 P,840350215,NDX,CBOE,100,2026-01-26,2026-01,P,25700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C25800000,NDX 27JAN26 25800 C,840672615,NDX,CBOE,100,2026-01-27,2026-01,C,25800,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C25850000,NDX 27JAN26 25850 C,845720384,NDX,CBOE,100,2026-01-27,2026-01,C,25850,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C25920000,NDX 27JAN26 25920 C,848953489,NDX,CBOE,100,2026-01-27,2026-01,C,25920,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C25950000,NDX 27JAN26 25950 C,845720394,NDX,CBOE,100,2026-01-27,2026-01,C,25950,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C25970000,NDX 27JAN26 25970 C,848953506,NDX,CBOE,100,2026-01-27,2026-01,C,25970,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C25980000,NDX 27JAN26 25980 C,848953511,NDX,CBOE,100,2026-01-27,2026-01,C,25980,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C26000000,NDX 27JAN26 26000 C,840672664,NDX,CBOE,100,2026-01-27,2026-01,C,26000,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C26020000,NDX 27JAN26 26020 C,848953523,NDX,CBOE,100,2026-01-27,2026-01,C,26020,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127C26030000,NDX 27JAN26 26030 C,848953526,NDX,CBOE,100,2026-01-27,2026-01,C,26030,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127P25800000,NDX 27JAN26 25800 P,840673246,NDX,CBOE,100,2026-01-27,2026-01,P,25800,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127P25850000,NDX 27JAN26 25850 P,845720742,NDX,CBOE,100,2026-01-27,2026-01,P,25850,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260127P25900000,NDX 27JAN26 25900 P,840673256,NDX,CBOE,100,2026-01-27,2026-01,P,25900,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128C25950000,NDX 28JAN26 25950 C,845721129,NDX,CBOE,100,2026-01-28,2026-01,C,25950,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128C26000000,NDX 28JAN26 26000 C,841483084,NDX,CBOE,100,2026-01-28,2026-01,C,26000,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128C26150000,NDX 28JAN26 26150 C,845721149,NDX,CBOE,100,2026-01-28,2026-01,C,26150,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128C26160000,NDX 28JAN26 26160 C,849307734,NDX,CBOE,100,2026-01-28,2026-01,C,26160,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128C26200000,NDX 28JAN26 26200 C,841483095,NDX,CBOE,100,2026-01-28,2026-01,C,26200,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128C26210000,NDX 28JAN26 26210 C,849307811,NDX,CBOE,100,2026-01-28,2026-01,C,26210,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128P25800000,NDX 28JAN26 25800 P,841483284,NDX,CBOE,100,2026-01-28,2026-01,P,25800,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128P25850000,NDX 28JAN26 25850 P,845721404,NDX,CBOE,100,2026-01-28,2026-01,P,25850,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260128P25900000,NDX 28JAN26 25900 P,841483298,NDX,CBOE,100,2026-01-28,2026-01,P,25900,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260129C25750000,NDX 29JAN26 25750 C,845721664,NDX,CBOE,100,2026-01-29,2026-01,C,25750,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260129C25800000,NDX 29JAN26 25800 C,841824827,NDX,CBOE,100,2026-01-29,2026-01,C,25800,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260129C25850000,NDX 29JAN26 25850 C,845721669,NDX,CBOE,100,2026-01-29,2026-01,C,25850,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260129C25900000,NDX 29JAN26 25900 C,841824838,NDX,CBOE,100,2026-01-29,2026-01,C,25900,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260129P25450000,NDX 29JAN26 25450 P,845721901,NDX,CBOE,100,2026-01-29,2026-01,P,25450,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260129P25500000,NDX 29JAN26 25500 P,841825057,NDX,CBOE,100,2026-01-29,2026-01,P,25500,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260129P25550000,NDX 29JAN26 25550 P,845721910,NDX,CBOE,100,2026-01-29,2026-01,P,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260129P25600000,NDX 29JAN26 25600 P,841825067,NDX,CBOE,100,2026-01-29,2026-01,P,25600,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130C25550000,NDX 30JAN26 25550 C,836957016,NDX,CBOE,100,2026-01-30,2026-01,C,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130C25600000,NDX 30JAN26 25600 C,819711741,NDX,CBOE,100,2026-01-30,2026-01,C,25600,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130C25650000,NDX 30JAN26 25650 C,836957040,NDX,CBOE,100,2026-01-30,2026-01,C,25650,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130C25700000,NDX 30JAN26 25700 C,819711762,NDX,CBOE,100,2026-01-30,2026-01,C,25700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130C25730000,NDX 30JAN26 25730 C,850121192,NDX,CBOE,100,2026-01-30,2026-01,C,25730,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130C25780000,NDX 30JAN26 25780 C,850121281,NDX,CBOE,100,2026-01-30,2026-01,C,25780,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130P25350000,NDX 30JAN26 25350 P,836958254,NDX,CBOE,100,2026-01-30,2026-01,P,25350,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130P25400000,NDX 30JAN26 25400 P,819712279,NDX,CBOE,100,2026-01-30,2026-01,P,25400,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130P25450000,NDX 30JAN26 25450 P,836958274,NDX,CBOE,100,2026-01-30,2026-01,P,25450,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130P25500000,NDX 30JAN26 25500 P,819712302,NDX,CBOE,100,2026-01-30,2026-01,P,25500,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130P25520000,NDX 30JAN26 25520 P,850122666,NDX,CBOE,100,2026-01-30,2026-01,P,25520,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130P25550000,NDX 30JAN26 25550 P,836958304,NDX,CBOE,100,2026-01-30,2026-01,P,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260130P25570000,NDX 30JAN26 25570 P,850122712,NDX,CBOE,100,2026-01-30,2026-01,P,25570,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260203P25150000,NDX 03FEB26 25150 P,845723014,NDX,CBOE,100,2026-02-03,2026-02,P,25150,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260203P25200000,NDX 03FEB26 25200 P,842131926,NDX,CBOE,100,2026-02-03,2026-02,P,25200,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260203P25300000,NDX 03FEB26 25300 P,842131929,NDX,CBOE,100,2026-02-03,2026-02,P,25300,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260203P25350000,NDX 03FEB26 25350 P,845723031,NDX,CBOE,100,2026-02-03,2026-02,P,25350,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260203P25400000,NDX 03FEB26 25400 P,842131932,NDX,CBOE,100,2026-02-03,2026-02,P,25400,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260204C25050000,NDX 04FEB26 25050 C,847280637,NDX,CBOE,100,2026-02-04,2026-02,C,25050,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260204C25550000,NDX 04FEB26 25550 C,847280695,NDX,CBOE,100,2026-02-04,2026-02,C,25550,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260204P25350000,NDX 04FEB26 25350 P,847281015,NDX,CBOE,100,2026-02-04,2026-02,P,25350,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260204P25400000,NDX 04FEB26 25400 P,842239910,NDX,CBOE,100,2026-02-04,2026-02,P,25400,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260205P25050000,NDX 05FEB26 25050 P,847281763,NDX,CBOE,100,2026-02-05,2026-02,P,25050,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260205P25100000,NDX 05FEB26 25100 P,842787667,NDX,CBOE,100,2026-02-05,2026-02,P,25100,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260205P25350000,NDX 05FEB26 25350 P,847281794,NDX,CBOE,100,2026-02-05,2026-02,P,25350,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260205P25400000,NDX 05FEB26 25400 P,842787680,NDX,CBOE,100,2026-02-05,2026-02,P,25400,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260212P24700000,NDX 12FEB26 24700 P,843974597,NDX,CBOE,100,2026-02-12,2026-02,P,24700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260212P24750000,NDX 12FEB26 24750 P,848954896,NDX,CBOE,100,2026-02-12,2026-02,P,24750,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260213P24650000,NDX 13FEB26 24650 P,841972435,NDX,CBOE,100,2026-02-13,2026-02,P,24650,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260213P24700000,NDX 13FEB26 24700 P,841825504,NDX,CBOE,100,2026-02-13,2026-02,P,24700,
+Financial Instrument Information,Data,Equity and Index Options,NDXP  260217P24700000,NDX 17FEB26 24700 P,845122096,NDX,CBOE,100,2026-02-17,2026-02,P,24700,
+Financial Instrument Information,Data,Equity and Index Options,SPXW  260113P06920000,SPXW 13JAN26 6920 P,838133109,SPX,CBOE,100,2026-01-13,2026-01,P,6920,
+Financial Instrument Information,Data,Equity and Index Options,SPXW  260113P06970000,SPXW 13JAN26 6970 P,841486178,SPX,CBOE,100,2026-01-13,2026-01,P,6970,
+Financial Instrument Information,Data,Equity and Index Options,SPXW  260120P06830000,SPXW 20JAN26 6830 P,839017067,SPX,CBOE,100,2026-01-20,2026-01,P,6830,
+Financial Instrument Information,Data,Equity and Index Options,SPXW  260120P06880000,SPXW 20JAN26 6880 P,839017103,SPX,CBOE,100,2026-01-20,2026-01,P,6880,
+Financial Instrument Information,Data,Equity and Index Options,SPXW  260121P06740000,SPXW 21JAN26 6740 P,840169150,SPX,CBOE,100,2026-01-21,2026-01,P,6740,
+Financial Instrument Information,Data,Equity and Index Options,SPXW  260121P06790000,SPXW 21JAN26 6790 P,840169210,SPX,CBOE,100,2026-01-21,2026-01,P,6790,
+Codes,Header,Code,Meaning,Code (Cont.),Meaning (Cont.)
+Codes,Data,A,Assignment
+Codes,Data,ADR,ADR Fee Accrual
+Codes,Data,AEx,Automatic exercise for dividend-related recommendation.
+Codes,Data,AFx,AutoFX conversion resulting from trading
+Codes,Data,Adj,Adjustment
+Codes,Data,Al,Allocation
+Codes,Data,Aw,Away Trade
+Codes,Data,B,Automatic Buy-in
+Codes,Data,Bo,Direct Borrow
+Codes,Data,C,Closing Trade
+Codes,Data,CD,Cash Delivery
+Codes,Data,CP,Complex Position
+Codes,Data,Ca,Cancelled
+Codes,Data,Co,Corrected Trade
+Codes,Data,Cx,Part or all of this transaction was a Crossing executed as dual agent by IB for two IB customers
+Codes,Data,DT,Discounted Trade
+Codes,Data,De,Delivery or Conversion Action
+Codes,Data,ETF,ETF Creation/Redemption
+Codes,Data,Ep,Resulted from an Expired Position
+Codes,Data,Ex,Exercise
+Codes,Data,FP,The fractional portion of this trade was executed against IB or an affiliate.
+Codes,Data,FPA,The fractional portion of this trade was executed against IB or an affiliate. IB acted as agent for the whole share portion of this trade.
+Codes,Data,G,Trade in Guaranteed Account Segment
+Codes,Data,GEA,Exercise or Assignment resulting from offsetting positions
+Codes,Data,HC,Highest Cost tax basis election
+Codes,Data,HFI,Investment Transferred to Hedge Fund
+Codes,Data,HFR,Redemption from Hedge Fund
+Codes,Data,I,Internal Transfer
+Codes,Data,IA,The transaction was executed against IB or an affiliate
+Codes,Data,IM,A portion of the order was executed against IB or an affiliate; IB acted as agent on a portion.
+Codes,Data,INV,Investment Transfer from Investor
+Codes,Data,IPO,This transaction was executed as part of an IPO in which IB was a member of the selling group and is classified as a Principal trade.
+Codes,Data,L,Ordered by IB (Margin Violation)
+Codes,Data,LD,Adjusted by Loss Disallowed from Wash Sale
+Codes,Data,LF,Liquidation of fractional position by IB
+Codes,Data,LI,"Last In, First Out (LIFO) tax basis election"
+Codes,Data,LT,Long Term P/L
+Codes,Data,Lo,Direct Loan
+Codes,Data,M,Entered manually by IB
+Codes,Data,MEx,Manual exercise for dividend-related recommendation.
+Codes,Data,ML,Maximize Losses tax basis election
+Codes,Data,MLG,Maximize Long Term Gain tax basis election
+Codes,Data,MLL,Maximize Long Term Loss tax basis election
+Codes,Data,MSG,Maximize Short Term Gain tax basis election
+Codes,Data,MSL,Maximize Short Term Loss tax basis election
+Codes,Data,O,Opening Trade
+Codes,Data,Off,Yes and No contracts offset to $1.00 cash settlement
+Codes,Data,P,Partial Execution
+Codes,Data,PE,Perpetual Investment
+Codes,Data,PI,Price Improvement
+Codes,Data,PTA,Post Trade Allocation
+Codes,Data,Po,Interest or Dividend Accrual Posting
+Codes,Data,Pr,Part or all of this transaction was executed by the Exchange as a Crossing by IB against an IB affiliate and is therefore classified as a Principal and not an agency trade
+Codes,Data,R,Dividend Reinvestment
+Codes,Data,RED,Redemption to Investor
+Codes,Data,RI,Recurring Investment
+Codes,Data,RP,"IB acted as agent for the fractional share portion of this trade, which was executed by an IB affiliate as riskless principal."
+Codes,Data,RPA,IB acted as agent for both the fractional share portion and the whole share portion of this trade; the fractional share portion was executed by an IB Affiliate as riskless principal.
+Codes,Data,Rb,Rebill
+Codes,Data,Re,Interest or Dividend Accrual Reversal
+Codes,Data,Ri,Reimbursement
+Codes,Data,S0,Contract settled to zero value
+Codes,Data,S1,Contract settled to $1.00
+Codes,Data,SF,Trade is subject to IBKR Lite Surcharge Fee if volume of such trades exceeds 10% of the total monthly Lite trade volume
+Codes,Data,SI,This order was solicited by Interactive Brokers
+Codes,Data,SL,Specific Lot tax basis election
+Codes,Data,SO,This order was marked as solicited by your Introducing Broker
+Codes,Data,SS,Customer designated this trade for shortened settlement and so is subject to execution at prices above the prevailing market
+Codes,Data,ST,Short Term P/L
+Codes,Data,T,Transfer
+Codes,Data,Un,Unvested shares from stock grant
+Codes,Data,XCH,Mutual Fund Exchange Transaction
+Notes/Legal Notes,Header,Type,Note
+Notes/Legal Notes,Data,Notes,"Stock exchange transactions generally settle on the trade date plus one business day (T+1). Options, futures and US open-end mutual fund transactions also settle on trade date plus one business day. Some exchanges and other transaction types may have longer or shorter settlement periods. Ending settled cash reflects the cash that has actually settled."
+Notes/Legal Notes,Data,Notes,Initial and maintenance margin requirements are available within the Account Window of the Trader Workstation.
+Notes/Legal Notes,Data,Notes,"Interactive Brokers LLC receives compensation from fund companies in connection with the purchase and holding of fund shares by customers of Interactive Brokers LLC. Such compensation includes, but is not limited to, Rule 12b-1 fees that are paid out of the funds assets. The source and amount of any remuneration received by Interactive Brokers LLC in connection with a transaction will be furnished upon written request of the customer.  IB may share a portion of the compensation received from fund companies with your independent advisor or introducing broker."
+Notes/Legal Notes,Data,Notes,"Quantities preceded by a ""-"" sign indicate sell transactions. Other transactions are purchases. "
+Notes/Legal Notes,Data,Notes,"IB acts as agent in executing the fractional share portion of your order. In certain circumstances, IB routes the fractional portion of your order to an affiliate, which may execute the fractional portion of the order as principal. In such circumstances, this is indicated by the codes associated with the trade. If an IB affiliate acts as principal in executing any fractional share portion of your order, the order will be executed at the price displayed for the opposite side of the NBBO from your order (the offer if you are buying and the bid if you are selling) at the time of execution. If an IB affiliate is acting as riskless principal in connection with filling the fractional share portion of your order, the affiliate will execute the fractional share portion of your order at the price it receives for the execution of the whole share."
+Notes/Legal Notes,Data,Notes,"In case of partial executions, commissions are charged on the total quantity executed on the original order. The commission is displayed on the first partial execution only."
+Notes/Legal Notes,Data,Notes,Trade execution times are displayed in Eastern Time.
+Notes/Legal Notes,Data,Notes,Applicable regulatory fees for your transactions are available on the IB website at www.interactivebrokers.com/en/accounts/fees/exchangeAndRegulatoryFees.php.
+Notes/Legal Notes,Data,Notes,"Borrow Fee Rate represents the cost to borrow stock expressed in percent per annum. It is applied to the collateral value on the stock borrow contract and is separate from any interest earned on credit cash balances. Similarly, Loan Fee Rate represents the benefit to lend stock. A positive rate indicates a cost to the borrower/benefit to the lender and a negative rate indicates a benefit to the borrower/cost to the lender. In general, the fee rates for hard-to-borrow stocks are higher than for normal availability stocks."
+Notes/Legal Notes,Data,Notes,Interest Rate on Customer Collateral represents the interest paid on the collateral posted to the customer's account and received from lending stock.  A positive rate indicates a benefit to the lender.
+Notes/Legal Notes,Data,Notes,"The closing prices on this Activity Statement are indicative and may come from third-party sources. Interactive Brokers does not warrant the accuracy of the prices provided by third-party sources. Due to time zone differences, certain non-US mutual funds may deliver closing prices after the Activity Statement has been produced and the closing prices for such funds will reflect the previous day's price."
+Notes/Legal Notes,Data,Notes,All Market Data and Research services are provided through Global Financial Information Services (GmbH).
+Notes/Legal Notes,Data,Notes,"Market data is provided by Global Financial Information Services (GmbH). Your local broker collects amounts owed for fees and tax for such data on behalf of Global Financial Information Services (GmbH). Note, you are responsible for any applicable taxes relating to the provision of these services."
+Notes/Legal Notes,Data,Notes,"For clients whose accounts are being managed by an advisor, trades shown may be part of a larger trade that was allocated across multiple client accounts, based on an allocation algorithm specified by the advisor prior to execution of the trade.  Times shown are times that trades were allocated to your account.  Execution time on the relevant market center is available upon your request."
+Notes/Legal Notes,Data,Notes,"If you specified that your advisor is to receive a per-trade advisory fee, please note that the figures in the ""Commiss"" column in the transaction listings are gross amounts that include both IB's brokerage commission for the trade as well as the advisor's per-trade fee.  IB receives its standard published brokerage commissions on your trades ( see www.interactivebrokers.com ). To determine the advisor's per-trade fee for any trade, subtract IB's standard commission from the amount shown."
+Notes/Legal Notes,Data,Notes,The stated commission rate on the Interactive Brokers website is for direct clients of Interactive Brokers. Clients managed by an advisor may pay additional commissions set by their advisor. Clients should contact their advisor about the rates that will apply to their account.
+Notes/Legal Notes,Data,Notes,RUS denotes Ruble balances that have been restricted by Russian authorities.
+Notes/Legal Notes,Data,Mutual Fund Notes,"All purchase and sales of mutual funds are calculated against the published NAV (Net Asset Value) of the underlying fund and is displayed on this confirmation as the ""C. Price"" (Closing Price). Due to any fees charged by a fund and/or any share rounding, the net price you pay may vary from the published NAV and is shown on this confirmation as the ""T. Price"" (Trade Price)."
+Notes/Legal Notes,Data,Fixed Income Notes,"Call features for bonds or preferred stocks may affect the yield. For zero coupon, compound interest and multiplier securities, there are no periodic payments and securities may be callable below maturity value without notice to holder unless registered. For asset-backed securities, the actual yield may vary depending on the speed at which the underlying note is pre-paid. For additional information regarding bond yield, please contact the IB Help Desk at: ibkr.com/help. If this debt security is unrated by a nationally recognized statistical rating organization, it may pose a high risk of default. You should consult an independent advisor to determine whether unrated bonds are appropriate for your portfolio in light of your goals and your financial circumstances. Fees charged by bond trading centers are included in the cost of bond transactions."
+Notes/Legal Notes,Data,Legal Notes,"Please promptly report any inaccuracy or discrepancy in this statement, or in your account. Contact the IB Customer Service Department in writing using the form available on the IB website. You may also contact IB by phone, but if you report an error by phone, you should re-confirm such oral communication in writing in order to protect your rights, including rights under the Securities Investor Protection Act (SIPA).Interactive Brokers:Interactive Brokers LLC, www.interactivebrokers.com, 877-442-2757 (U.S.)Interactive Brokers (UK) (Ltd), www.interactivebrokers.co.uk, 00800-42-276537 (Intl)Interactive Brokers Canada Inc., www.interactivebrokers.ca, 877-745-4222 (Can.)"
+Notes/Legal Notes,Data,Legal Notes,"Unless otherwise noted, Interactive Brokers acted as agent in the execution of the above transactions. For those exchanges where IB is not a direct clearing member or custodian, IB may use one of the following clearing agents or sub-custodians: Interactive Brokers Australia Pty Limited; Interactive Brokers Canada Inc.; Interactive Brokers Hong Kong Limited; Interactive Brokers Ireland, Limited; Interactive Brokers Securities Japan, Inc.; Interactive Brokers (U.K.) Limited; IBKR Financial Services AG; ABN Amro Clearing Singapore Pte. Ltd.; Allfunds Bank, S.A.U.; Banco B3 S.A.; BBVA Bancomer, S.A.; BNP Securities Services, Milan Branch; BMO Bank N.A.; Citibank Europe plc; Skandinaviska Enskilda Banken AB (including select branches)."
+Notes/Legal Notes,Data,Legal Notes,"IB acts as agent or riskless principal in foreign currency exchange transactions and as riskless principal in spot precious metals transactions.  Such transactions are executed against an IB affiliate or a third party, which acts as principal in such transactions and may have a long or short position and may have profited or lost in connection with the transaction.  Foreign currency exchange and spot precious metals transactions executed by Customer through IB are not regulated or overseen by the SEC or the CFTC."
+Notes/Legal Notes,Data,Legal Notes,"IB accepts liquidity rebates or other order flow payments from Alternative Trading Systems, market makers and exchanges for certain orders in stocks. IB receives payment for some option orders pursuant to exchange-mandated marketing fee programs or other arrangements. The source and nature of any compensation received by IB in connection with any transaction is available upon written request of the customer. For further information, check the IB website and the Order Routing and Payment for Order Flow Disclosure provided when you opened your account and annually or visit ibkr.com/help.  "
+Notes/Legal Notes,Data,Legal Notes,"For security futures trades, if not already indicated on this statement, information about the time of any transaction, the identity of the counterparty to the transaction, and whether IB is acting as agent or principal, as agent for the counterparty, as agent for both parties to the contract, or as principal, and if acting as principal, whether the transaction was a block transaction or an exchange for physicals transaction, will be available upon written request of the customer."
+Notes/Legal Notes,Data,Legal Notes,Customer is requested to promptly advise Interactive Brokers of any material change in Customers investment objectives.
+Notes/Legal Notes,Data,Legal Notes,"A financial statement of Interactive Brokers LLC is available for your personal inspection at www.interactivebrokers.com or at its offices, or a copy of it will be mailed upon your written request."
+Notes/Legal Notes,Data,Legal Notes,"For trades executed on the ASX market, the ASX 24 market and the Cboe Australia market, this confirmation is issued subject to: (i) the Applicable Laws, the directions, decisions and requirements of the relevant market operator, the operating rules of the relevant market, the clearing rules and where relevant, the relevant settlement rules, (ii) the customs and usages of the relevant financial market, and (iii) the correction of errors and omissions. Trades in Cash Market Products (as that term is defined in the relevant ASIC market integrity rules) on ASX market and Cboe Australia are cleared by BNP Paribas, ARBN 149 440 291, AFSL 402467, who is a participant of ASX Clear Pty Ltd and ASX Settlement Pty Ltd. Trades in Derivative Products on ASX and all products on ASX 24 are cleared by Interactive Brokers Australia (“IBA”) as a participant of ASX Clear Pty Ltd and ASX Clear (Futures) Pty Ltd. If your transaction was a crossing transaction, IBA may have either acted on behalf of (i) both the buyer and seller of this transaction, or (ii) on behalf of the buyer or seller on one side of the transaction and acted as Principal on the other side. Under the Corporations Act 2001, where IBA enters into an exchange traded derivative on a customer's behalf, IBA is regarded as having issued the derivative to the customer."
+Notes/Legal Notes,Data,Legal Notes,"For All Options Trades Executed on the Stock Exchange of Hong Kong (""SEHK""): (a) Options can involve a high degree of risk and may not be suitable for every investor. Investors should ensure they understand those risks before participating in the options market. (b) All options contracts executed on the SEHK were executed by Interactive Brokers Hong Kong Limited on behalf of Interactive Brokers LLC. (c) In the event of a default committed by Interactive Brokers LLC resulting in the client suffering any pecuniary loss, the client shall have a right to claim under the Investor Compensation Fund established under the Hong Kong Securities and Futures Ordinance, subject to the terms of the Investor Compensation Fund from time to time. (d) All Exchange Traded Options Business made for or on behalf of a client shall be subject to the relevant provisions of the constitution, Rules of The Stock Exchange of Hong Kong Limited (""SEHK Rules""), regulations, the Articles, customs and usages of SEHK, the Options Trading Rules, the Clearing Rules of SEOCH, the CCASS Rules and the laws of Hong Kong, which shall be binding on both Interactive Brokers LLC and the client."
+Notes/Legal Notes,Data,Legal Notes,"Interactive Brokers LLC is a SIPC member. Deposits held away from Interactive Brokers LLC may not qualify under SIPC protection. Also, futures and options on futures are not covered by SIPC."
+Notes/Legal Notes,Data,,Interactive Brokers LLC is a SIPC Member
