@@ -77,7 +77,7 @@ Edit `~/.claude/.mcp.json` (global) or `.mcp.json` in the project root. Merge th
   "mcpServers": {
     "tradingview": {
       "command": "node",
-      "args": ["/Users/<username>/.claude/skills/tradingview-claude/src/server.js"]
+      "args": ["/Users/<username>/.claude/skills/tradingview-claude/mcp/src/server.js"]
     }
   }
 }
