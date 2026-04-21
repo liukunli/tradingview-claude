@@ -59,15 +59,14 @@ Use this when the MCP server is not yet installed or the user asks for a fresh s
 - **TradingView Desktop** installed (download from tradingview.com)
 - **Claude Code** CLI installed
 
-### Step 1 — Clone and install the MCP server
+### Step 1 — Install MCP dependencies
+
+The MCP server ships inside this skill at `~/.claude/skills/tradingview-claude/`. Just install its dependencies:
 
 ```bash
-git clone https://github.com/tradesdontlie/tradingview-mcp.git ~/tradingview-mcp
-cd ~/tradingview-mcp
+cd ~/.claude/skills/tradingview-claude
 npm install
 ```
-
-If the user wants a different install path, substitute it everywhere below.
 
 ### Step 2 — Add to Claude Code MCP config
 
@@ -78,13 +77,13 @@ Edit `~/.claude/.mcp.json` (global) or `.mcp.json` in the project root. Merge th
   "mcpServers": {
     "tradingview": {
       "command": "node",
-      "args": ["/Users/<username>/tradingview-mcp/src/server.js"]
+      "args": ["/Users/<username>/.claude/skills/tradingview-claude/src/server.js"]
     }
   }
 }
 ```
 
-Replace `/Users/<username>/tradingview-mcp` with the actual clone path.
+Replace `/Users/<username>` with the actual home directory path (run `echo $HOME` to get it).
 
 ### Step 3 — Launch TradingView Desktop with CDP enabled
 
