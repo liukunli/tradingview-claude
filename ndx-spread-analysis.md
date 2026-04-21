@@ -1,186 +1,363 @@
 ---
 name: ndx-spread-analysis
-description: Analyze live NDX chart for vertical spread trade setups using the observed trading strategy from Animus LLC accounts. Use when asked to analyze NDX for entries, exits, EDT setups, or spread trade ideas. Triggers on: "analyze NDX", "check NDX for entry", "NDX spread setup", "EDT setup", "check entry/exit", "spread trade".
+description: Analyze live NDX chart for vertical spread trade setups. Uses backtest-derived rules from 159 real spread trades (Jan–Apr 2026). Triggers on "analyze NDX", "check NDX for entry", "NDX spread setup", "EDT setup", "check entry/exit", "spread trade", "NDX analysis".
 allowed-tools: mcp__tradingview__chart_get_state, mcp__tradingview__quote_get, mcp__tradingview__data_get_ohlcv, mcp__tradingview__chart_set_symbol, mcp__tradingview__chart_set_timeframe, mcp__tradingview__capture_screenshot, mcp__tradingview__chart_scroll_to_date, mcp__tradingview__data_get_study_values
 ---
 
 # NDX Vertical Spread Analysis
 
-This skill analyzes live NDX price action and suggests spread trade setups based on the observed strategy from Animus LLC trading logs (Jan–Mar 2026, ~645 trades across two accounts).
+Backtest-driven skill for live NDX spread entry analysis. All rules are derived from 159 real spread trades across two accounts (Jan–Apr 2026). The strategy is NDX 0DTE vertical credit spreads; the only direction with positive expected value is the **Bear Put**. All other directions (Bull Put, Bear Call, Bull Call) have negative EV in the observed regime.
 
 ---
 
-## Strategy Mechanics (Observed from Trade Logs)
+## What the Backtest Proved (read this first)
 
-### Core Structure: NDX Vertical Credit Spreads (0–3 DTE)
-
-**Bull Put Spread** (bullish bias):
-- Long lower-strike put + Short higher-strike put, same expiry
-- Standard spread width: $50 on NDX
-- Entry: After bearish intraday move, expecting price to hold / recover
-- Profit: NDX stays above short strike at expiry or closes spread for less than received
-- Max loss: Spread width ($50 × 100) minus credit received
-
-**Bear Call Spread** (bearish bias):
-- Short lower-strike call + Long higher-strike call, same expiry
-- Standard spread width: $50 on NDX
-- Entry: After bullish intraday move, expecting price to reject / consolidate
-- Profit: NDX stays below short strike at expiry or closes spread for less than received
-- Max loss: Spread width ($50 × 100) minus credit received
-
-### Expiration Selection
-- **0DTE / 1DTE**: Most common — same-day or next-calendar-day expiry
-- **EDT (Expiration Day Trading)**: Enter 3:00–4:00 PM the afternoon before expiry; close at or shortly after next day's 9:30 AM open. Captures overnight theta decay without holding through full RTH
-
-### Position Sizing (observed)
-- 1–9 contracts per leg
-- Scale in: add contracts during adverse moves (averaging down on spread cost)
-- Exit: close 50–80% of max profit, or cut at 100–150% of credit received
-
-### Strike Placement
-- Short strike: ~50–150 pts OTM from current spot
-- Long strike: $50 further OTM (protection)
-- On high-volatility days: strikes placed further OTM to avoid getting run over
-
-### Risk Observations from Logs
-- **Feb 3, 2026**: -$102K in one session — gap/trend move through both strikes
-- **Mar 10–12, 2026**: -$113K over 3 days — sustained directional selloff (tariff-driven)
-- **Key lesson**: The strategy bleeds on trending, high-VIX days; performs well on mean-reverting, range-bound sessions
-- Both accounts effectively stopped trading after mid-March 2026 (accounts blown)
+| Finding | Data |
+|---------|------|
+| Only Bear Put has positive EV | +$1,836/trade vs −$1,915 to −$27,564 for others |
+| Prime entry window is 10:00–10:30 ET | 64% WR, +$6,426 avg — only profitable bucket |
+| 0DTE far better than 1DTE/EDT | 35% WR / −$358 avg vs 17% / −$6,241 avg |
+| Flat 30-min momentum at entry | 38% WR, +$2,954 avg — best condition |
+| Short strike 100–150pt OTM optimal | 41% WR — closer strikes get run over |
+| NDX in top 20% of intraday range | 37% WR / −$104 avg — best range position |
+| 5+ scale-ins = catastrophe | −$7,011 avg; all worst days had 4–7 adds |
+| EDT (overnight) = 8% WR | −$8,851 avg; 46% of all losses from 8% of trades |
+| Trending regime (range > 2.5× avg bar) | Every catastrophic loss day was TRENDING |
 
 ---
 
-## Analysis Steps
+## Strategy Mechanics
 
-### 1. Set Chart
-- Symbol: NDX, Timeframe: 5 min
-- Scroll to current date if needed
+### The Only Viable Setup: Bear Put Spread
 
-### 2. Read Current State
+**Structure**: Short higher-strike put + Long lower-strike put, same 0DTE expiry  
+**Width**: $50 (standard NDX increment)  
+**Thesis**: NDX has moved up intraday into the top portion of its range, sell premium above with a put spread expecting the level to hold through expiry  
+**Profit**: NDX stays above the short put at close; spread expires worthless, keep full credit  
+**Max loss**: ($50 × 100) − credit received = ~$4,500–$4,800 per contract at typical credits  
 
-Collect from live chart:
-- Current price and quote
-- Day's OHLC and range (last 78 bars = full RTH session on 5-min)
-- Intraday structure: direction, key levels, range size
+**Example at NDX 21,000**:  
+`Short 20,850P / Long 20,800P — today's expiry (0DTE)`  
+NDX is 150pt above short strike; NDX needs to fall 150pt by close to threaten the position.
 
-### 3. Market Context Assessment
+### Why Other Directions Fail in This Regime
 
-**Range calculation**:
-- Day range = Day High − Day Low
-- Tight range (<150 pts): low-volatility, credit spreads favorable
-- Normal range (150–300 pts): standard setup
-- Wide range (>300 pts): elevated risk, widen strikes or skip
+| Direction | EV/trade | Why it fails |
+|-----------|----------|--------------|
+| Bull Put  | −$11,106 | "Fade the dip" — every dip in a downtrend is a continuation |
+| Bear Call | −$27,564 | "Fade the rally" — sharp rallies in bear markets keep running |
+| Bull Call | −$1,915  | Collected premium but NDX reversed through strikes repeatedly |
 
-**Session phase** (ET):
-- 9:30–10:30: Opening range — observe, identify direction bias
-- 10:30–12:00: Mid-morning — primary entry window for scalp spreads
-- 12:00–14:00: Lunch chop — lower priority, smaller size
-- 14:00–15:30: Afternoon trend / reversal — second entry window
-- 15:00–16:00: EDT entry window — open next-day expiry spreads
+These are not entirely prohibited — occasionally correct — but have negative expected value. Use only when explicitly indicated (see conditional exceptions below).
 
-**Intraday bias determination**:
-- Compare current price vs. open: above = bullish, below = bearish
-- Look at last 6 bars (30 min): is price making HH/HL or LH/LL?
-- Day range position: price in top 30% = resistance bias, bottom 30% = support bias
+### Expiry Selection
 
-### 4. Entry Setup Evaluation
+**Always prefer 0DTE** over 1DTE. 0DTE (35% WR, −$358 avg) vs 1DTE (17% WR, −$6,241 avg).  
 
-**Bull Put Spread Entry Criteria**:
-- Price is near session low or a prior support level
-- Last 3–4 bars show slowing bearish momentum (smaller ranges, wicks below)
-- NDX has sold off ≥100 pts from intraday high
-- Entry: short strike ~50–75 pts below current price, long strike $50 below that
-- Example at NDX 26,500: Short 26,450P / Long 26,400P (next-day expiry)
+**EDT (Expiration Day Trading) — avoid unless regime is confirmed range-bound**:  
+- Definition: enter after 14:45 ET, expiry is the next calendar day  
+- Historical result: 1/13 winners, net −$115,066 across 13 trades  
+- The Mar 12 EDT alone: −$41,556 (Bull Put entered 15:55, NDX gapped through both strikes)  
+- EDT only works when overnight volatility is low and no macro events are pending
 
-**Bear Call Spread Entry Criteria**:
-- Price is near session high or a prior resistance level
-- Last 3–4 bars show slowing bullish momentum (upper wicks, decreasing volume)
-- NDX has rallied ≥100 pts from intraday low
-- Entry: short strike ~50–75 pts above current price, long strike $50 above that
-- Example at NDX 26,500: Short 26,550C / Long 26,600C (next-day expiry)
+### Position Sizing
 
-**EDT Entry Criteria** (3:00–4:00 PM):
-- Price is consolidating or trending away from a key level
-- Use next calendar day's expiry (0DTE at tomorrow's open)
-- Short strike: 100–150 pts from current price in the direction of trend
-- Close position between 9:30–10:00 AM next day before the market establishes direction
+- Start size: 2–3 contracts  
+- Scale-in: maximum 2 adds at $50 lower strikes (hard cap, never 3+)  
+- Hard rule: **if NDX has already moved 100pt past short strike, do not add** — exit instead  
+- Reduce to 1 contract after 2 consecutive loss days
 
-### 5. Exit Criteria
+---
 
-**Take profit**: 
-- Spread has decayed to 20–30% of original credit → buy back for ~70–80% profit
-- Or: NDX has moved 50+ pts in favorable direction within 30 min
+## Pre-Analysis Gate: Go / No-Go
 
-**Stop loss**:
-- Spread value doubles (cost basis 2× initial credit) → close immediately
-- NDX breaks through short strike level → close immediately
-- Do NOT average down if NDX is trending — the Feb/Mar blowups came from holding/adding into a trend
+**Compute this before anything else. If AVOID, output AVOID and stop.**
 
-**Time stop**:
-- Any position open for >3 hours with no profit → evaluate for exit
-- Any overnight position not closed by 10:00 AM → close regardless of P&L
+```
+1. Is current time between 10:00–10:30 ET?       → YES=+1  NO=0  (outside window: reduce priority)
+2. Is 30-min NDX momentum flat (± 10pt)?          → YES=+1  NO=0
+3. Is NDX in top 20% of today's running range?    → YES=+1  NO=0
+4. Is day_range < 180pt OR not trending?          → YES=+1  NO=0 (trending = range > 2.5×avg_bar)
+5. Is DTE = 0 (same-day expiry available)?        → YES=+1  NO=0
+
+Score ≥ 3: PROCEED to setup construction
+Score 2:   WATCH — conditions marginal, smaller size
+Score ≤ 1: AVOID — do not enter today
+```
+
+Hard override to AVOID (regardless of score):
+- Day range already >250pt before noon
+- NDX moving directionally >50pt in the last 30 min with no reversal
+- Known macro event today or overnight (Fed, CPI, tariff announcement, earnings)
+- On a 2+ consecutive loss day streak with the same directional bias
+
+---
+
+## Entry Quality Score (Q-Score)
+
+For each proposed setup, compute a Q-score 0–100 to communicate confidence:
+
+| Criterion | +Points | −Points |
+|-----------|---------|---------|
+| Entry 30–60min after open (10:00–10:30) | +20 | |
+| Entry <30min after open | | −10 |
+| Entry >5h after open (EDT risk) | | −25 |
+| 0DTE expiry | +15 | |
+| EDT / overnight (1DTE after 14:45) | | −30 |
+| Direction = Bear Put | +15 | |
+| Direction = Bull Put | | −30 |
+| Direction = Bear Call | | −20 |
+| Short strike ≥100pt OTM | +10 | |
+| Short strike <50pt OTM | | −15 |
+| Trending regime (range > 2.5× avg bar) | | −20 |
+| Non-trending / range-bound regime | +10 | |
+| ≤2 planned scale-ins | +5 | |
+
+**Score ≥ 65**: High quality — full size  
+**Score 45–64**: Acceptable — reduced size (50%)  
+**Score < 45**: Poor — do not trade
+
+---
+
+## Trade Rationale Framework
+
+For each proposed setup, explicitly state the WHY using this structure:
+
+```
+DIRECTION: [Bear Put / Bull Put / Bear Call / Bull Call]
+THESIS:    [1 sentence — what NDX must do for the trade to win]
+CONTEXT:   [NDX price position + momentum at entry]
+  - vs open: +/-Xpt (X% of range)
+  - 30-min momentum: flat / rising Xpt / falling Xpt
+  - range position: top/middle/bottom X% of intraday range
+  - VWAP: above / below by Xpt
+RISK:      [what would invalidate the thesis]
+TRIGGER:   [specific price level or condition that triggers entry]
+```
+
+**Example — Bear Put at 10:12 ET with NDX at 21,080**:
+```
+DIRECTION: Bear Put
+THESIS:    NDX holds above 20,900 through today's close; put spread expires worthless
+CONTEXT:   NDX +180pt from open (top 22% of running range)
+           30-min momentum: flat (+8pt) — consolidating after morning rally
+           VWAP: +145pt above (strongly extended)
+RISK:      Trend reversal if NDX breaks below 20,950 — close immediately
+TRIGGER:   Current: NDX 21,080. Sell 20,950P / Buy 20,900P (0DTE) on next 5-min close above 21,050
+```
+
+---
+
+## Session Phase Guide
+
+| Phase | ET Window | Action | Backtest Edge |
+|-------|-----------|--------|---------------|
+| Pre-open | <9:30 | Wait; watch futures | — |
+| Opening range | 9:30–10:00 | Observe only; identify direction | 32% WR, −$4,608 avg |
+| **★ Prime window** | **10:00–10:30** | **Primary entry zone** | **64% WR, +$6,426 avg** |
+| Mid-morning | 10:30–12:00 | Secondary entries; 50% size | 30% WR, −$1,230 avg |
+| Lunch | 12:00–14:00 | Avoid new entries | 28% WR, −$2,523 avg |
+| Afternoon | 14:00–15:00 | Tertiary only; 1-contract size | 33% WR, −$1,093 avg |
+| EDT window | 15:00–16:00 | Avoid unless explicitly range-confirmed | 8% WR, −$7,659 avg |
+
+---
+
+## Setup Construction (Bear Put)
+
+When the Go/No-Go gate says PROCEED:
+
+**Step 1 — Confirm NDX position**
+- NDX must be in top 20% of today's running range  
+- If not: wait for a test of session high, or look for secondary setup
+
+**Step 2 — Strike selection**
+- Short put: round $50 level **100–150pt below current spot**  
+  (closer than 100pt = 20% WR historically; farther than 150pt = less credit)
+- Long put: exactly $50 below the short put (protection leg)
+- Example: NDX at 21,080 → Short 20,950P / Long 20,900P
+
+**Step 3 — Expiry**  
+- 0DTE (same-day expiry) always preferred  
+- If no 0DTE available (e.g., Monday), use Tuesday expiry but note elevated risk
+
+**Step 4 — Credit check**
+- Target credit: $8–15 per spread ($800–1,500 per contract at $50 width)  
+- If credit < $5: strikes are too far OTM or IV is crushed — skip  
+- If credit > $20: strikes may be dangerously close to current price — widen
+
+**Step 5 — Scale-in plan**
+- Initial: 2–3 contracts  
+- Add 1: if NDX dips 30pt and holds — add 2 contracts at next $50 lower strike  
+- Add 2 (max): if NDX dips another 30pt — add 1 contract  
+- Hard stop: if NDX breaks through short strike, close entire position immediately
+
+---
+
+## Conditional Exceptions (Non-Bear-Put setups)
+
+These have negative EV on average but may be warranted in specific conditions:
+
+**Bull Call** (bearish premium collection — NOT Bull Put):  
+- Only consider if NDX is strongly extended ABOVE VWAP after a trend day (already ran >200pt)  
+- NDX must be in top 5% of multi-day range (near prior week's high)  
+- Short call 100–150pt above current spot  
+- Hard rule: **never use Bull Put** — 7% win rate, −$11K avg, no redeeming conditions
+
+**Bear Call** (fade rally):  
+- Historically 0% win rate in this dataset — do not use
+
+**EDT (any direction)**:  
+- Only if: VIX < 15, no macro events overnight, NDX in a clear range-bound regime for 3+ days  
+- Default answer is NO; document the specific regime justification if used
+
+---
+
+## Exit Rules (Backtest-Derived)
+
+**Target exit**: 3–6 hour hold is the sweet spot (43% WR vs 26% for <15min trades)  
+- Close when spread has decayed to 25–30% of original credit received  
+- Or close at 14:30–15:00 ET if entering in prime window — captures full-day theta
+
+**Stop loss** (hard rules, no exceptions):
+1. NDX breaks through short put strike — close immediately, no debate
+2. Spread value reaches 2× initial credit — close immediately  
+3. NDX moves >100pt against position within 30min of entry — close, reassess
+4. Do NOT add contracts if any stop trigger is active — this is how −$58K days happen
+
+**Scale-in stops**:
+- Never add past 3 total scale-in events  
+- If already at max adds and position is losing — close, do not hold to expiry hoping for recovery
+
+**Time stops**:
+- Any position open for >4 hours with P&L < −50% of credit: close  
+- Any overnight (EDT) position not closed by 9:45 AM: close regardless of P&L
 
 ---
 
 ## Analysis Output Format
 
-When running this skill, output the following:
-
 ```
-NDX SPREAD ANALYSIS — [DATE] [TIME ET]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NDX SPREAD ANALYSIS — [DATE]  [TIME ET]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-CURRENT PRICE: [price]
-DAY RANGE: [low] – [high] ([range] pts)
-VS OPEN: [+/- pts] ([+/- %])
-SESSION PHASE: [Opening/Mid-Morning/Afternoon/EDT Window]
+MARKET SNAPSHOT
+  Price:       [current]     VWAP: [vwap]   vs Open: [+/-pt (+/-]%)]
+  Day range:   [low]–[high]  ([range]pt)    Running since open: [X bars]
+  30-min mom:  [+/-Xpt]      Position:      [top/mid/bot X% of range]
+  Regime:      [TRENDING / RANGE-BOUND]  ([range]pt vs [avg_bar]pt avg bar)
 
-INTRADAY BIAS: [Bullish / Bearish / Neutral]
-REASONING: [2–3 sentences on price structure, key levels, momentum]
+SESSION PHASE: [name]  →  [edge summary from table above]
 
-RANGE REGIME: [Tight / Normal / Wide] — [implication for sizing]
+━━━ GO / NO-GO GATE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [✓/✗] Prime window (10:00–10:30 ET)
+  [✓/✗] Flat 30-min momentum (±10pt)
+  [✓/✗] NDX top 20% of intraday range
+  [✓/✗] Non-trending regime (range < 2.5× avg bar)
+  [✓/✗] 0DTE expiry available
 
---- SETUPS ---
+  Gate score: [X/5]   →   [PROCEED / WATCH / AVOID]
 
-BULL PUT SPREAD (if applicable):
-  Trigger: [price level or condition to watch for]
-  Structure: Short [strike]P / Long [strike]P — [expiry]
-  Rationale: [why this level is support]
-  Max risk: $[X] per contract | Ideal credit target: $[X]
+━━━ SETUP (if PROCEED or WATCH) ━━━━━━━━━━━━━━━━━━━━
+  Direction:  Bear Put  [or stated exception + justification]
+  Structure:  Short [strike]P / Long [strike]P  —  [expiry DDMMMYY]
+  OTM dist:   [Xpt] from current price to short strike
+  Entry at:   NDX [trigger level] on [condition]
+  Initial:    [X] contracts
 
-BEAR CALL SPREAD (if applicable):
-  Trigger: [price level or condition to watch for]
-  Structure: Short [strike]C / Long [strike]C — [expiry]
-  Rationale: [why this level is resistance]
-  Max risk: $[X] per contract | Ideal credit target: $[X]
+  Q-SCORE: [0–100]  ([grade: High/Acceptable/Poor])
+  Criteria:
+    [+/-] [each scored criterion from Q-Score table]
 
-EDT SETUP (if 2:30 PM or later):
-  Direction: [Bullish / Bearish]
-  Structure: [strikes + tomorrow's expiry]
-  Entry window: [time range]
-  Close target: 9:30–10:00 AM tomorrow
+  TRADE RATIONALE:
+    Thesis:   [one sentence]
+    Context:  NDX [+/-]pt from open, [position in range], [momentum]
+    Risk:     [invalidation condition]
 
-RISK FLAGS:
-  [ ] Wide range day (>300 pts) — reduce size
-  [ ] Trending session — avoid fading
-  [ ] News/macro event today or overnight — elevated gap risk
-  [ ] Near major level (round number, prior week H/L)
+  EXIT PLAN:
+    Target:   Close at [X]% profit  (~[time] if held from entry)
+    Stop:     Close if NDX breaks [strike level]  OR spread > 2× credit
+    Max adds: [X] (hard cap at 2 re-entries)
+
+━━━ RISK FLAGS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [✓/✗] Trending session (day range > 180pt) — AVOID or widen
+  [✓/✗] Bull Put / Bear Call considered — negative EV, document reason
+  [✓/✗] EDT setup — overnight gap risk, low-VIX only
+  [✓/✗] 2+ consecutive loss days in same direction
+  [✓/✗] Macro event today/overnight (Fed, CPI, tariff, earnings)
+  [✓/✗] NDX near prior-week high/low or round-number level
 ```
 
 ---
 
 ## Execution Instructions
 
-1. Call `chart_set_symbol` (NDX) and `chart_set_timeframe` (5) if not already set
-2. Call `quote_get` and `data_get_ohlcv` (count=78, summary=false) in parallel
-3. Compute day OHLC from bars (first bar open = day open, scan all bars for H/L)
-4. Determine session phase from current timestamp (ET)
-5. Assess intraday bias from last 12 bars (1 hour)
-6. Calculate proposed strikes using round $50 increments from current price
-7. Output the formatted analysis block above
-8. Take screenshot for visual confirmation
+### Step 1 — Set up chart
+```
+chart_set_symbol("NDX")
+chart_set_timeframe("5")
+```
 
-**Next-day expiry label format**: `NDX DDMMMYY [strike] [C/P]`
-(e.g., `NDX 21APR26 26550 C`)
+### Step 2 — Collect data (parallel)
+```
+quote_get()                         → current price, day OHLC
+data_get_ohlcv(count=78)            → last 78 bars (full RTH on 5-min)
+```
+
+### Step 3 — Compute session metrics from the 78 bars
+- `day_open` = bars[0].open
+- `day_high` = max(bar.high for all bars)
+- `day_low`  = min(bar.low for all bars)
+- `day_range` = day_high − day_low
+- `avg_bar_range` = mean(bar.high − bar.low for all bars)
+- `trending` = day_range > 2.5 × avg_bar_range
+- `vwap` = Σ(close × volume) / Σ(volume)
+- `range_pos` = (current − day_low) / day_range
+- `mom_30m` = current_close − close[6 bars ago]  (6 × 5min = 30min)
+- `mins_since_open` = (current ET − 09:30) in minutes
+
+### Step 4 — Run Go/No-Go gate
+Score each of the 5 criteria → output gate result. If AVOID, stop here.
+
+### Step 5 — Construct setup (if gate ≥ 2)
+- Short strike = round down to nearest $50: `floor((current - 100) / 50) * 50`
+- Long strike  = short strike − 50
+- Expiry = today's date in DDMMMYY format (0DTE)
+
+### Step 6 — Compute Q-score
+Apply each criterion from the Q-Score table → sum to 0–100.
+
+### Step 7 — Generate trade rationale
+Using the Trade Rationale Framework above, fill in all five fields.
+
+### Step 8 — Output formatted analysis block
+Fill in the Analysis Output Format template exactly as shown.
+
+### Step 9 — Screenshot
+```
+capture_screenshot(region="chart")
+```
+
+**Next-day expiry label format**: `NDX DDMMMYY [strike] [C/P]`  
+Example: `NDX 21APR26 20950 P`
+
+---
+
+## Quick Reference Card
+
+```
+BEST SETUP:   Bear Put  ·  0DTE  ·  10:00–10:30 ET
+              NDX top 20% range  ·  flat momentum  ·  100–150pt OTM
+
+AVOID IF:     Day range >180pt & trending
+              Bull Put (always)  ·  Bear Call (always)
+              EDT unless VIX<15 & no macro
+              5+ scale-ins under any circumstances
+
+STOP RULES:   NDX breaks short strike  →  close immediately
+              Spread = 2× credit       →  close immediately
+              Max 2 adds               →  hard cap, no exceptions
+```
 
 ---
 
