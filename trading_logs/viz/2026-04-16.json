@@ -1,0 +1,39 @@
+{
+  "date": "2026-04-16",
+  "ndx_session": {
+    "open": 26256.9,
+    "high": 26400.5,
+    "low": 26113.7,
+    "close": 26333.0,
+    "range": 286.9,
+    "avg_bar": 28.9,
+    "direction": "UP",
+    "regime": "TRENDING"
+  },
+  "real_trades": [],
+  "strategy": {
+    "taken": false,
+    "skip_reason": "NDX at 42% of range, not top 20% \u2014 Bear Put not viable",
+    "gate_score": 3,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": false,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "entry_time": "10:00:00",
+    "entry_ndx": 26173.2,
+    "metrics": {
+      "day_high": 26256.88,
+      "day_low": 26113.65,
+      "day_range": 143.23,
+      "avg_bar": 55.4,
+      "trending": true,
+      "price": 26173.22,
+      "range_pct": 0.42,
+      "mom_30": -64.16,
+      "vwap": 26195.29
+    }
+  }
+}

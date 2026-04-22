@@ -1,0 +1,164 @@
+{
+  "date": "2026-03-18",
+  "ndx_session": {
+    "open": 24727.1,
+    "high": 24763.6,
+    "low": 24417.4,
+    "close": 24425.1,
+    "range": 346.2,
+    "avg_bar": 28.7,
+    "direction": "DOWN",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bull Call",
+      "short_strike": 24600,
+      "long_strike": 24650,
+      "expiry": "18MAR26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 2,
+      "n_adds": 2,
+      "entry_time": "10:48:55",
+      "exit_time": "12:36:04",
+      "hold_min": 107.0,
+      "pnl": -677.0,
+      "legs": [
+        {
+          "time": "10:48:55",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24600 C",
+          "strike": 24600,
+          "qty": -1.0,
+          "price": 88.85,
+          "pnl": -8883.385383333
+        },
+        {
+          "time": "10:48:55",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24650 C",
+          "strike": 24650,
+          "qty": 1.0,
+          "price": 65.85,
+          "pnl": 6586.614616667
+        },
+        {
+          "time": "11:17:16",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24600 C",
+          "strike": 24600,
+          "qty": -1.0,
+          "price": 128.35,
+          "pnl": -12833.42705
+        },
+        {
+          "time": "11:17:16",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24650 C",
+          "strike": 24650,
+          "qty": 1.0,
+          "price": 96.575,
+          "pnl": 9659.07295
+        },
+        {
+          "time": "12:36:04",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24600 C",
+          "strike": 24600,
+          "qty": 2.0,
+          "price": 80.162,
+          "pnl": 21716.812433
+        },
+        {
+          "time": "12:36:04",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24650 C",
+          "strike": 24650,
+          "qty": -2.0,
+          "price": 56.162,
+          "pnl": -16245.687567
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "direction": "Bear Put",
+      "short_strike": 24600,
+      "long_strike": 24550,
+      "expiry": "18MAR26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 1,
+      "n_adds": 1,
+      "entry_time": "10:51:10",
+      "exit_time": "11:17:16",
+      "hold_min": 26.0,
+      "pnl": -656.0,
+      "legs": [
+        {
+          "time": "10:51:10",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24550 P",
+          "strike": 24550,
+          "qty": 1.0,
+          "price": 54.56,
+          "pnl": 5457.44795
+        },
+        {
+          "time": "10:51:10",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24600 P",
+          "strike": 24600,
+          "qty": -1.0,
+          "price": 74.89,
+          "pnl": -7487.55205
+        },
+        {
+          "time": "11:17:16",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24550 P",
+          "strike": 24550,
+          "qty": -1.0,
+          "price": 35.75,
+          "pnl": -5457.44795
+        },
+        {
+          "time": "11:17:16",
+          "account": "U24514532",
+          "symbol": "NDX 18MAR26 24600 P",
+          "strike": 24600,
+          "qty": 1.0,
+          "price": 49.525,
+          "pnl": 7487.55205
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": false,
+    "skip_reason": "NDX at 40% of range, not top 20% \u2014 Bear Put not viable",
+    "gate_score": 4,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": true,
+      "top_20_range": false,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "entry_time": "10:00:00",
+    "entry_ndx": 24715.1,
+    "metrics": {
+      "day_high": 24763.58,
+      "day_low": 24683.37,
+      "day_range": 80.2,
+      "avg_bar": 41.01,
+      "trending": false,
+      "price": 24715.1,
+      "range_pct": 0.4,
+      "mom_30": 5.67,
+      "vwap": 24724.48
+    }
+  }
+}

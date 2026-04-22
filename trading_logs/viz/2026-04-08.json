@@ -1,0 +1,93 @@
+{
+  "date": "2026-04-08",
+  "ndx_session": {
+    "open": 25045.4,
+    "high": 25045.4,
+    "low": 24756.9,
+    "close": 24903.2,
+    "range": 288.4,
+    "avg_bar": 28.2,
+    "direction": "DOWN",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bear Put",
+      "short_strike": 25000,
+      "long_strike": 24950,
+      "expiry": "08APR26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 1,
+      "n_adds": 1,
+      "entry_time": "11:16:45",
+      "exit_time": "12:39:48",
+      "hold_min": 83.0,
+      "pnl": -900.0,
+      "legs": [
+        {
+          "time": "11:16:45",
+          "account": "U24514532",
+          "symbol": "NDX 08APR26 24950 P",
+          "strike": 24950,
+          "qty": 1.0,
+          "price": 121.7,
+          "pnl": 12171.57295
+        },
+        {
+          "time": "11:16:45",
+          "account": "U24514532",
+          "symbol": "NDX 08APR26 25000 P",
+          "strike": 25000,
+          "qty": -1.0,
+          "price": 161.7,
+          "pnl": -16168.42705
+        },
+        {
+          "time": "12:39:48",
+          "account": "U24514532",
+          "symbol": "NDX 08APR26 24950 P",
+          "strike": 24950,
+          "qty": -1.0,
+          "price": 46.1,
+          "pnl": -12171.57295
+        },
+        {
+          "time": "12:39:48",
+          "account": "U24514532",
+          "symbol": "NDX 08APR26 25000 P",
+          "strike": 25000,
+          "qty": 1.0,
+          "price": 77.1,
+          "pnl": 16168.42705
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": false,
+    "skip_reason": "NDX at 11% of range, not top 20% \u2014 Bear Put not viable",
+    "gate_score": 3,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": false,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "entry_time": "10:00:00",
+    "entry_ndx": 24905.6,
+    "metrics": {
+      "day_high": 25045.36,
+      "day_low": 24888.11,
+      "day_range": 157.25,
+      "avg_bar": 53.77,
+      "trending": true,
+      "price": 24905.56,
+      "range_pct": 0.11,
+      "mom_30": -79.82,
+      "vwap": 24940.91
+    }
+  }
+}

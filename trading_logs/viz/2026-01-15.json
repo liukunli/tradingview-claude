@@ -1,0 +1,75 @@
+{
+  "date": "2026-01-15",
+  "ndx_session": {
+    "open": 25767.3,
+    "high": 25781.0,
+    "low": 25520.2,
+    "close": 25547.1,
+    "range": 260.8,
+    "avg_bar": 26.0,
+    "direction": "DOWN",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bull Put",
+      "short_strike": 25600,
+      "long_strike": 25550,
+      "expiry": "16JAN26",
+      "dte": 1,
+      "is_edt": true,
+      "n_contracts": 1,
+      "n_adds": 0,
+      "entry_time": "15:54:16",
+      "exit_time": "16:00:00",
+      "hold_min": 6.0,
+      "pnl": -2500.0,
+      "legs": [
+        {
+          "time": "15:54:16",
+          "account": "U23445314",
+          "symbol": "NDX 16JAN26 25550 P",
+          "strike": 25550,
+          "qty": 1.0,
+          "price": 96.05,
+          "pnl": 9607.04875
+        },
+        {
+          "time": "15:54:16",
+          "account": "U23445314",
+          "symbol": "NDX 16JAN26 25600 P",
+          "strike": 25600,
+          "qty": -1.0,
+          "price": 121.05,
+          "pnl": -12102.95125
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": false,
+    "skip_reason": "NDX at 23% of range, not top 20% \u2014 Bear Put not viable",
+    "gate_score": 3,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": false,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "entry_time": "10:00:00",
+    "entry_ndx": 25704.3,
+    "metrics": {
+      "day_high": 25781.03,
+      "day_low": 25681.13,
+      "day_range": 99.9,
+      "avg_bar": 47.2,
+      "trending": false,
+      "price": 25704.33,
+      "range_pct": 0.23,
+      "mom_30": -21.19,
+      "vwap": 25727.49
+    }
+  }
+}

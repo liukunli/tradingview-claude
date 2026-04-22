@@ -1,0 +1,52 @@
+{
+  "date": "2026-04-15",
+  "ndx_session": {
+    "open": 25859.2,
+    "high": 26214.6,
+    "low": 25828.8,
+    "close": 26204.6,
+    "range": 385.8,
+    "avg_bar": 23.5,
+    "direction": "UP",
+    "regime": "TRENDING"
+  },
+  "real_trades": [],
+  "strategy": {
+    "taken": true,
+    "gate_score": 4,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": true,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "q_score": 100,
+    "entry_time": "10:00:00",
+    "entry_ndx": 25912.1,
+    "short_strike": 25800,
+    "long_strike": 25750,
+    "otm_dist": 112.1,
+    "credit_pts": 16.41,
+    "credit_dollar": 4924.0,
+    "n_contracts": 3,
+    "outcome": "profit_target",
+    "exit_reason": "profit_target",
+    "stop_triggered": false,
+    "stop_time": null,
+    "stop_ndx": null,
+    "exit_time": "13:50:00",
+    "exit_ndx": 26041.4,
+    "pnl_pts": 12.46,
+    "pnl_dollar": 3738.0,
+    "metrics": {
+      "day_range": 93.6,
+      "avg_bar": 43.0,
+      "trending": false,
+      "range_pct": 0.89,
+      "mom_30": 47.8,
+      "vwap": 25879.5,
+      "sigma": 0.2003
+    }
+  }
+}

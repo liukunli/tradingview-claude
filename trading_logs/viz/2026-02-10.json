@@ -1,0 +1,52 @@
+{
+  "date": "2026-02-10",
+  "ndx_session": {
+    "open": 25314.2,
+    "high": 25363.1,
+    "low": 25113.4,
+    "close": 25127.6,
+    "range": 249.7,
+    "avg_bar": 27.9,
+    "direction": "DOWN",
+    "regime": "TRENDING"
+  },
+  "real_trades": [],
+  "strategy": {
+    "taken": true,
+    "gate_score": 4,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": true,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "q_score": 95,
+    "entry_time": "10:00:00",
+    "entry_ndx": 25316.2,
+    "short_strike": 25200,
+    "long_strike": 25150,
+    "otm_dist": 116.2,
+    "credit_pts": 17.62,
+    "credit_dollar": 5285.0,
+    "n_contracts": 3,
+    "outcome": "stop_loss",
+    "exit_reason": "stop_loss",
+    "stop_triggered": true,
+    "stop_time": "13:30:00",
+    "stop_ndx": 25190.3,
+    "exit_time": "13:30:00",
+    "exit_ndx": 25190.3,
+    "pnl_pts": -6.08,
+    "pnl_dollar": -1823.0,
+    "metrics": {
+      "day_range": 152.0,
+      "avg_bar": 58.2,
+      "trending": true,
+      "range_pct": 0.924,
+      "mom_30": 39.5,
+      "vwap": 25260.7,
+      "sigma": 0.2461
+    }
+  }
+}

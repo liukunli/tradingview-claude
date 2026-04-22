@@ -1,0 +1,88 @@
+{
+  "date": "2026-02-27",
+  "ndx_session": {
+    "open": 24808.0,
+    "high": 24988.0,
+    "low": 24747.3,
+    "close": 24960.0,
+    "range": 240.7,
+    "avg_bar": 34.9,
+    "direction": "UP",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bull Put",
+      "short_strike": 24950,
+      "long_strike": 24900,
+      "expiry": "02MAR26",
+      "dte": 3,
+      "is_edt": false,
+      "n_contracts": 3,
+      "n_adds": 0,
+      "entry_time": "12:35:46",
+      "exit_time": "16:00:00",
+      "hold_min": 204.0,
+      "pnl": -6000.0,
+      "legs": [
+        {
+          "time": "12:35:46",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24900 P",
+          "strike": 24900,
+          "qty": 3.0,
+          "price": 133.641666667,
+          "pnl": 40096.84625
+        },
+        {
+          "time": "12:35:46",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 P",
+          "strike": 24950,
+          "qty": -3.0,
+          "price": 153.641666667,
+          "pnl": -46088.15375
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": true,
+    "gate_score": 4,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": true,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "q_score": 100,
+    "entry_time": "10:00:00",
+    "entry_ndx": 24882.2,
+    "short_strike": 24750,
+    "long_strike": 24700,
+    "otm_dist": 132.2,
+    "credit_pts": 17.41,
+    "credit_dollar": 5223.0,
+    "n_contracts": 3,
+    "outcome": "time_exit",
+    "exit_reason": "time_exit",
+    "stop_triggered": false,
+    "stop_time": null,
+    "stop_ndx": null,
+    "exit_time": "14:30:00",
+    "exit_ndx": 24858.9,
+    "pnl_pts": 4.7,
+    "pnl_dollar": 1410.0,
+    "metrics": {
+      "day_range": 159.8,
+      "avg_bar": 76.4,
+      "trending": false,
+      "range_pct": 0.845,
+      "mom_30": 49.0,
+      "vwap": 24847.0,
+      "sigma": 0.2697
+    }
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "date": "2026-01-28",
+  "ndx_session": {
+    "open": 26121.7,
+    "high": 26165.1,
+    "low": 25974.7,
+    "close": 26022.8,
+    "range": 190.4,
+    "avg_bar": 25.4,
+    "direction": "DOWN",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bull Call",
+      "short_strike": 26150,
+      "long_strike": 26160,
+      "expiry": "28JAN26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 10,
+      "n_adds": 5,
+      "entry_time": "11:09:48",
+      "exit_time": "16:20:00",
+      "hold_min": 310.0,
+      "pnl": -26877.0,
+      "legs": [
+        {
+          "time": "11:09:48",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": -5.0,
+          "price": 26.66,
+          "pnl": -13322.75625
+        },
+        {
+          "time": "11:45:56",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26150 C",
+          "strike": 26150,
+          "qty": -5.0,
+          "price": 18.08,
+          "pnl": -9033.25625
+        },
+        {
+          "time": "12:35:04",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": 5.0,
+          "price": 11.65,
+          "pnl": 13322.75625
+        },
+        {
+          "time": "12:44:49",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": -10.0,
+          "price": 11.93,
+          "pnl": -11916.7625
+        },
+        {
+          "time": "15:04:18",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": 5.0,
+          "price": 3.196,
+          "pnl": 5942.75625
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26150 C",
+          "strike": 26150,
+          "qty": 5.0,
+          "price": 0.0,
+          "pnl": 9033.25625
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": 5.0,
+          "price": 0.0,
+          "pnl": 5974.00625
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "direction": "Bull Call",
+      "short_strike": 26160,
+      "long_strike": 26200,
+      "expiry": "28JAN26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 10,
+      "n_adds": 5,
+      "entry_time": "11:09:48",
+      "exit_time": "16:20:00",
+      "hold_min": 310.0,
+      "pnl": -12887.0,
+      "legs": [
+        {
+          "time": "11:09:48",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": -5.0,
+          "price": 26.66,
+          "pnl": -13322.75625
+        },
+        {
+          "time": "11:45:56",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26200 C",
+          "strike": 26200,
+          "qty": 5.0,
+          "price": 9.9,
+          "pnl": 4956.74375
+        },
+        {
+          "time": "12:35:04",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": 5.0,
+          "price": 11.65,
+          "pnl": 13322.75625
+        },
+        {
+          "time": "12:44:49",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": -10.0,
+          "price": 11.93,
+          "pnl": -11916.7625
+        },
+        {
+          "time": "15:04:18",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": 5.0,
+          "price": 3.196,
+          "pnl": 5942.75625
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26160 C",
+          "strike": 26160,
+          "qty": 5.0,
+          "price": 0.0,
+          "pnl": 5974.00625
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26200 C",
+          "strike": 26200,
+          "qty": -5.0,
+          "price": 0.0,
+          "pnl": -4956.74375
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "direction": "Bull Call",
+      "short_strike": 26200,
+      "long_strike": 26210,
+      "expiry": "28JAN26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 10,
+      "n_adds": 5,
+      "entry_time": "11:09:48",
+      "exit_time": "16:20:00",
+      "hold_min": 310.0,
+      "pnl": 15375.0,
+      "legs": [
+        {
+          "time": "11:09:48",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26210 C",
+          "strike": 26210,
+          "qty": 5.0,
+          "price": 14.79,
+          "pnl": 7400.99375
+        },
+        {
+          "time": "11:45:56",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26200 C",
+          "strike": 26200,
+          "qty": 5.0,
+          "price": 9.9,
+          "pnl": 4956.74375
+        },
+        {
+          "time": "12:35:04",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26210 C",
+          "strike": 26210,
+          "qty": -5.0,
+          "price": 6.1,
+          "pnl": -7400.99375
+        },
+        {
+          "time": "12:44:49",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26210 C",
+          "strike": 26210,
+          "qty": 10.0,
+          "price": 6.57,
+          "pnl": 6583.2375
+        },
+        {
+          "time": "15:04:18",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26210 C",
+          "strike": 26210,
+          "qty": -5.0,
+          "price": 0.98,
+          "pnl": -7664.98125
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26200 C",
+          "strike": 26200,
+          "qty": -5.0,
+          "price": 0.0,
+          "pnl": -4956.74375
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 26210 C",
+          "strike": 26210,
+          "qty": -5.0,
+          "price": 0.0,
+          "pnl": -3275.99375
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "direction": "Bear Put",
+      "short_strike": 25850,
+      "long_strike": 25800,
+      "expiry": "28JAN26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 10,
+      "n_adds": 5,
+      "entry_time": "11:09:48",
+      "exit_time": "16:20:00",
+      "hold_min": 310.0,
+      "pnl": 12182.0,
+      "legs": [
+        {
+          "time": "11:09:48",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": 5.0,
+          "price": 17.9,
+          "pnl": 8955.99375
+        },
+        {
+          "time": "11:45:56",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25800 P",
+          "strike": 25800,
+          "qty": 5.0,
+          "price": 21.26,
+          "pnl": 10636.74375
+        },
+        {
+          "time": "11:45:56",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": -5.0,
+          "price": 29.58,
+          "pnl": -8955.99375
+        },
+        {
+          "time": "12:35:04",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": -5.0,
+          "price": 24.82,
+          "pnl": -12403.25625
+        },
+        {
+          "time": "12:44:49",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": 10.0,
+          "price": 20.57,
+          "pnl": 22679.25
+        },
+        {
+          "time": "15:04:18",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": -5.0,
+          "price": 1.536,
+          "pnl": -10275.99375
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25800 P",
+          "strike": 25800,
+          "qty": -5.0,
+          "price": 0.0,
+          "pnl": -10636.74375
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "direction": "Bear Put",
+      "short_strike": 25900,
+      "long_strike": 25850,
+      "expiry": "28JAN26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 10,
+      "n_adds": 5,
+      "entry_time": "11:09:48",
+      "exit_time": "16:20:00",
+      "hold_min": 310.0,
+      "pnl": -20653.0,
+      "legs": [
+        {
+          "time": "11:09:48",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": 5.0,
+          "price": 17.9,
+          "pnl": 8955.99375
+        },
+        {
+          "time": "11:09:48",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25900 P",
+          "strike": 25900,
+          "qty": -5.0,
+          "price": 25.2,
+          "pnl": -12592.75625
+        },
+        {
+          "time": "11:45:56",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": -5.0,
+          "price": 29.58,
+          "pnl": -8955.99375
+        },
+        {
+          "time": "12:35:04",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": -5.0,
+          "price": 24.82,
+          "pnl": -12403.25625
+        },
+        {
+          "time": "12:35:04",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25900 P",
+          "strike": 25900,
+          "qty": 5.0,
+          "price": 36.27,
+          "pnl": 12592.75625
+        },
+        {
+          "time": "12:44:49",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": 10.0,
+          "price": 20.57,
+          "pnl": 22679.25
+        },
+        {
+          "time": "12:44:49",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25900 P",
+          "strike": 25900,
+          "qty": -10.0,
+          "price": 29.4,
+          "pnl": -29384.2625
+        },
+        {
+          "time": "15:04:18",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25850 P",
+          "strike": 25850,
+          "qty": -5.0,
+          "price": 1.536,
+          "pnl": -10275.99375
+        },
+        {
+          "time": "15:04:18",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25900 P",
+          "strike": 25900,
+          "qty": 5.0,
+          "price": 3.32,
+          "pnl": 9141.26875
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 28JAN26 25900 P",
+          "strike": 25900,
+          "qty": 5.0,
+          "price": 0.0,
+          "pnl": 14692.75625
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": false,
+    "skip_reason": "NDX at 50% of range, not top 20% \u2014 Bear Put not viable",
+    "gate_score": 4,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": true,
+      "top_20_range": false,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "entry_time": "10:00:00",
+    "entry_ndx": 26126.8,
+    "metrics": {
+      "day_high": 26165.08,
+      "day_low": 26088.69,
+      "day_range": 76.4,
+      "avg_bar": 40.16,
+      "trending": false,
+      "price": 26126.83,
+      "range_pct": 0.5,
+      "mom_30": 3.6,
+      "vwap": 26131.24
+    }
+  }
+}

@@ -1,0 +1,3 @@
+[submodule "ibkr-mcp"]
+	path = ibkr-mcp
+	url = https://github.com/jinyiabc/ibkr-mcp

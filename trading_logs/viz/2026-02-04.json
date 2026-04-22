@@ -1,0 +1,110 @@
+{
+  "date": "2026-02-04",
+  "ndx_session": {
+    "open": 25240.4,
+    "high": 25275.3,
+    "low": 24681.3,
+    "close": 24891.2,
+    "range": 594.0,
+    "avg_bar": 57.7,
+    "direction": "DOWN",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bull Put",
+      "short_strike": 25100,
+      "long_strike": 25050,
+      "expiry": "05FEB26",
+      "dte": 1,
+      "is_edt": false,
+      "n_contracts": 5,
+      "n_adds": 0,
+      "entry_time": "10:45:11",
+      "exit_time": "16:00:00",
+      "hold_min": 315.0,
+      "pnl": -10260.0,
+      "legs": [
+        {
+          "time": "10:45:11",
+          "account": "U23445314",
+          "symbol": "NDX 05FEB26 25050 P",
+          "strike": 25050,
+          "qty": 5.0,
+          "price": 172.05,
+          "pnl": 86032.24375
+        },
+        {
+          "time": "10:45:11",
+          "account": "U23445314",
+          "symbol": "NDX 05FEB26 25100 P",
+          "strike": 25100,
+          "qty": -5.0,
+          "price": 192.57,
+          "pnl": -96277.75625
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "direction": "Bear Put",
+      "short_strike": 25400,
+      "long_strike": 25350,
+      "expiry": "04FEB26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 10,
+      "n_adds": 0,
+      "entry_time": "16:20:00",
+      "exit_time": "16:00:00",
+      "hold_min": -20.0,
+      "pnl": 0.0,
+      "legs": [
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 04FEB26 25350 P",
+          "strike": 25350,
+          "qty": -10.0,
+          "price": 0.0,
+          "pnl": -123564.4875
+        },
+        {
+          "time": "16:20:00",
+          "account": "U23445314",
+          "symbol": "NDX 04FEB26 25400 P",
+          "strike": 25400,
+          "qty": 10.0,
+          "price": 0.0,
+          "pnl": 146035.5125
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": false,
+    "skip_reason": "Gate score 2/5 < 3",
+    "gate_score": 2,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": false,
+      "small_or_calm": false,
+      "dte0": true
+    },
+    "entry_time": "10:00:00",
+    "entry_ndx": 25043.7,
+    "metrics": {
+      "day_high": 25275.26,
+      "day_low": 25008.06,
+      "day_range": 267.2,
+      "avg_bar": 97.51,
+      "trending": true,
+      "price": 25043.68,
+      "range_pct": 0.13,
+      "mom_30": -137.33,
+      "vwap": 25178.41
+    }
+  }
+}

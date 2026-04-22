@@ -1,0 +1,306 @@
+{
+  "date": "2026-03-02",
+  "ndx_session": {
+    "open": 24599.4,
+    "high": 25059.2,
+    "low": 24575.5,
+    "close": 24992.6,
+    "range": 483.6,
+    "avg_bar": 37.6,
+    "direction": "UP",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bear Put",
+      "short_strike": 24950,
+      "long_strike": 24900,
+      "expiry": "02MAR26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 3,
+      "n_adds": 0,
+      "entry_time": "09:31:07",
+      "exit_time": "16:00:00",
+      "hold_min": 389.0,
+      "pnl": 12000.0,
+      "legs": [
+        {
+          "time": "09:31:07",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24900 P",
+          "strike": 24900,
+          "qty": -3.0,
+          "price": 273.775,
+          "pnl": -40096.84625
+        },
+        {
+          "time": "09:31:07",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 P",
+          "strike": 24950,
+          "qty": 3.0,
+          "price": 313.775,
+          "pnl": 46088.15375
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "direction": "Bull Call",
+      "short_strike": 24900,
+      "long_strike": 24950,
+      "expiry": "02MAR26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 3,
+      "n_adds": 3,
+      "entry_time": "09:52:02",
+      "exit_time": "11:51:48",
+      "hold_min": 120.0,
+      "pnl": -567.0,
+      "legs": [
+        {
+          "time": "09:52:02",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24900 C",
+          "strike": 24900,
+          "qty": -3.0,
+          "price": 57.15,
+          "pnl": -17140.65615
+        },
+        {
+          "time": "09:52:02",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 C",
+          "strike": 24950,
+          "qty": 3.0,
+          "price": 39.15,
+          "pnl": 11749.34385
+        },
+        {
+          "time": "09:55:32",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24900 C",
+          "strike": 24900,
+          "qty": 3.0,
+          "price": 54.75,
+          "pnl": 17140.65615
+        },
+        {
+          "time": "09:55:32",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 C",
+          "strike": 24950,
+          "qty": -3.0,
+          "price": 36.85,
+          "pnl": -11749.34385
+        },
+        {
+          "time": "11:43:46",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 C",
+          "strike": 24950,
+          "qty": -3.0,
+          "price": 63.78,
+          "pnl": -19129.65615
+        },
+        {
+          "time": "11:51:48",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 C",
+          "strike": 24950,
+          "qty": 3.0,
+          "price": 61.99,
+          "pnl": 19129.65615
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "direction": "Bull Call",
+      "short_strike": 24950,
+      "long_strike": 25000,
+      "expiry": "02MAR26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 3,
+      "n_adds": 5,
+      "entry_time": "09:52:02",
+      "exit_time": "13:40:34",
+      "hold_min": 229.0,
+      "pnl": -3045.0,
+      "legs": [
+        {
+          "time": "09:52:02",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 C",
+          "strike": 24950,
+          "qty": 3.0,
+          "price": 39.15,
+          "pnl": 11749.34385
+        },
+        {
+          "time": "09:55:32",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 C",
+          "strike": 24950,
+          "qty": -3.0,
+          "price": 36.85,
+          "pnl": -11749.34385
+        },
+        {
+          "time": "11:43:46",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 C",
+          "strike": 24950,
+          "qty": -3.0,
+          "price": 63.78,
+          "pnl": -19129.65615
+        },
+        {
+          "time": "11:43:46",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25000 C",
+          "strike": 25000,
+          "qty": 3.0,
+          "price": 37.1,
+          "pnl": 11134.34385
+        },
+        {
+          "time": "11:51:48",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 24950 C",
+          "strike": 24950,
+          "qty": 3.0,
+          "price": 61.99,
+          "pnl": 19129.65615
+        },
+        {
+          "time": "11:51:48",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25000 C",
+          "strike": 25000,
+          "qty": -3.0,
+          "price": 36.11,
+          "pnl": -11134.34385
+        },
+        {
+          "time": "13:22:50",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25000 C",
+          "strike": 25000,
+          "qty": -3.0,
+          "price": 28.7,
+          "pnl": -8605.28115
+        },
+        {
+          "time": "13:40:34",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25000 C",
+          "strike": 25000,
+          "qty": 3.0,
+          "price": 17.05,
+          "pnl": 8605.28115
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "direction": "Bull Call",
+      "short_strike": 25000,
+      "long_strike": 25050,
+      "expiry": "02MAR26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 3,
+      "n_adds": 3,
+      "entry_time": "11:43:46",
+      "exit_time": "13:40:34",
+      "hold_min": 117.0,
+      "pnl": -1503.0,
+      "legs": [
+        {
+          "time": "11:43:46",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25000 C",
+          "strike": 25000,
+          "qty": 3.0,
+          "price": 37.1,
+          "pnl": 11134.34385
+        },
+        {
+          "time": "11:51:48",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25000 C",
+          "strike": 25000,
+          "qty": -3.0,
+          "price": 36.11,
+          "pnl": -11134.34385
+        },
+        {
+          "time": "13:22:50",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25000 C",
+          "strike": 25000,
+          "qty": -3.0,
+          "price": 28.7,
+          "pnl": -8605.28115
+        },
+        {
+          "time": "13:22:50",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25050 C",
+          "strike": 25050,
+          "qty": 3.0,
+          "price": 10.7,
+          "pnl": 3213.96885
+        },
+        {
+          "time": "13:40:34",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25000 C",
+          "strike": 25000,
+          "qty": 3.0,
+          "price": 17.05,
+          "pnl": 8605.28115
+        },
+        {
+          "time": "13:40:34",
+          "account": "U24514532",
+          "symbol": "NDX 02MAR26 25050 C",
+          "strike": 25050,
+          "qty": -3.0,
+          "price": 5.05,
+          "pnl": -3213.96885
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": false,
+    "skip_reason": "Day range 289pt > 250pt hard override",
+    "gate_score": 3,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": true,
+      "small_or_calm": false,
+      "dte0": true
+    },
+    "entry_time": "10:00:00",
+    "entry_ndx": 24849.6,
+    "metrics": {
+      "day_high": 24864.92,
+      "day_low": 24575.54,
+      "day_range": 289.39,
+      "avg_bar": 93.76,
+      "trending": true,
+      "price": 24849.6,
+      "range_pct": 0.95,
+      "mom_30": 52.64,
+      "vwap": 24809.64
+    }
+  }
+}

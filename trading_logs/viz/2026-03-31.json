@@ -1,0 +1,106 @@
+{
+  "date": "2026-03-31",
+  "ndx_session": {
+    "open": 23208.0,
+    "high": 23789.6,
+    "low": 23198.6,
+    "close": 23740.2,
+    "range": 591.0,
+    "avg_bar": 45.5,
+    "direction": "UP",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bull Call",
+      "short_strike": 23650,
+      "long_strike": 23700,
+      "expiry": "31MAR26",
+      "dte": 0,
+      "is_edt": false,
+      "n_contracts": 1,
+      "n_adds": 1,
+      "entry_time": "12:45:10",
+      "exit_time": "14:25:28",
+      "hold_min": 100.0,
+      "pnl": -100.0,
+      "legs": [
+        {
+          "time": "12:45:10",
+          "account": "U24514532",
+          "symbol": "NDX 31MAR26 23650 C",
+          "strike": 23650,
+          "qty": -1.0,
+          "price": 64.016666667,
+          "pnl": -6400.05205
+        },
+        {
+          "time": "12:45:10",
+          "account": "U24514532",
+          "symbol": "NDX 31MAR26 23700 C",
+          "strike": 23700,
+          "qty": 1.0,
+          "price": 49.016666667,
+          "pnl": 4903.281283334
+        },
+        {
+          "time": "14:25:28",
+          "account": "U24514532",
+          "symbol": "NDX 31MAR26 23650 C",
+          "strike": 23650,
+          "qty": 1.0,
+          "price": 26.866666667,
+          "pnl": 6400.05205
+        },
+        {
+          "time": "14:25:28",
+          "account": "U24514532",
+          "symbol": "NDX 31MAR26 23700 C",
+          "strike": 23700,
+          "qty": -1.0,
+          "price": 12.866666667,
+          "pnl": -4903.281283
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": true,
+    "gate_score": 3,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": true,
+      "small_or_calm": false,
+      "dte0": true
+    },
+    "q_score": 95,
+    "entry_time": "10:00:00",
+    "entry_ndx": 23374.3,
+    "short_strike": 23250,
+    "long_strike": 23200,
+    "otm_dist": 124.3,
+    "credit_pts": 17.31,
+    "credit_dollar": 5192.0,
+    "n_contracts": 3,
+    "outcome": "stop_loss",
+    "exit_reason": "stop_loss",
+    "stop_triggered": true,
+    "stop_time": "10:50:00",
+    "stop_ndx": 23219.6,
+    "exit_time": "10:50:00",
+    "exit_ndx": 23219.6,
+    "pnl_pts": -7.96,
+    "pnl_dollar": -2387.0,
+    "metrics": {
+      "day_range": 189.4,
+      "avg_bar": 59.2,
+      "trending": true,
+      "range_pct": 0.893,
+      "mom_30": 101.4,
+      "vwap": 23313.5,
+      "sigma": 0.2689
+    }
+  }
+}

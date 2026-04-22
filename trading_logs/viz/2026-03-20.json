@@ -1,0 +1,39 @@
+{
+  "date": "2026-03-20",
+  "ndx_session": {
+    "open": 24257.6,
+    "high": 24267.3,
+    "low": 23760.0,
+    "close": 23898.2,
+    "range": 507.4,
+    "avg_bar": 36.5,
+    "direction": "DOWN",
+    "regime": "TRENDING"
+  },
+  "real_trades": [],
+  "strategy": {
+    "taken": false,
+    "skip_reason": "Gate score 2/5 < 3",
+    "gate_score": 2,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": false,
+      "small_or_calm": false,
+      "dte0": true
+    },
+    "entry_time": "10:00:00",
+    "entry_ndx": 24091.8,
+    "metrics": {
+      "day_high": 24267.33,
+      "day_low": 24056.68,
+      "day_range": 210.65,
+      "avg_bar": 64.87,
+      "trending": true,
+      "price": 24091.76,
+      "range_pct": 0.17,
+      "mom_30": -101.19,
+      "vwap": 24169.82
+    }
+  }
+}

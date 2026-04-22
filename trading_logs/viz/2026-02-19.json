@@ -1,0 +1,88 @@
+{
+  "date": "2026-02-19",
+  "ndx_session": {
+    "open": 24771.7,
+    "high": 24890.1,
+    "low": 24690.9,
+    "close": 24797.3,
+    "range": 199.2,
+    "avg_bar": 34.6,
+    "direction": "UP",
+    "regime": "TRENDING"
+  },
+  "real_trades": [
+    {
+      "id": 0,
+      "direction": "Bull Put",
+      "short_strike": 25050,
+      "long_strike": 25000,
+      "expiry": "25FEB26",
+      "dte": 6,
+      "is_edt": false,
+      "n_contracts": 2,
+      "n_adds": 0,
+      "entry_time": "14:01:28",
+      "exit_time": "16:00:00",
+      "hold_min": 119.0,
+      "pnl": -5400.0,
+      "legs": [
+        {
+          "time": "14:01:28",
+          "account": "U24514532",
+          "symbol": "NDX 25FEB26 25000 P",
+          "strike": 25000,
+          "qty": 2.0,
+          "price": 372.0,
+          "pnl": 74403.1475
+        },
+        {
+          "time": "14:01:28",
+          "account": "U24514532",
+          "symbol": "NDX 25FEB26 25050 P",
+          "strike": 25050,
+          "qty": -2.0,
+          "price": 399.0,
+          "pnl": -79796.8525
+        }
+      ]
+    }
+  ],
+  "strategy": {
+    "taken": true,
+    "gate_score": 4,
+    "gate_details": {
+      "prime_window": true,
+      "flat_momentum": false,
+      "top_20_range": true,
+      "small_or_calm": true,
+      "dte0": true
+    },
+    "q_score": 95,
+    "entry_time": "10:00:00",
+    "entry_ndx": 24860.8,
+    "short_strike": 24750,
+    "long_strike": 24700,
+    "otm_dist": 110.8,
+    "credit_pts": 13.35,
+    "credit_dollar": 4004.0,
+    "n_contracts": 3,
+    "outcome": "stop_loss",
+    "exit_reason": "stop_loss",
+    "stop_triggered": true,
+    "stop_time": "11:50:00",
+    "stop_ndx": 24741.6,
+    "exit_time": "11:50:00",
+    "exit_ndx": 24741.6,
+    "pnl_pts": -9.65,
+    "pnl_dollar": -2894.0,
+    "metrics": {
+      "day_range": 174.5,
+      "avg_bar": 66.0,
+      "trending": true,
+      "range_pct": 0.875,
+      "mom_30": 87.4,
+      "vwap": 24789.5,
+      "sigma": 0.1485
+    }
+  }
+}
