@@ -565,32 +565,46 @@ def make_chart(date_str, day_df, real_spreads, strategy, day_json):
 
     # ── Real spread bands ─────────────────────────────────────────────────────
     for idx, sp in enumerate(real_spreads):
-        sc  = SPREAD_COLORS[idx % len(SPREAD_COLORS)]
         win = sp["net"] > 0
+        sc  = "#26a69a" if win else "#ef5350"   # green=profit, red=loss
         x0  = mdates.date2num(sp["t_open"]  - datetime.timedelta(minutes=4))
         x1  = mdates.date2num(sp["t_close"] + datetime.timedelta(minutes=4))
         if x1 <= x0:
             x0 = mdates.date2num(day_df["et"].min() - datetime.timedelta(minutes=5))
             x1 = mdates.date2num(eod_dt + datetime.timedelta(minutes=5))
 
-        bh = max(sp["hi"] - sp["lo"], 1)
-        ax.add_patch(Rectangle((x0, sp["lo"]), x1-x0, bh,
-                               facecolor=sc, alpha=0.14 if win else 0.07, edgecolor="none", zorder=2))
-        ax.add_patch(Rectangle((x0, sp["lo"]), x1-x0, bh, facecolor="none",
-                               edgecolor=sc, lw=0.9,
-                               linestyle=(0,(6,2)) if win else (0,(3,3)),
-                               alpha=0.7, zorder=3))
-        ax.hlines(sp["short_s"], x0, x1, colors=sc, lw=1.2, linestyles="--", alpha=0.9, zorder=4)
-        ax.hlines(sp["long_s"],  x0, x1, colors=sc, lw=0.7, linestyles=":",  alpha=0.7, zorder=4)
+        short_s = sp["short_s"]
+        long_s  = sp["long_s"]
 
-        # Strike labels
+        # Spread fill: danger zone (between strikes = at-risk region)
+        ax.add_patch(Rectangle((x0, long_s), x1-x0, short_s - long_s,
+                               facecolor="#ef5350", alpha=0.08, edgecolor="none", zorder=2))
+        # Safe zone marker: thin green fill between short strike and 2× above
+        safe_height = min(short_s - long_s, ylim[1] - short_s)
+        if safe_height > 0:
+            ax.add_patch(Rectangle((x0, short_s), x1-x0, safe_height,
+                                   facecolor="#26a69a", alpha=0.06, edgecolor="none", zorder=2))
+
+        # Spread box outline — green=win, red=loss, solid=win, dashed=loss
+        bh = max(short_s - long_s, 1)
+        ax.add_patch(Rectangle((x0, long_s), x1-x0, bh, facecolor="none",
+                               edgecolor=sc, lw=1.2,
+                               linestyle="-" if win else (0,(4,3)),
+                               alpha=0.85, zorder=3))
+
+        # Short strike — bold solid line, the critical level
+        ax.hlines(short_s, x0, x1, colors=sc, lw=2.0, linestyles="-",  alpha=1.0, zorder=5)
+        # Long strike — thin dotted, protective floor
+        ax.hlines(long_s,  x0, x1, colors=sc, lw=0.8, linestyles=":",  alpha=0.6, zorder=4)
+
+        # Strike labels on left axis
         x_lbl = mdates.date2num(day_df["et"].min() - datetime.timedelta(minutes=3))
-        ax.text(x_lbl, sp["short_s"], f"{sp['short_s']:,.0f} ─S",
-                color=sc, fontsize=6.2, va="center", ha="right", zorder=6)
-        ax.text(x_lbl, sp["long_s"],  f"{sp['long_s']:,.0f} ─L",
-                color=sc, fontsize=5.8, va="center", ha="right", zorder=6, alpha=0.7)
+        ax.text(x_lbl, short_s, f"{short_s:,.0f} SHORT",
+                color=sc, fontsize=6.5, va="center", ha="right", fontweight="bold", zorder=6)
+        ax.text(x_lbl, long_s,  f"{long_s:,.0f} long",
+                color=sc, fontsize=5.8, va="center", ha="right", zorder=6, alpha=0.65)
 
-        # Callout box
+        # Callout box (above chart)
         x_mid      = (x0 + x1) / 2
         y_span     = ylim[1] - ylim[0]
         n_sp       = max(len(real_spreads), 1)
@@ -604,21 +618,31 @@ def make_chart(date_str, day_df, real_spreads, strategy, day_json):
         dte_s = f"{sp['dte']}DTE" if sp["dte"] is not None else "?DTE"
         if sp["is_edt"]: dte_s += " EDT"
         hold_s = f"{sp['hold_min']:.0f}min" if sp["hold_min"] < 120 else f"{sp['hold_min']/60:.1f}h"
+        result_label = "WIN ✓" if win else "LOSS ✗"
 
-        txt = (f"REAL  {sp['direction']}  {sp['qty']:.0f}ct  "
-               f"{dte_s}  {hold_s}  ${sign}{sp['net']:,.0f}\n"
-               f"Short {sp['short_s']:,.0f}P / Long {sp['long_s']:,.0f}P  +{sp['n_adds']} adds")
+        txt = (f"REAL  Bull Put  {sp['qty']:.0f}ct  {dte_s}  {hold_s}  "
+               f"{result_label}  ${sign}{sp['net']:,.0f}\n"
+               f"Short {short_s:,.0f}P / Long {long_s:,.0f}P  +{sp['n_adds']} adds")
         ax.annotate(txt,
             xy=(mdates.date2num(sp["t_open"]), entry_ndx),
             xytext=(x_mid, cy),
             color=sc, fontsize=6.2, va="center", ha="center", fontfamily="monospace",
             arrowprops=dict(arrowstyle="-|>", color=sc, alpha=0.4, lw=0.7, mutation_scale=5),
-            bbox=dict(boxstyle="round,pad=0.32", fc=PANEL2, ec=sc, alpha=0.95, lw=1.0),
+            bbox=dict(boxstyle="round,pad=0.32", fc=PANEL2, ec=sc, alpha=0.95, lw=1.2),
             zorder=11)
+
+        # P&L label at exit point
+        exit_dt_sp = sp["t_close"]
+        exit_ndx_sp = nearest_bar_close(day_df, exit_dt_sp)
+        if exit_ndx_sp:
+            xexit = mdates.date2num(exit_dt_sp)
+            ax.text(xexit, exit_ndx_sp, f"  ${sign}{sp['net']:,.0f}",
+                    color=sc, fontsize=7.0, va="bottom", ha="left",
+                    fontweight="bold", zorder=12)
 
         sign2 = "+" if sp["net"] >= 0 else ""
         legend_handles.append(mpatches.Patch(facecolor=sc, alpha=0.8,
-            label=f"REAL  {sp['direction']:10s} {sp['short_s']:>7,.0f}/{sp['long_s']:>7,.0f} "
+            label=f"REAL  Bull Put  {short_s:>7,.0f}/{long_s:>7,.0f} "
                   f"{dte_s:9s} ${sign2}{sp['net']:>9,.0f}  {hold_s}  +{sp['n_adds']}"))
 
     # ── Real trade leg markers ─────────────────────────────────────────────────
@@ -713,7 +737,7 @@ def make_chart(date_str, day_df, real_spreads, strategy, day_json):
         pnl_d     = strategy["pnl_dollar"]
         sign_s    = "+" if pnl_d >= 0 else ""
         gate_txt  = " ".join(["✓" if v else "✗" for v in strategy["gate_details"].values()])
-        strat_txt = (f"STRATEGY  Bear Put  {N_CONTRACTS}ct  0DTE  Q{qs}\n"
+        strat_txt = (f"STRATEGY  Bull Put  {N_CONTRACTS}ct  0DTE  Q{qs}\n"
                      f"Short {sk:,.0f}P / Long {lk:,.0f}P  OTM {strategy['otm_dist']:.0f}pt\n"
                      f"Gate {strategy['gate_score']}/5 [{gate_txt}]\n"
                      f"Credit ${strategy['credit_dollar']:,.0f}  →  {outcome.upper()}  "
@@ -734,7 +758,7 @@ def make_chart(date_str, day_df, real_spreads, strategy, day_json):
 
         sign_l = "+" if pnl_d >= 0 else ""
         legend_handles.append(mpatches.Patch(facecolor=C_SIM_STRIKE, alpha=0.7,
-            label=f"STRATEGY  Bear Put       {sk:>7,.0f}/{lk:>7,.0f} 0DTE        "
+            label=f"STRATEGY  Bull Put       {sk:>7,.0f}/{lk:>7,.0f} 0DTE        "
                   f"{sign_l}${abs(pnl_d):>9,.0f}  Q{qs:3d}  gate={strategy['gate_score']}/5"))
 
     elif not strategy.get("taken"):
@@ -776,15 +800,15 @@ def make_chart(date_str, day_df, real_spreads, strategy, day_json):
                 bbox=dict(boxstyle="round,pad=0.32", fc=BG, ec=rc, lw=1.2, alpha=0.96))
 
     # ── Axes cosmetics ────────────────────────────────────────────────────────
+    xlo = mdates.date2num(day_df["et"].min() - datetime.timedelta(minutes=15)) if not day_df.empty else 0
+    xhi = mdates.date2num(eod_dt + datetime.timedelta(minutes=10))
+    ax.set_xlim(xlo, xhi)   # set BEFORE locators so they only see the ~7hr range
+
     for a in (ax, ax_vol):
         a.xaxis.set_major_formatter(mdates.DateFormatter("%H:%M"))
         a.xaxis.set_major_locator(mdates.HourLocator(interval=1))
         a.xaxis.set_minor_locator(mdates.MinuteLocator(byminute=[0,15,30,45]))
     ax_vol.tick_params(axis="x", colors=TEXT2, labelsize=8)
-
-    xlo = mdates.date2num(day_df["et"].min() - datetime.timedelta(minutes=15)) if not day_df.empty else 0
-    xhi = mdates.date2num(eod_dt + datetime.timedelta(minutes=10))
-    ax.set_xlim(xlo, xhi)
     ax.grid(True, which="major", color=GRID,  lw=0.5, zorder=1)
     ax.grid(True, which="minor", color=GRID2, lw=0.2, alpha=0.5, zorder=1)
     ax_vol.grid(True, color=GRID, lw=0.3, zorder=1)
@@ -825,10 +849,15 @@ def make_chart(date_str, day_df, real_spreads, strategy, day_json):
 
 # ─── Main ──────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
+    import sys as _sys
+    _date_filter = _sys.argv[1] if len(_sys.argv) > 1 else None
+
     print("Loading data...")
     price_df = load_price_data()
     trades   = load_trades()
     ndx_dates = sorted(price_df["date"].unique())
+    if _date_filter:
+        ndx_dates = [d for d in ndx_dates if str(d) == _date_filter]
 
     by_day = defaultdict(list)
     for t in trades:

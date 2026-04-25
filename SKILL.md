@@ -61,10 +61,10 @@ Use this when the MCP server is not yet installed or the user asks for a fresh s
 
 ### Step 1 — Install MCP dependencies
 
-The MCP server ships inside this skill at `~/.claude/skills/tradingview-claude/`. Just install its dependencies:
+The MCP server ships inside this skill at `~/.claude/skills/tradingview-claude/mcp-servers/tradingview/`. Just install its dependencies:
 
 ```bash
-cd ~/.claude/skills/tradingview-claude
+cd ~/.claude/skills/tradingview-claude/mcp-servers/tradingview
 npm install
 ```
 
@@ -77,7 +77,7 @@ Edit `~/.claude/.mcp.json` (global) or `.mcp.json` in the project root. Merge th
   "mcpServers": {
     "tradingview": {
       "command": "node",
-      "args": ["/Users/<username>/.claude/skills/tradingview-claude/mcp/src/server.js"]
+      "args": ["/Users/<username>/.claude/skills/tradingview-claude/mcp-servers/tradingview/src/server.js"]
     }
   }
 }
