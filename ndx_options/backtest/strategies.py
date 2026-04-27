@@ -218,13 +218,14 @@ def run_simulated(
     Run a simulation variant through the backtest engine with custom parameters.
     Thin wrapper around backtest.simulate_day so we can vary individual knobs.
     """
-    from .backtest import load_ndx_5min, compute_bar_metrics, spread_value_pts as _svp
+    from .loader import load_ohlcv as load_ndx_5min
+    from ..strategy.signal_engine import compute_bar_metrics, spread_value_pts as _svp
     from ..config.settings import (
         PRIME_START, PRIME_END, TIME_EXIT_ET,
         PROFIT_TARGET_PCT, LOSS_STOP_MULT,
         BASE_CONTRACTS,
     )
-    from ..core.signal_engine import (
+    from ..strategy.signal_engine import (
         evaluate_gate, gate_action, hard_override_avoid,
         select_strikes, compute_qscore, size_from_qscore,
     )
@@ -362,8 +363,8 @@ def run_mean_reversion(
       - Sell a put spread where short strike = current NDX + offset (ITM put)
       - Profit from mean reversion back above the short strike
     """
-    from .backtest import load_ndx_5min, compute_bar_metrics
-    from ..core.signal_engine import spread_value_pts as _svp
+    from .loader import load_ohlcv as load_ndx_5min
+    from ..strategy.signal_engine import compute_bar_metrics, spread_value_pts as _svp
 
     df = load_ndx_5min(str(data_path))
     trading_days = sorted(df["date"].unique())

@@ -44,11 +44,11 @@ log = logging.getLogger("ndx.main")
 # ── Trade mode ────────────────────────────────────────────────────────────────
 
 async def run_trade(args):
-    from .core.market_data import TradingViewClient
-    from .core.order_manager import OrderManager
-    from .core.risk_manager import RiskManager
+    from .live.market_data import TradingViewClient
+    from .live.order_manager import OrderManager
+    from .strategy.risk_manager import RiskManager
     from .strategy.bear_put import BearPutSpread
-    from .analysis.daily_report import DailyReport
+    from .backtest.report import DailyReport
 
     live    = args.live
     dry_run = args.dry_run or (not live)  # default safe: dry-run unless --live
@@ -82,7 +82,7 @@ async def run_trade(args):
     # EOD backtest comparison
     if args.compare_backtest:
         log.info("Running EOD backtest comparison…")
-        from .analysis.backtest import run_backtest, propose_improvements
+        from .backtest.engine import run_backtest, propose_improvements
         bt = run_backtest(verbose=False)
         if bt:
             s = bt["summary"]
@@ -96,7 +96,7 @@ async def run_trade(args):
 # ── Backtest mode ─────────────────────────────────────────────────────────────
 
 def run_backtest_cli(args):
-    from .analysis.backtest import run_backtest, propose_improvements
+    from .backtest.engine import run_backtest, propose_improvements
 
     results = run_backtest(
         start=args.start,
@@ -159,7 +159,7 @@ def run_backtest_cli(args):
 # ── Compare mode ─────────────────────────────────────────────────────────────
 
 def run_compare_cli(args):
-    from .analysis.strategies import build_all, print_comparison, print_strategy_detail
+    from .backtest.strategies import build_all, print_comparison, print_strategy_detail
     from .config.settings import TRADES_JSON, BACKTEST_DATA
 
     trades_path = args.trades or TRADES_JSON

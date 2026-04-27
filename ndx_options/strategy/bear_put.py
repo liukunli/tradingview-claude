@@ -27,12 +27,13 @@ from ..config.settings import (
     MIN_CREDIT_PTS, MAX_CREDIT_PTS,
     BS_DEFAULT_SIGMA, ANNUAL_BARS_5MIN,
 )
-from ..core.signal_engine import (
+from .signal_engine import (
     evaluate_gate, hard_override_avoid, gate_action,
     select_strikes, compute_qscore, size_from_qscore,
     spread_value_pts, format_analysis, bs_put,
+    compute_bar_metrics,
 )
-from ..core.risk_manager import RiskManager
+from .risk_manager import RiskManager
 
 log = logging.getLogger("ndx.strategy")
 
@@ -130,7 +131,6 @@ class BearPutSpread:
             log.error(f"OHLCV fetch failed: {e}")
             return False
 
-        from ..core.market_data import compute_bar_metrics
         m = compute_bar_metrics(bars, now)
 
         gate_score, gate_details = evaluate_gate(m, now.time())

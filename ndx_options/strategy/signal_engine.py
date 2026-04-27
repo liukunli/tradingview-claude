@@ -1,9 +1,11 @@
 """
-signal_engine.py — Go/No-Go gate + Q-Score from ndx-spread-analysis.md.
-All logic is pure Python (no I/O) so it can be unit-tested in isolation.
+signal_engine.py — Gate, Q-Score, BS pricing, strike selection, and bar metrics.
+All pure computation (no I/O) — shared by backtest engine and live session.
 """
 
 import math
+import numpy as np
+import pandas as pd
 from datetime import time, datetime
 from typing import Optional
 
@@ -16,6 +18,40 @@ from ..config.settings import (
     MIN_CREDIT_PTS, MAX_CREDIT_PTS,
     BS_RISK_FREE, BS_DEFAULT_SIGMA, ANNUAL_BARS_5MIN,
 )
+
+
+# ── Bar metrics (pure computation, shared by backtest and live) ───────────────
+
+def compute_bar_metrics(bars: pd.DataFrame, now_et=None) -> dict:
+    """
+    Compute gate-relevant metrics from an OHLCV bar DataFrame.
+    Returns: price, day_range, avg_bar, trending, range_pct, mom_30, vwap, sigma
+    """
+    closes  = bars["close"].values
+    log_ret = np.diff(np.log(np.maximum(closes, 1e-8)))
+    sigma   = max(math.sqrt(np.var(log_ret) * ANNUAL_BARS_5MIN), 0.12) \
+              if len(log_ret) > 2 else BS_DEFAULT_SIGMA
+
+    day_high  = float(bars["high"].max())
+    day_low   = float(bars["low"].min())
+    day_range = day_high - day_low
+    avg_bar   = float((bars["high"] - bars["low"]).mean())
+    trending  = bool(day_range > 2.5 * avg_bar) if avg_bar > 0 else False
+
+    price     = float(bars.iloc[-1]["close"])
+    range_pct = (price - day_low) / day_range if day_range > 0 else 0.5
+
+    mom_idx = max(len(bars) - 7, 0)
+    mom_30  = price - float(bars.iloc[mom_idx]["close"])
+
+    vol  = float(bars["volume"].sum())
+    vwap = float((bars["close"] * bars["volume"]).sum() / vol) if vol > 0 else price
+
+    return dict(
+        price=price, day_high=day_high, day_low=day_low,
+        day_range=day_range, avg_bar=avg_bar, trending=trending,
+        range_pct=range_pct, mom_30=mom_30, vwap=vwap, sigma=sigma,
+    )
 
 
 # ── Black-Scholes ─────────────────────────────────────────────────────────────
