@@ -51,6 +51,21 @@ def _pct(x: float) -> str:
 def _usd(x: float) -> str:
     return f"${x:>+,.0f}"
 
+
+def _add_weekly_stats(summary: dict, trades_df: pd.DataFrame) -> None:
+    """Compute pnl_per_week and worst_week (max single-week loss). Mutates summary."""
+    if trades_df.empty:
+        return
+    dates = pd.to_datetime(trades_df["date"])
+    weekly_pnl = trades_df.copy()
+    weekly_pnl["week"] = dates.dt.to_period("W")
+    by_week = weekly_pnl.groupby("week")["cash_pnl"].sum()
+    n_weeks = len(by_week)
+    total   = summary.get("total_pnl", 0)
+    summary["pnl_per_week"]  = round(total / n_weeks, 2) if n_weeks else 0
+    summary["worst_week"]    = round(by_week.min(), 2)   if n_weeks else 0
+
+
 def _summarize(pnl_series: pd.Series) -> dict:
     """Standard stats dict from a series of per-trade P&L values."""
     if len(pnl_series) == 0:
@@ -182,6 +197,7 @@ def run_actual(
 
     summary = _summarize(spreads["cash_pnl"])
     summary["filtered_days"] = 0
+    _add_weekly_stats(summary, spreads)
     return dict(name=name, description=description, summary=summary, trades=spreads)
 
 
@@ -317,6 +333,7 @@ def run_simulated(
     summary["filtered_days"] = len(trading_days) - len(trades_df)
     exit_counts = trades_df["exit_reason"].value_counts().to_dict()
     summary["exit_reasons"] = exit_counts
+    _add_weekly_stats(summary, trades_df)
 
     return dict(name=name, description=description, summary=summary, trades=trades_df)
 
@@ -455,6 +472,7 @@ def run_mean_reversion(
     summary   = _summarize(trades_df["cash_pnl"])
     summary["filtered_days"] = len(trading_days) - len(trades_df)
     summary["exit_reasons"]  = trades_df["exit_reason"].value_counts().to_dict()
+    _add_weekly_stats(summary, trades_df)
 
     return dict(name=name, description=description, summary=summary, trades=trades_df)
 
@@ -676,13 +694,15 @@ def print_comparison(results: dict[str, dict]):
     COLS = [
         ("n",             "Trades",    lambda v: str(v)),
         ("win_rate",      "WR",        lambda v: f"{v:.1%}"),
-        ("total_pnl",     "Total P&L", lambda v: f"${v:>+,.0f}"),
+        ("total_pnl",     "Total P&L", lambda v: f"{v/100_000*100:>+.1f}%"),
         ("avg_pnl",       "Avg/trade", lambda v: f"${v:>+,.0f}"),
         ("avg_win",       "Avg Win",   lambda v: f"${v:>+,.0f}"),
         ("avg_loss",      "Avg Loss",  lambda v: f"${v:>+,.0f}"),
         ("profit_factor", "PF",        lambda v: f"{v:.2f}"),
         ("sharpe",        "Sharpe",    lambda v: f"{v:.3f}"),
         ("max_dd_pct",    "MaxDD%",    lambda v: f"{v:.1f}%"),
+        ("pnl_per_week",  "P&L/wk",   lambda v: f"{v/100_000*100:>+.2f}%"),
+        ("worst_week",    "WorstWk",   lambda v: f"{v/100_000*100:>+.2f}%"),
         ("filtered_days", "Filtered",  lambda v: str(v)),
     ]
 

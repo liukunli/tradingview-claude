@@ -103,6 +103,7 @@ def run_backtest_cli(args):
         end=args.end,
         data_path=args.data,
         verbose=args.verbose,
+        no_gate=getattr(args, "no_gate", False),
     )
     if not results:
         sys.exit(1)
@@ -110,12 +111,39 @@ def run_backtest_cli(args):
     summary = results["summary"]
     trades  = results["trades"]
 
-    print("\n" + "="*55)
+    SKIP = {"exit_reasons", "initial_capital", "final_equity",
+            "total_return_pct", "max_drawdown_usd", "max_drawdown_pct"}
+    PCT_FIELDS = {"total_pnl", "avg_pnl", "avg_win", "avg_loss",
+                  "max_trade_pnl", "min_trade_pnl"}
+
+    ic  = summary.get("initial_capital", 100_000)
+    fe  = summary.get("final_equity",    ic)
+    ret = summary.get("total_return_pct", 0.0)
+    dd  = summary.get("max_drawdown_usd", 0.0)
+    ddp = summary.get("max_drawdown_pct", 0.0)
+
+    def fmt_pnl(usd: float) -> str:
+        pct = usd / ic * 100
+        arrow = "+" if usd >= 0 else ""
+        return f"${usd:>+12,.0f}  ({arrow}{pct:.2f}%)"
+
+    print("\n" + "="*60)
     print("NDX BEAR PUT BACKTEST")
-    print("="*55)
+    print("="*60)
+
+    # Equity block
+    arrow = "▲" if fe >= ic else "▼"
+    print(f"  {'starting_capital':<28} ${ic:>12,.0f}")
+    print(f"  {'final_equity':<28} ${fe:>12,.0f}  {arrow} {ret:+.2f}%")
+    print(f"  {'max_drawdown':<28} ${dd:>12,.0f}  ({ddp:.2f}%)")
+    print()
+
     for k, v in summary.items():
-        if k != "exit_reasons":
-            print(f"  {k:<28} {v}")
+        if k not in SKIP:
+            if k in PCT_FIELDS and isinstance(v, (int, float)):
+                print(f"  {k:<28} {fmt_pnl(v)}")
+            else:
+                print(f"  {k:<28} {v}")
     print("\n  Exit breakdown:")
     for r, c in summary.get("exit_reasons", {}).items():
         print(f"    {r:<28} {c}")
@@ -126,6 +154,31 @@ def run_backtest_cli(args):
         print("="*55)
         for i, p in enumerate(propose_improvements(summary, trades), 1):
             print(f"\n{i}. {p}")
+
+
+# ── Compare mode ─────────────────────────────────────────────────────────────
+
+def run_compare_cli(args):
+    from .analysis.strategies import build_all, print_comparison, print_strategy_detail
+    from .config.settings import TRADES_JSON, BACKTEST_DATA
+
+    trades_path = args.trades or TRADES_JSON
+    data_path   = args.data   or BACKTEST_DATA
+    name        = getattr(args, "name", None)
+
+    results = build_all(
+        trades_path=trades_path,
+        data_path=data_path,
+        verbose=getattr(args, "verbose", False),
+    )
+
+    if name:
+        if name not in results:
+            print(f"Unknown strategy '{name}'. Available: {', '.join(results.keys())}")
+            sys.exit(1)
+        print_strategy_detail(results[name])
+    else:
+        print_comparison(results)
 
 
 # ── Report mode ───────────────────────────────────────────────────────────────
@@ -168,6 +221,15 @@ def main():
     bp.add_argument("--data",    default=None, help="Path to 5-min OHLCV JSON")
     bp.add_argument("--verbose", action="store_true")
     bp.add_argument("--improve", action="store_true", help="Show improvement proposals")
+    bp.add_argument("--no-gate", action="store_true", help="Disable all gate/Q-score filters")
+
+    # compare
+    cp = sub.add_parser("compare", help="Run all strategy variants side-by-side")
+    cp.add_argument("--trades", default=None, help="Path to trades.json")
+    cp.add_argument("--data",   default=None, help="Path to 5-min OHLCV JSON")
+    cp.add_argument("--name",   default=None,
+                    help="Show detail for one variant (original, gated, no_gate, …)")
+    cp.add_argument("--verbose", action="store_true")
 
     # report
     rp = sub.add_parser("report", help="Show session P&L summary")
@@ -187,6 +249,8 @@ def main():
         asyncio.run(run_trade(args))
     elif args.mode == "backtest":
         run_backtest_cli(args)
+    elif args.mode == "compare":
+        run_compare_cli(args)
     elif args.mode == "report":
         run_report(args)
     else:

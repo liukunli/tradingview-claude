@@ -66,7 +66,8 @@ def load_ndx_5min(path: Optional[str] = None) -> pd.DataFrame:
 
 # ── Per-day simulation ────────────────────────────────────────────────────────
 
-def simulate_day(day_bars: pd.DataFrame, verbose: bool = False) -> Optional[dict]:
+def simulate_day(day_bars: pd.DataFrame, verbose: bool = False,
+                 no_gate: bool = False) -> Optional[dict]:
     """
     Simulate one trading day through the full strategy gate + execution.
     Returns a trade result dict or None (no trade).
@@ -94,15 +95,16 @@ def simulate_day(day_bars: pd.DataFrame, verbose: bool = False) -> Optional[dict
         gate_score, gate_details = evaluate_gate(m, bar_time)
         action = gate_action(gate_score)
 
-        if action == "AVOID":
-            continue
-        if hard_override_avoid(m, bar_time):
-            continue
+        if not no_gate:
+            if action == "AVOID":
+                continue
+            if hard_override_avoid(m, bar_time):
+                continue
 
         short_K, long_K = select_strikes(m["price"])
         q_score, _      = compute_qscore(m, bar_time, "Bear Put", short_K, is_0dte=True)
 
-        if q_score < QSCORE_ACCEPT:
+        if not no_gate and q_score < QSCORE_ACCEPT:
             continue
 
         bars_total = len(open_bars)
@@ -113,7 +115,7 @@ def simulate_day(day_bars: pd.DataFrame, verbose: bool = False) -> Optional[dict
         if not (MIN_CREDIT_PTS <= credit_est <= MAX_CREDIT_PTS):
             continue
 
-        n = size_from_qscore(BASE_CONTRACTS, q_score, gate_score)
+        n = BASE_CONTRACTS if no_gate else size_from_qscore(BASE_CONTRACTS, q_score, gate_score)
         if n == 0:
             continue
 
@@ -194,7 +196,8 @@ def simulate_day(day_bars: pd.DataFrame, verbose: bool = False) -> Optional[dict
 # ── Full backtest ─────────────────────────────────────────────────────────────
 
 def run_backtest(start: Optional[str] = None, end: Optional[str] = None,
-                 data_path: Optional[str] = None, verbose: bool = False) -> dict:
+                 data_path: Optional[str] = None, verbose: bool = False,
+                 no_gate: bool = False) -> dict:
     df = load_ndx_5min(data_path)
 
     if start:
@@ -207,7 +210,7 @@ def run_backtest(start: Optional[str] = None, end: Optional[str] = None,
 
     for day in trading_days:
         day_bars = df[df["date"] == day].reset_index(drop=True)
-        res = simulate_day(day_bars, verbose=verbose)
+        res = simulate_day(day_bars, verbose=verbose, no_gate=no_gate)
         if res:
             results.append(res)
 
@@ -243,14 +246,25 @@ def run_backtest(start: Optional[str] = None, end: Optional[str] = None,
         "filtered_days": len(trading_days) - len(trades_df),
     }
 
+    # Equity curve (always computed from $100k base)
+    initial_capital = 100_000
+    equity_curve    = pd.Series(initial_capital + trades_df["cumulative_pnl"].values)
+    peak_equity     = equity_curve.cummax()
+    drawdown_usd    = (equity_curve - peak_equity)
+    final_equity    = equity_curve.iloc[-1]
+
+    summary.update({
+        "initial_capital":   initial_capital,
+        "final_equity":      round(final_equity, 2),
+        "total_return_pct":  round((final_equity - initial_capital) / initial_capital * 100, 2),
+        "max_drawdown_usd":  round(drawdown_usd.min(), 2),
+    })
+
     # PerformanceEvaluator metrics (Sharpe, Calmar, max DD)
     if _HAVE_PERF and len(trades_df) > 5:
-        initial_capital = 100_000
-        equity_curve    = pd.Series(initial_capital + trades_df["cumulative_pnl"].values)
-        returns         = equity_curve.pct_change().dropna()
-
-        pe = PerformanceEvaluator(risk_free_rate=0.045)
-        report = pe.generate_report(equity_curve / equity_curve.iloc[0], returns)
+        returns = equity_curve.pct_change().dropna()
+        pe      = PerformanceEvaluator(risk_free_rate=0.045)
+        report  = pe.generate_report(equity_curve / equity_curve.iloc[0], returns)
 
         summary.update({
             "sharpe_ratio":      round(report.get("sharpe_ratio", 0), 3),
@@ -258,12 +272,6 @@ def run_backtest(start: Optional[str] = None, end: Optional[str] = None,
             "max_drawdown_pct":  round(report.get("max_drawdown", 0) * 100, 2),
             "annual_return_pct": round(report.get("annual_return", 0) * 100, 2),
         })
-    else:
-        # Fallback manual calculation
-        cum_pnl = trades_df["pnl_usd"].values
-        peak    = np.maximum.accumulate(cum_pnl)
-        dd      = cum_pnl - peak
-        summary["max_drawdown_usd"] = round(float(dd.min()), 2)
 
     return {"summary": summary, "trades": results}
 
