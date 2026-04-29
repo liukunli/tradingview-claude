@@ -9,6 +9,8 @@ import pandas as pd
 from datetime import time, datetime
 from typing import Optional
 
+from typing import NamedTuple
+
 from ..config.settings import (
     PRIME_START, PRIME_END, SECONDARY_END, EDT_START,
     MAX_FLAT_MOM, MIN_RANGE_PCT, MAX_TRENDING_MULT, MAX_DAY_RANGE,
@@ -16,7 +18,10 @@ from ..config.settings import (
     QSCORE_HIGH, QSCORE_ACCEPT,
     MIN_OTM_DIST, MAX_OTM_DIST, SPREAD_WIDTH,
     MIN_CREDIT_PTS, MAX_CREDIT_PTS,
+    PROFIT_TARGET_PCT, LOSS_STOP_MULT, TIME_STOP_HOURS, TIME_EXIT_ET,
+    BASE_CONTRACTS,
     BS_RISK_FREE, BS_DEFAULT_SIGMA, ANNUAL_BARS_5MIN,
+    ENTRY_SLIPPAGE_PTS, EXIT_SLIPPAGE_PTS, COMMISSION_PER_LEG, NDX_MULTIPLIER,
 )
 
 
@@ -82,6 +87,100 @@ def spread_value_pts(S: float, short_K: float, long_K: float,
     T = bars_remaining / ANNUAL_BARS_5MIN
     val = bs_put(S, short_K, T, sigma=sigma) - bs_put(S, long_K, T, sigma=sigma)
     return max(min(val, SPREAD_WIDTH), 0.0)
+
+
+# ── Greeks ────────────────────────────────────────────────────────────────────
+
+class Greeks(NamedTuple):
+    delta: float   # ∂P/∂S  — unitless (per 1pt move in NDX)
+    gamma: float   # ∂²P/∂S² — per 1pt move in NDX
+    theta: float   # ∂P/∂t  — pts per calendar day (time decay)
+    vega:  float   # ∂P/∂σ  — pts per 1% move in implied vol
+
+
+def _norm_pdf(x: float) -> float:
+    return math.exp(-0.5 * x * x) / math.sqrt(2 * math.pi)
+
+
+def bs_greeks(S: float, K: float, T: float,
+              r: float = BS_RISK_FREE,
+              sigma: float = BS_DEFAULT_SIGMA) -> Greeks:
+    """
+    Black-Scholes Greeks for a long European put.
+    delta < 0 (put loses value as S rises)
+    gamma > 0 (convexity)
+    theta < 0 (long put decays)
+    vega  > 0 (long put benefits from higher vol)
+    """
+    if T <= 1e-8:
+        return Greeks(delta=-1.0 if S <= K else 0.0,
+                      gamma=0.0, theta=0.0, vega=0.0)
+    sqrtT = math.sqrt(T)
+    d1 = (math.log(S / K) + (r + 0.5 * sigma ** 2) * T) / (sigma * sqrtT)
+    d2 = d1 - sigma * sqrtT
+    phi_d1 = _norm_pdf(d1)
+
+    delta = _norm_cdf(d1) - 1.0                                    # put delta
+    gamma = phi_d1 / (S * sigma * sqrtT)
+    theta = (-(S * sigma * phi_d1) / (2 * sqrtT)
+             - r * K * math.exp(-r * T) * _norm_cdf(-d2)) / 365.0  # per calendar day
+    vega  = S * sqrtT * phi_d1 / 100.0                             # per 1% σ move
+
+    return Greeks(delta=delta, gamma=gamma, theta=theta, vega=vega)
+
+
+def spread_greeks(S: float, short_K: float, long_K: float,
+                  bars_remaining: int,
+                  sigma: float = BS_DEFAULT_SIGMA,
+                  n_contracts: int = 1) -> Greeks:
+    """
+    Net Greeks for our SOLD bear put spread (short short_K put + long long_K put).
+
+    Position: we SOLD the spread for credit, so we benefit from:
+      delta > 0  (benefits if NDX rallies — spread loses value)
+      theta > 0  (time decay works in our favour as sellers)
+      vega  < 0  (hurt by vol expansion — short vol position)
+      gamma < 0  (hurt by large moves — short gamma)
+    """
+    T = bars_remaining / ANNUAL_BARS_5MIN
+    g_sk = bs_greeks(S, short_K, T, sigma=sigma)   # long short_K put greeks
+    g_lk = bs_greeks(S, long_K,  T, sigma=sigma)   # long long_K put greeks
+
+    # Our position = short short_K put (negate g_sk) + long long_K put (g_lk)
+    return Greeks(
+        delta=(-g_sk.delta + g_lk.delta) * n_contracts,
+        gamma=(-g_sk.gamma + g_lk.gamma) * n_contracts,
+        theta=(-g_sk.theta + g_lk.theta) * n_contracts,
+        vega =(-g_sk.vega  + g_lk.vega)  * n_contracts,
+    )
+
+
+# ── Realistic fill model ──────────────────────────────────────────────────────
+
+def transaction_cost_pts(n_contracts: int = 1) -> float:
+    """
+    Total round-trip transaction cost in index points per contract.
+
+    Covers:
+      Entry: 2 legs × ENTRY_SLIPPAGE_PTS (bid-ask half-spread per leg)
+      Exit:  2 legs × EXIT_SLIPPAGE_PTS
+      Commissions: 4 leg-executions × COMMISSION_PER_LEG / NDX_MULTIPLIER
+    """
+    ba_cost     = 2 * ENTRY_SLIPPAGE_PTS + 2 * EXIT_SLIPPAGE_PTS
+    commission  = 4 * COMMISSION_PER_LEG / NDX_MULTIPLIER      # USD → pts
+    return ba_cost + commission
+
+
+def realistic_credit(credit_mid: float, n_contracts: int = 1) -> float:
+    """Credit received after entry bid-ask slippage and commissions."""
+    entry_cost = 2 * ENTRY_SLIPPAGE_PTS + 2 * COMMISSION_PER_LEG / NDX_MULTIPLIER
+    return max(credit_mid - entry_cost, 0.0)
+
+
+def realistic_close_val(close_val_mid: float, n_contracts: int = 1) -> float:
+    """Debit paid to close the spread (mid + exit slippage + commissions)."""
+    exit_cost = 2 * EXIT_SLIPPAGE_PTS + 2 * COMMISSION_PER_LEG / NDX_MULTIPLIER
+    return close_val_mid + exit_cost
 
 
 # ── Gate evaluation ───────────────────────────────────────────────────────────
@@ -351,3 +450,99 @@ def format_analysis(m: dict, now_et: time, gate_score: int, gate_details: dict,
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
     ]
     return "\n".join(lines)
+
+
+# ── Consolidated entry / exit decisions (shared by backtest and live) ─────────
+
+def evaluate_entry(
+    m: dict,
+    bar_time: time,
+    bars_remaining: int,
+    no_gate: bool = False,
+    macro_event: bool = False,
+    consecutive_losses: int = 0,
+    base_contracts: int = BASE_CONTRACTS,
+    adjusted_base: Optional[int] = None,
+) -> dict:
+    """
+    Single entry decision used by both backtest and live trading.
+
+    Always returns a full diagnostics dict so callers can log the analysis
+    regardless of outcome.  Check ``result['n_contracts'] > 0`` to trade.
+
+    Parameters
+    ----------
+    m               : bar metrics from compute_bar_metrics()
+    bar_time        : current bar time (time object, ET)
+    bars_remaining  : 5-min bars left in the session (for credit estimate)
+    no_gate         : skip gate/Q-score filters (backtest no_gate variant)
+    macro_event     : hard-override: macro event today
+    consecutive_losses : used by hard_override_avoid directional-bias check
+    base_contracts  : standard contract size (default BASE_CONTRACTS)
+    adjusted_base   : risk-manager-adjusted base (live only; uses base_contracts if None)
+    """
+    gate_score, gate_details = evaluate_gate(m, bar_time)
+    action = gate_action(gate_score)
+    avoid_reason = hard_override_avoid(
+        m, bar_time, macro_event=macro_event,
+        consecutive_losses=consecutive_losses,
+    )
+    short_K, long_K = select_strikes(m["price"])
+    q_score, q_criteria = compute_qscore(m, bar_time, "Bear Put", short_K, is_0dte=True)
+    credit_pts = spread_value_pts(
+        m["price"], short_K, long_K, max(bars_remaining, 10), m["sigma"]
+    )
+
+    result = dict(
+        short_K=short_K, long_K=long_K,
+        q_score=q_score, gate_score=gate_score,
+        gate_details=gate_details, q_criteria=q_criteria,
+        credit_pts=credit_pts, action=action, avoid_reason=avoid_reason,
+        n_contracts=0,
+    )
+
+    if not no_gate:
+        if action == "AVOID" or avoid_reason:
+            return result
+        if q_score < QSCORE_ACCEPT:
+            return result
+
+    if not (MIN_CREDIT_PTS <= credit_pts <= MAX_CREDIT_PTS):
+        return result
+
+    contracts_base = adjusted_base if adjusted_base is not None else base_contracts
+    n = base_contracts if no_gate else size_from_qscore(contracts_base, q_score, gate_score)
+    result["n_contracts"] = n
+    return result
+
+
+def evaluate_exit(
+    ndx_price: float,
+    short_K: float,
+    credit_pts: float,
+    spread_val: float,
+    bar_time: time,
+    hours_open: float = 0.0,
+) -> Optional[str]:
+    """
+    Single exit decision used by both backtest and live trading.
+    Returns an exit-reason string, or None to hold the position.
+
+    Priority order matches strategy rules:
+      1. NDX through short strike  → ndx_stop      (immediate)
+      2. Spread >= 2x credit       → loss_stop      (immediate)
+      3. Spread <= 25% credit      → profit_target
+      4. 14:30 ET time exit        → time_exit
+      5. Open > 4h + P&L < -50%   → time_stop_loss
+    """
+    if ndx_price < short_K:
+        return "ndx_stop"
+    if spread_val >= credit_pts * LOSS_STOP_MULT:
+        return "loss_stop"
+    if spread_val <= credit_pts * PROFIT_TARGET_PCT:
+        return "profit_target"
+    if bar_time >= TIME_EXIT_ET:
+        return "time_exit"
+    if hours_open > TIME_STOP_HOURS and (credit_pts - spread_val) < -0.5 * credit_pts:
+        return "time_stop_loss"
+    return None

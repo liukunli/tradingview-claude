@@ -67,6 +67,27 @@ BS_RISK_FREE       = 0.045     # 4.5% risk-free rate
 BS_DEFAULT_SIGMA   = 0.25      # fallback IV if unable to compute
 ANNUAL_BARS_5MIN   = 252 * 78  # 5-min bars per trading year
 
+# ── Transaction costs (realistic backtest) ────────────────────────────────────
+# Entering a bear put spread: sell short_K put at BID, buy long_K put at ASK.
+# Exiting: buy back at ASK, sell at BID.  Slippage is per leg (half-spread model).
+ENTRY_SLIPPAGE_PTS = 0.50      # half-spread + market impact per leg, entry
+EXIT_SLIPPAGE_PTS  = 0.50      # half-spread + market impact per leg, exit
+COMMISSION_PER_LEG = 0.65      # IBKR per contract per leg (USD)
+# Round-trip cost per contract ≈ 4×0.50pt + 4×$0.65/$100 ≈ 2.03pt
+
+# ── Greeks-based risk limits ─────────────────────────────────────────────────
+MAX_DELTA_EQUIV    = 10.0      # max |net delta| × 100 in USD/pt terms per contract
+MAX_DOLLAR_VEGA    = 500.0     # max |net vega × n_contracts × NDX_MULTIPLIER| (USD per 1% σ)
+
+# ── Position sizing: Kelly criterion ─────────────────────────────────────────
+KELLY_FRACTION     = 0.25      # quarter-Kelly — conservative capital allocation
+KELLY_MIN_TRADES   = 20        # min trade history before Kelly sizing activates
+
+# ── Walk-forward validation ──────────────────────────────────────────────────
+WFO_TRAIN_MONTHS   = 9         # in-sample training window (months)
+WFO_TEST_MONTHS    = 3         # out-of-sample test window (months)
+WFO_STEP_MONTHS    = 1         # window step size (months)
+
 # ── IBKR connectivity ────────────────────────────────────────────────────────
 IBKR_HOST         = "127.0.0.1"
 IBKR_PAPER_PORT   = 7497

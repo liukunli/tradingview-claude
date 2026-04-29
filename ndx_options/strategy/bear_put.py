@@ -20,17 +20,13 @@ from typing import Optional
 
 from ..config.settings import (
     ET, SYMBOL, NDX_MULTIPLIER, SPREAD_WIDTH,
-    PRIME_START, PRIME_END, TIME_EXIT_ET, MARKET_CLOSE, OVERNIGHT_CLOSE_ET,
-    GATE_MIN_PROCEED, GATE_MIN_WATCH,
+    PRIME_START, PRIME_END, MARKET_CLOSE, OVERNIGHT_CLOSE_ET,
     BASE_CONTRACTS, MAX_SCALE_INS, SCALE_IN_DROP,
-    PROFIT_TARGET_PCT, LOSS_STOP_MULT, TIME_STOP_HOURS,
-    MIN_CREDIT_PTS, MAX_CREDIT_PTS,
-    BS_DEFAULT_SIGMA, ANNUAL_BARS_5MIN,
+    BS_DEFAULT_SIGMA,
 )
 from .signal_engine import (
-    evaluate_gate, hard_override_avoid, gate_action,
-    select_strikes, compute_qscore, size_from_qscore,
-    spread_value_pts, format_analysis, bs_put,
+    evaluate_entry, evaluate_exit,
+    spread_value_pts, format_analysis,
     compute_bar_metrics,
 )
 from .risk_manager import RiskManager
@@ -132,65 +128,46 @@ class BearPutSpread:
             return False
 
         m = compute_bar_metrics(bars, now)
-
-        gate_score, gate_details = evaluate_gate(m, now.time())
-        action = gate_action(gate_score)
-
-        avoid_reason = hard_override_avoid(
-            m, now.time(),
-            macro_event=self.macro_event,
-            consecutive_losses=self.rm.consecutive_losses,
-        )
-
-        short_K, long_K = select_strikes(m["price"])
-        q_score, q_crit = compute_qscore(
-            m, now.time(), direction="Bear Put",
-            short_K=short_K, is_0dte=True,
-        )
-
-        # Estimate credit
         bars_left = max(int((datetime.combine(now.date(), MARKET_CLOSE, tzinfo=ET) - now)
                            .total_seconds() / 300), 10)
-        credit_est = spread_value_pts(m["price"], short_K, long_K, bars_left, m["sigma"])
+
+        entry = evaluate_entry(
+            m, now.time(), bars_left,
+            macro_event=self.macro_event,
+            consecutive_losses=self.rm.consecutive_losses,
+            adjusted_base=self.rm.adjusted_contracts(BASE_CONTRACTS),
+        )
 
         analysis = format_analysis(
-            m, now.time(), gate_score, gate_details,
-            short_K, long_K, q_score, q_crit, credit_est,
-            action if not avoid_reason else "AVOID",
-            avoid_reason,
+            m, now.time(),
+            entry["gate_score"], entry["gate_details"],
+            entry["short_K"], entry["long_K"],
+            entry["q_score"], entry["q_criteria"],
+            entry["credit_pts"],
+            entry["action"] if not entry["avoid_reason"] else "AVOID",
+            entry["avoid_reason"],
         )
         log.info("\n" + analysis)
 
-        if avoid_reason or action == "AVOID":
+        if entry["n_contracts"] == 0:
             return False
 
-        if q_score < 45:
-            log.info(f"Q-Score too low ({q_score}) — skip")
-            return False
-
-        if not (MIN_CREDIT_PTS <= credit_est <= MAX_CREDIT_PTS):
-            log.info(f"Credit estimate {credit_est:.1f}pt outside [{MIN_CREDIT_PTS}, {MAX_CREDIT_PTS}] — skip")
-            return False
-
-        # Risk pre-check
+        # Risk pre-check (stateful — stays outside evaluate_entry)
         ok, reason = self.rm.pre_trade_check("entry")
         if not ok:
             log.warning(f"Risk block: {reason}")
             return False
 
-        # Size
-        base = BASE_CONTRACTS
-        n = size_from_qscore(self.rm.adjusted_contracts(base), q_score, gate_score)
-        if n == 0:
-            log.info("Size = 0 after Q-score adjustment — skip")
-            return False
+        short_K = entry["short_K"]
+        long_K  = entry["long_K"]
+        n       = entry["n_contracts"]
+        credit_est = entry["credit_pts"]
 
-        # Get live quotes
         today = now.date()
         try:
             spread_info = await self.om.place_spread(
                 today, short_K, long_K, n,
-                short_mid=credit_est * 0.6,    # rough split; will be replaced by live quotes
+                short_mid=credit_est * 0.6,
                 long_mid=credit_est * 0.4,
             )
         except Exception as e:
@@ -246,21 +223,11 @@ class BearPutSpread:
                      f"P&L={pnl_pts:+.2f}pt (${pnl_usd:+,.0f})")
 
             # ── Exit conditions ──────────────────────────────────────────────
-            exit_reason = None
-
-            if ndx_price < self._short_K:
-                exit_reason = "ndx_stop"
-            elif spread_val >= self._credit * LOSS_STOP_MULT:
-                exit_reason = "loss_stop"
-            elif spread_val <= self._credit * PROFIT_TARGET_PCT:
-                exit_reason = "profit_target"
-            elif now_et.time() >= TIME_EXIT_ET:
-                exit_reason = "time_exit"
-            else:
-                # Check time-based stop: open > 4h with P&L < -50% credit
-                hours_open = (now_et - self._entry_time).total_seconds() / 3600
-                if hours_open > TIME_STOP_HOURS and pnl_pts < -0.5 * self._credit:
-                    exit_reason = "time_stop_loss"
+            hours_open = (now_et - self._entry_time).total_seconds() / 3600
+            exit_reason = evaluate_exit(
+                ndx_price, self._short_K, self._credit, spread_val,
+                now_et.time(), hours_open,
+            )
 
             if exit_reason:
                 await self._exit_position(ndx_price, spread_val, exit_reason)
