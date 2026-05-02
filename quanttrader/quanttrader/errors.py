@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+
+from __future__ import (absolute_import, division, print_function,
+                        unicode_literals)
+
+
+__all__ = ['QuanttraderError', 'StrategySkipError']
+
+
+class QuanttraderError(Exception):
+    '''Base exception for all other exceptions'''
+    pass
+
+
+class StrategySkipError(QuanttraderError):
+    '''Requests the platform to skip this strategy for backtesting. To be
+    raised during the initialization (``__init__``) phase of the instance'''
+    pass
+
+
+class ModuleImportError(QuanttraderError):
+    '''Raised if a class requests a module to be present to work and it cannot
+    be imported'''
+    def __init__(self, message, *args):
+        super(ModuleImportError, self).__init__(message)
+        self.args = args
+
+
+class FromModuleImportError(ModuleImportError):
+    '''Raised if a class requests a module to be present to work and it cannot
+    be imported'''
+    def __init__(self, message, *args):
+        super(FromModuleImportError, self).__init__(message, *args)
