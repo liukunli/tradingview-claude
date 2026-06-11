@@ -1,0 +1,978 @@
+[
+  {
+    "symbol": "LDOS",
+    "name": "Leidos Holdings",
+    "sector": "Industrials",
+    "close": 137.19,
+    "low50": 137.11,
+    "pct_above": 0.06
+  },
+  {
+    "symbol": "RSG",
+    "name": "Republic Services",
+    "sector": "Industrials",
+    "close": 203.88,
+    "low50": 203.7,
+    "pct_above": 0.09
+  },
+  {
+    "symbol": "FE",
+    "name": "FirstEnergy Corp",
+    "sector": "Utilities",
+    "close": 45.88,
+    "low50": 45.83,
+    "pct_above": 0.11
+  },
+  {
+    "symbol": "WTRG",
+    "name": "Essential Utilities",
+    "sector": "Utilities",
+    "close": 37.49,
+    "low50": 37.42,
+    "pct_above": 0.17
+  },
+  {
+    "symbol": "BSX",
+    "name": "Boston Scientific",
+    "sector": "Health Care",
+    "close": 55.98,
+    "low50": 55.88,
+    "pct_above": 0.18
+  },
+  {
+    "symbol": "OTIS",
+    "name": "Otis Worldwide",
+    "sector": "Industrials",
+    "close": 75.62,
+    "low50": 75.27,
+    "pct_above": 0.47
+  },
+  {
+    "symbol": "MDT",
+    "name": "Medtronic PLC",
+    "sector": "Health Care",
+    "close": 77.79,
+    "low50": 77.39,
+    "pct_above": 0.52
+  },
+  {
+    "symbol": "HON",
+    "name": "Honeywell International",
+    "sector": "Industrials",
+    "close": 209.06,
+    "low50": 207.83,
+    "pct_above": 0.59
+  },
+  {
+    "symbol": "CHTR",
+    "name": "Charter Communications",
+    "sector": "Communication Services",
+    "close": 158.23,
+    "low50": 157.26,
+    "pct_above": 0.62
+  },
+  {
+    "symbol": "IR",
+    "name": "Ingersoll Rand",
+    "sector": "Industrials",
+    "close": 75.82,
+    "low50": 75.31,
+    "pct_above": 0.68
+  },
+  {
+    "symbol": "MCD",
+    "name": "McDonald's Corp",
+    "sector": "Consumer Discretionary",
+    "close": 285.17,
+    "low50": 283.02,
+    "pct_above": 0.76
+  },
+  {
+    "symbol": "BDX",
+    "name": "Becton Dickinson",
+    "sector": "Health Care",
+    "close": 144.17,
+    "low50": 143.0,
+    "pct_above": 0.82
+  },
+  {
+    "symbol": "LHX",
+    "name": "L3Harris Technologies",
+    "sector": "Industrials",
+    "close": 302.65,
+    "low50": 300.07,
+    "pct_above": 0.86
+  },
+  {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "sector": "Health Care",
+    "close": 225.55,
+    "low50": 223.58,
+    "pct_above": 0.88
+  },
+  {
+    "symbol": "BMY",
+    "name": "Bristol-Myers Squibb",
+    "sector": "Health Care",
+    "close": 56.95,
+    "low50": 56.45,
+    "pct_above": 0.89
+  },
+  {
+    "symbol": "CMCSA",
+    "name": "Comcast Corp",
+    "sector": "Communication Services",
+    "close": 26.46,
+    "low50": 26.22,
+    "pct_above": 0.92
+  },
+  {
+    "symbol": "NOC",
+    "name": "Northrop Grumman",
+    "sector": "Industrials",
+    "close": 558.6,
+    "low50": 553.41,
+    "pct_above": 0.94
+  },
+  {
+    "symbol": "AWK",
+    "name": "American Water Works",
+    "sector": "Utilities",
+    "close": 126.05,
+    "low50": 124.85,
+    "pct_above": 0.96
+  },
+  {
+    "symbol": "RTX",
+    "name": "RTX Corp",
+    "sector": "Industrials",
+    "close": 172.87,
+    "low50": 171.2,
+    "pct_above": 0.98
+  },
+  {
+    "symbol": "CMS",
+    "name": "CMS Energy",
+    "sector": "Utilities",
+    "close": 74.93,
+    "low50": 74.19,
+    "pct_above": 1.0
+  },
+  {
+    "symbol": "LOW",
+    "name": "Lowe's Companies",
+    "sector": "Consumer Discretionary",
+    "close": 225.23,
+    "low50": 223.0,
+    "pct_above": 1.0
+  },
+  {
+    "symbol": "BBY",
+    "name": "Best Buy",
+    "sector": "Consumer Discretionary",
+    "close": 57.27,
+    "low50": 56.68,
+    "pct_above": 1.04
+  },
+  {
+    "symbol": "DLTR",
+    "name": "Dollar Tree",
+    "sector": "Consumer Discretionary",
+    "close": 93.69,
+    "low50": 92.65,
+    "pct_above": 1.12
+  },
+  {
+    "symbol": "ZTS",
+    "name": "Zoetis Inc",
+    "sector": "Health Care",
+    "close": 112.54,
+    "low50": 111.27,
+    "pct_above": 1.14
+  },
+  {
+    "symbol": "ABT",
+    "name": "Abbott Laboratories",
+    "sector": "Health Care",
+    "close": 87.17,
+    "low50": 86.16,
+    "pct_above": 1.17
+  },
+  {
+    "symbol": "EXC",
+    "name": "Exelon Corp",
+    "sector": "Utilities",
+    "close": 46.18,
+    "low50": 45.63,
+    "pct_above": 1.21
+  },
+  {
+    "symbol": "MCK",
+    "name": "McKesson Corp",
+    "sector": "Health Care",
+    "close": 801.01,
+    "low50": 791.09,
+    "pct_above": 1.25
+  },
+  {
+    "symbol": "NVR",
+    "name": "NVR Inc",
+    "sector": "Consumer Discretionary",
+    "close": 6004.33,
+    "low50": 5930.0,
+    "pct_above": 1.25
+  },
+  {
+    "symbol": "YUM",
+    "name": "Yum! Brands",
+    "sector": "Consumer Discretionary",
+    "close": 153.89,
+    "low50": 151.91,
+    "pct_above": 1.3
+  },
+  {
+    "symbol": "SEE",
+    "name": "Sealed Air Corp",
+    "sector": "Materials",
+    "close": 42.15,
+    "low50": 41.6,
+    "pct_above": 1.32
+  },
+  {
+    "symbol": "DHR",
+    "name": "Danaher Corp",
+    "sector": "Health Care",
+    "close": 174.63,
+    "low50": 172.34,
+    "pct_above": 1.33
+  },
+  {
+    "symbol": "CB",
+    "name": "Chubb Ltd",
+    "sector": "Financials",
+    "close": 322.57,
+    "low50": 318.31,
+    "pct_above": 1.34
+  },
+  {
+    "symbol": "ED",
+    "name": "Consolidated Edison",
+    "sector": "Utilities",
+    "close": 109.15,
+    "low50": 107.65,
+    "pct_above": 1.39
+  },
+  {
+    "symbol": "LMT",
+    "name": "Lockheed Martin",
+    "sector": "Industrials",
+    "close": 508.93,
+    "low50": 501.95,
+    "pct_above": 1.39
+  },
+  {
+    "symbol": "DTE",
+    "name": "DTE Energy",
+    "sector": "Utilities",
+    "close": 143.5,
+    "low50": 141.42,
+    "pct_above": 1.47
+  },
+  {
+    "symbol": "HCA",
+    "name": "HCA Healthcare",
+    "sector": "Health Care",
+    "close": 428.79,
+    "low50": 422.19,
+    "pct_above": 1.56
+  },
+  {
+    "symbol": "DPZ",
+    "name": "Domino's Pizza",
+    "sector": "Consumer Discretionary",
+    "close": 331.73,
+    "low50": 326.54,
+    "pct_above": 1.59
+  },
+  {
+    "symbol": "HD",
+    "name": "Home Depot",
+    "sector": "Consumer Discretionary",
+    "close": 315.42,
+    "low50": 310.42,
+    "pct_above": 1.61
+  },
+  {
+    "symbol": "PCG",
+    "name": "PG&E Corp",
+    "sector": "Utilities",
+    "close": 16.33,
+    "low50": 16.07,
+    "pct_above": 1.62
+  },
+  {
+    "symbol": "PH",
+    "name": "Parker Hannifin",
+    "sector": "Industrials",
+    "close": 872.69,
+    "low50": 858.72,
+    "pct_above": 1.63
+  },
+  {
+    "symbol": "CLX",
+    "name": "Clorox Co",
+    "sector": "Consumer Staples",
+    "close": 86.12,
+    "low50": 84.7,
+    "pct_above": 1.68
+  },
+  {
+    "symbol": "PFE",
+    "name": "Pfizer Inc",
+    "sector": "Health Care",
+    "close": 26.45,
+    "low50": 26.01,
+    "pct_above": 1.69
+  },
+  {
+    "symbol": "SYK",
+    "name": "Stryker Corp",
+    "sector": "Health Care",
+    "close": 295.25,
+    "low50": 290.22,
+    "pct_above": 1.73
+  },
+  {
+    "symbol": "AVY",
+    "name": "Avery Dennison",
+    "sector": "Materials",
+    "close": 161.97,
+    "low50": 159.19,
+    "pct_above": 1.75
+  },
+  {
+    "symbol": "TJX",
+    "name": "TJX Companies",
+    "sector": "Consumer Discretionary",
+    "close": 154.96,
+    "low50": 152.18,
+    "pct_above": 1.83
+  },
+  {
+    "symbol": "MKTX",
+    "name": "MarketAxess Holdings",
+    "sector": "Financials",
+    "close": 151.29,
+    "low50": 148.52,
+    "pct_above": 1.86
+  },
+  {
+    "symbol": "ICE",
+    "name": "Intercontinental Exchange",
+    "sector": "Financials",
+    "close": 155.28,
+    "low50": 152.38,
+    "pct_above": 1.9
+  },
+  {
+    "symbol": "XYL",
+    "name": "Xylem Inc",
+    "sector": "Industrials",
+    "close": 116.39,
+    "low50": 114.15,
+    "pct_above": 1.96
+  },
+  {
+    "symbol": "ECL",
+    "name": "Ecolab Inc",
+    "sector": "Materials",
+    "close": 257.65,
+    "low50": 252.66,
+    "pct_above": 1.97
+  },
+  {
+    "symbol": "FAST",
+    "name": "Fastenal Co",
+    "sector": "Industrials",
+    "close": 44.33,
+    "low50": 43.47,
+    "pct_above": 1.98
+  },
+  {
+    "symbol": "KR",
+    "name": "Kroger Co",
+    "sector": "Consumer Staples",
+    "close": 66.92,
+    "low50": 65.62,
+    "pct_above": 1.98
+  },
+  {
+    "symbol": "EPAM",
+    "name": "EPAM Systems",
+    "sector": "Information Technology",
+    "close": 109.64,
+    "low50": 107.49,
+    "pct_above": 2.0
+  },
+  {
+    "symbol": "HOLX",
+    "name": "Hologic Inc",
+    "sector": "Health Care",
+    "close": 76.01,
+    "low50": 74.5,
+    "pct_above": 2.03
+  },
+  {
+    "symbol": "BR",
+    "name": "Broadridge Financial",
+    "sector": "Industrials",
+    "close": 152.14,
+    "low50": 149.05,
+    "pct_above": 2.07
+  },
+  {
+    "symbol": "CTSH",
+    "name": "Cognizant Technology",
+    "sector": "Information Technology",
+    "close": 51.87,
+    "low50": 50.81,
+    "pct_above": 2.09
+  },
+  {
+    "symbol": "ISRG",
+    "name": "Intuitive Surgical",
+    "sector": "Health Care",
+    "close": 451.38,
+    "low50": 441.98,
+    "pct_above": 2.13
+  },
+  {
+    "symbol": "DUK",
+    "name": "Duke Energy",
+    "sector": "Utilities",
+    "close": 127.58,
+    "low50": 124.9,
+    "pct_above": 2.15
+  },
+  {
+    "symbol": "PEG",
+    "name": "PSEG Inc",
+    "sector": "Utilities",
+    "close": 79.73,
+    "low50": 78.01,
+    "pct_above": 2.2
+  },
+  {
+    "symbol": "PPL",
+    "name": "PPL Corp",
+    "sector": "Materials",
+    "close": 37.35,
+    "low50": 36.53,
+    "pct_above": 2.24
+  },
+  {
+    "symbol": "MOS",
+    "name": "Mosaic Co",
+    "sector": "Materials",
+    "close": 23.26,
+    "low50": 22.74,
+    "pct_above": 2.29
+  },
+  {
+    "symbol": "CTAS",
+    "name": "Cintas Corp",
+    "sector": "Industrials",
+    "close": 169.25,
+    "low50": 165.46,
+    "pct_above": 2.29
+  },
+  {
+    "symbol": "NKE",
+    "name": "Nike Inc",
+    "sector": "Consumer Discretionary",
+    "close": 43.06,
+    "low50": 42.09,
+    "pct_above": 2.3
+  },
+  {
+    "symbol": "EA",
+    "name": "Electronic Arts",
+    "sector": "Communication Services",
+    "close": 201.57,
+    "low50": 197.01,
+    "pct_above": 2.31
+  },
+  {
+    "symbol": "WBD",
+    "name": "Warner Bros Discovery",
+    "sector": "Communication Services",
+    "close": 27.22,
+    "low50": 26.6,
+    "pct_above": 2.33
+  },
+  {
+    "symbol": "EFX",
+    "name": "Equifax Inc",
+    "sector": "Industrials",
+    "close": 170.02,
+    "low50": 166.07,
+    "pct_above": 2.38
+  },
+  {
+    "symbol": "TMO",
+    "name": "Thermo Fisher Scientific",
+    "sector": "Health Care",
+    "close": 466.76,
+    "low50": 455.6,
+    "pct_above": 2.45
+  },
+  {
+    "symbol": "AON",
+    "name": "Aon PLC",
+    "sector": "Financials",
+    "close": 314.55,
+    "low50": 307.02,
+    "pct_above": 2.45
+  },
+  {
+    "symbol": "WM",
+    "name": "Waste Management",
+    "sector": "Industrials",
+    "close": 224.49,
+    "low50": 219.1,
+    "pct_above": 2.46
+  },
+  {
+    "symbol": "MMM",
+    "name": "3M Company",
+    "sector": "Industrials",
+    "close": 142.82,
+    "low50": 139.34,
+    "pct_above": 2.5
+  },
+  {
+    "symbol": "MKC",
+    "name": "McCormick & Co",
+    "sector": "Consumer Staples",
+    "close": 48.49,
+    "low50": 47.3,
+    "pct_above": 2.52
+  },
+  {
+    "symbol": "HIG",
+    "name": "Hartford Financial",
+    "sector": "Financials",
+    "close": 134.15,
+    "low50": 130.75,
+    "pct_above": 2.6
+  },
+  {
+    "symbol": "HSY",
+    "name": "Hershey Co",
+    "sector": "Consumer Staples",
+    "close": 184.91,
+    "low50": 180.18,
+    "pct_above": 2.63
+  },
+  {
+    "symbol": "AES",
+    "name": "AES Corp",
+    "sector": "Utilities",
+    "close": 14.37,
+    "low50": 13.99,
+    "pct_above": 2.72
+  },
+  {
+    "symbol": "PCAR",
+    "name": "PACCAR Inc",
+    "sector": "Industrials",
+    "close": 113.42,
+    "low50": 110.36,
+    "pct_above": 2.77
+  },
+  {
+    "symbol": "AMGN",
+    "name": "Amgen Inc",
+    "sector": "Health Care",
+    "close": 329.59,
+    "low50": 320.53,
+    "pct_above": 2.83
+  },
+  {
+    "symbol": "GIS",
+    "name": "General Mills",
+    "sector": "Consumer Staples",
+    "close": 34.55,
+    "low50": 33.58,
+    "pct_above": 2.9
+  },
+  {
+    "symbol": "CAG",
+    "name": "Conagra Brands",
+    "sector": "Consumer Staples",
+    "close": 14.0,
+    "low50": 13.6,
+    "pct_above": 2.9
+  },
+  {
+    "symbol": "VRTX",
+    "name": "Vertex Pharmaceuticals",
+    "sector": "Health Care",
+    "close": 424.36,
+    "low50": 412.27,
+    "pct_above": 2.93
+  },
+  {
+    "symbol": "PG",
+    "name": "Procter & Gamble",
+    "sector": "Consumer Staples",
+    "close": 144.9,
+    "low50": 140.74,
+    "pct_above": 2.96
+  },
+  {
+    "symbol": "PGR",
+    "name": "Progressive Corp",
+    "sector": "Financials",
+    "close": 197.74,
+    "low50": 192.02,
+    "pct_above": 2.98
+  },
+  {
+    "symbol": "HRL",
+    "name": "Hormel Foods",
+    "sector": "Consumer Staples",
+    "close": 20.93,
+    "low50": 20.32,
+    "pct_above": 3.0
+  },
+  {
+    "symbol": "ITW",
+    "name": "Illinois Tool Works",
+    "sector": "Industrials",
+    "close": 254.55,
+    "low50": 247.0,
+    "pct_above": 3.06
+  },
+  {
+    "symbol": "ACN",
+    "name": "Accenture PLC",
+    "sector": "Information Technology",
+    "close": 179.01,
+    "low50": 173.56,
+    "pct_above": 3.14
+  },
+  {
+    "symbol": "CHD",
+    "name": "Church & Dwight",
+    "sector": "Consumer Staples",
+    "close": 93.53,
+    "low50": 90.67,
+    "pct_above": 3.15
+  },
+  {
+    "symbol": "IBM",
+    "name": "IBM Corp",
+    "sector": "Information Technology",
+    "close": 229.03,
+    "low50": 221.73,
+    "pct_above": 3.29
+  },
+  {
+    "symbol": "MA",
+    "name": "Mastercard Inc",
+    "sector": "Financials",
+    "close": 497.08,
+    "low50": 480.5,
+    "pct_above": 3.45
+  },
+  {
+    "symbol": "WEC",
+    "name": "WEC Energy Group",
+    "sector": "Utilities",
+    "close": 115.22,
+    "low50": 111.35,
+    "pct_above": 3.48
+  },
+  {
+    "symbol": "IDXX",
+    "name": "IDEXX Laboratories",
+    "sector": "Health Care",
+    "close": 562.97,
+    "low50": 544.01,
+    "pct_above": 3.48
+  },
+  {
+    "symbol": "STZ",
+    "name": "Constellation Brands",
+    "sector": "Consumer Staples",
+    "close": 149.8,
+    "low50": 144.61,
+    "pct_above": 3.59
+  },
+  {
+    "symbol": "SHW",
+    "name": "Sherwin-Williams",
+    "sector": "Materials",
+    "close": 312.46,
+    "low50": 301.58,
+    "pct_above": 3.61
+  },
+  {
+    "symbol": "TPR",
+    "name": "Tapestry Inc",
+    "sector": "Consumer Discretionary",
+    "close": 141.39,
+    "low50": 136.44,
+    "pct_above": 3.63
+  },
+  {
+    "symbol": "DG",
+    "name": "Dollar General",
+    "sector": "Consumer Discretionary",
+    "close": 117.01,
+    "low50": 112.76,
+    "pct_above": 3.77
+  },
+  {
+    "symbol": "TAP",
+    "name": "Molson Coors Beverage",
+    "sector": "Consumer Staples",
+    "close": 42.19,
+    "low50": 40.64,
+    "pct_above": 3.81
+  },
+  {
+    "symbol": "LEN",
+    "name": "Lennar Corp",
+    "sector": "Consumer Discretionary",
+    "close": 86.2,
+    "low50": 83.03,
+    "pct_above": 3.82
+  },
+  {
+    "symbol": "T",
+    "name": "AT&T Inc",
+    "sector": "Communication Services",
+    "close": 25.9,
+    "low50": 24.94,
+    "pct_above": 3.85
+  },
+  {
+    "symbol": "EIX",
+    "name": "Edison International",
+    "sector": "Utilities",
+    "close": 68.87,
+    "low50": 66.3,
+    "pct_above": 3.88
+  },
+  {
+    "symbol": "ES",
+    "name": "Eversource Energy",
+    "sector": "Utilities",
+    "close": 68.9,
+    "low50": 66.32,
+    "pct_above": 3.89
+  },
+  {
+    "symbol": "GEHC",
+    "name": "GE HealthCare",
+    "sector": "Health Care",
+    "close": 61.04,
+    "low50": 58.75,
+    "pct_above": 3.9
+  },
+  {
+    "symbol": "SRE",
+    "name": "Sempra Energy",
+    "sector": "Utilities",
+    "close": 94.37,
+    "low50": 90.82,
+    "pct_above": 3.91
+  },
+  {
+    "symbol": "ALGN",
+    "name": "Align Technology",
+    "sector": "Health Care",
+    "close": 168.71,
+    "low50": 162.27,
+    "pct_above": 3.97
+  },
+  {
+    "symbol": "ZBH",
+    "name": "Zimmer Biomet",
+    "sector": "Health Care",
+    "close": 83.01,
+    "low50": 79.83,
+    "pct_above": 3.98
+  },
+  {
+    "symbol": "PEP",
+    "name": "PepsiCo Inc",
+    "sector": "Consumer Staples",
+    "close": 155.04,
+    "low50": 149.03,
+    "pct_above": 4.03
+  },
+  {
+    "symbol": "PHM",
+    "name": "PulteGroup Inc",
+    "sector": "Consumer Discretionary",
+    "close": 117.97,
+    "low50": 113.26,
+    "pct_above": 4.16
+  },
+  {
+    "symbol": "UPS",
+    "name": "United Parcel Service",
+    "sector": "Industrials",
+    "close": 98.07,
+    "low50": 94.06,
+    "pct_above": 4.26
+  },
+  {
+    "symbol": "EQT",
+    "name": "EQT Corp",
+    "sector": "Energy",
+    "close": 58.72,
+    "low50": 56.26,
+    "pct_above": 4.37
+  },
+  {
+    "symbol": "KVUE",
+    "name": "Kenvue Inc",
+    "sector": "Consumer Staples",
+    "close": 17.37,
+    "low50": 16.64,
+    "pct_above": 4.39
+  },
+  {
+    "symbol": "LVS",
+    "name": "Las Vegas Sands",
+    "sector": "Consumer Discretionary",
+    "close": 52.26,
+    "low50": 50.05,
+    "pct_above": 4.42
+  },
+  {
+    "symbol": "ATO",
+    "name": "Atmos Energy",
+    "sector": "Utilities",
+    "close": 187.25,
+    "low50": 179.32,
+    "pct_above": 4.42
+  },
+  {
+    "symbol": "EVRG",
+    "name": "Evergy Inc",
+    "sector": "Utilities",
+    "close": 81.61,
+    "low50": 78.15,
+    "pct_above": 4.43
+  },
+  {
+    "symbol": "CME",
+    "name": "CME Group",
+    "sector": "Financials",
+    "close": 286.82,
+    "low50": 274.6,
+    "pct_above": 4.45
+  },
+  {
+    "symbol": "CINF",
+    "name": "Cincinnati Financial",
+    "sector": "Financials",
+    "close": 160.35,
+    "low50": 153.4,
+    "pct_above": 4.53
+  },
+  {
+    "symbol": "OGE",
+    "name": "OGE Energy",
+    "sector": "Utilities",
+    "close": 47.84,
+    "low50": 45.75,
+    "pct_above": 4.57
+  },
+  {
+    "symbol": "GILD",
+    "name": "Gilead Sciences",
+    "sector": "Health Care",
+    "close": 133.48,
+    "low50": 127.64,
+    "pct_above": 4.58
+  },
+  {
+    "symbol": "RMD",
+    "name": "ResMed Inc",
+    "sector": "Health Care",
+    "close": 207.88,
+    "low50": 198.64,
+    "pct_above": 4.65
+  },
+  {
+    "symbol": "APTV",
+    "name": "Aptiv PLC",
+    "sector": "Consumer Discretionary",
+    "close": 54.83,
+    "low50": 52.38,
+    "pct_above": 4.68
+  },
+  {
+    "symbol": "SO",
+    "name": "Southern Company",
+    "sector": "Utilities",
+    "close": 95.9,
+    "low50": 91.6,
+    "pct_above": 4.69
+  },
+  {
+    "symbol": "HII",
+    "name": "Huntington Ingalls",
+    "sector": "Industrials",
+    "close": 326.13,
+    "low50": 311.53,
+    "pct_above": 4.69
+  },
+  {
+    "symbol": "CNP",
+    "name": "CenterPoint Energy",
+    "sector": "Utilities",
+    "close": 43.53,
+    "low50": 41.56,
+    "pct_above": 4.74
+  },
+  {
+    "symbol": "DE",
+    "name": "Deere & Co",
+    "sector": "Industrials",
+    "close": 575.79,
+    "low50": 549.68,
+    "pct_above": 4.75
+  },
+  {
+    "symbol": "MRK",
+    "name": "Merck & Co",
+    "sector": "Health Care",
+    "close": 113.15,
+    "low50": 107.9,
+    "pct_above": 4.87
+  },
+  {
+    "symbol": "DXCM",
+    "name": "DexCom Inc",
+    "sector": "Health Care",
+    "close": 59.48,
+    "low50": 56.72,
+    "pct_above": 4.87
+  },
+  {
+    "symbol": "REGN",
+    "name": "Regeneron Pharmaceuticals",
+    "sector": "Health Care",
+    "close": 702.27,
+    "low50": 668.85,
+    "pct_above": 5.0
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "symbol": "AAPL",
+    "name": "AAPL",
+    "sector": "Custom",
+    "datetime": "2026-04-30 09:30:00",
+    "direction": "down",
+    "close": 269.065,
+    "atr_pct": 100.0,
+    "squeeze_bars": 12,
+    "consol_high": 270.45,
+    "consol_low": 269.43,
+    "total_breakouts": 1,
+    "recent_breakouts": 1
+  },
+  {
+    "symbol": "AMZN",
+    "name": "AMZN",
+    "sector": "Custom",
+    "datetime": "2026-04-29 09:30:00",
+    "direction": "down",
+    "close": 258.17,
+    "atr_pct": 100.0,
+    "squeeze_bars": 30,
+    "consol_high": 259.85,
+    "consol_low": 258.86,
+    "total_breakouts": 1,
+    "recent_breakouts": 1
+  },
+  {
+    "symbol": "NVDA",
+    "name": "NVDA",
+    "sector": "Custom",
+    "datetime": "2026-04-30 15:55:00",
+    "direction": "down",
+    "close": 199.54,
+    "atr_pct": 83.33333333333334,
+    "squeeze_bars": 55,
+    "consol_high": 202.0,
+    "consol_low": 200.18,
+    "total_breakouts": 2,
+    "recent_breakouts": 2
+  },
+  {
+    "symbol": "META",
+    "name": "META",
+    "sector": "Custom",
+    "datetime": "2026-05-01 15:10:00",
+    "direction": "down",
+    "close": 609.83,
+    "atr_pct": 70.0,
+    "squeeze_bars": 13,
+    "consol_high": 615.89,
+    "consol_low": 610.43,
+    "total_breakouts": 3,
+    "recent_breakouts": 3
+  },
+  {
+    "symbol": "QQQ",
+    "name": "QQQ",
+    "sector": "Custom",
+    "datetime": "2026-04-30 09:30:00",
+    "direction": "up",
+    "close": 662.02,
+    "atr_pct": 96.66666666666667,
+    "squeeze_bars": 3,
+    "consol_high": 661.72,
+    "consol_low": 657.8,
+    "total_breakouts": 1,
+    "recent_breakouts": 1
+  }
+]
